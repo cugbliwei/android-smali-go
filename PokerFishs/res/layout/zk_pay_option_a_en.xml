@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="115.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/zk_pay_select_icon" android:background="@drawable/zk_alipay" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="50.0sp" android:textColor="@android:color/black" android:id="@id/zk_pay_select_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="125.0dip" android:layout_marginTop="20.0dip" android:text="支付宝aaaaa" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/imageView" android:background="@drawable/zk_go" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pay_select_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+    <com.zkunity.core.AFontTextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/pay_select_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65.0dip" android:text="支付宝" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/pay_select_go" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/zk_go" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>
