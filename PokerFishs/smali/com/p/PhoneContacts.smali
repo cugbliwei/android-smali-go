@@ -125,10 +125,10 @@
 
     if-nez v1, :cond_2
 
-    .line 51
+    .line 52
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    .line 55
+    .line 56
     .end local v7    # "contactName":Ljava/lang/String;
     .end local v9    # "infos":Lorg/json/JSONObject;
     .end local v11    # "phoneNumber":Ljava/lang/String;
@@ -143,7 +143,7 @@
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 60
+    .line 61
     :goto_1
     iget-object v1, p0, Lcom/p/PhoneContacts;->contacts:Lorg/json/JSONObject;
 
@@ -203,9 +203,18 @@
     .end local v12    # "tels":Lorg/json/JSONArray;
     .local v13, "tels":Lorg/json/JSONArray;
     :try_start_2
-    invoke-virtual {v13, v11}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+    const-string v1, "\\D"
+
+    const-string v2, ""
+
+    invoke-virtual {v11, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v11
 
     .line 45
+    invoke-virtual {v13, v11}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+    .line 46
     const-string v1, "tel"
 
     invoke-virtual {v9, v1, v13}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
@@ -214,7 +223,7 @@
 
     move-object v12, v13
 
-    .line 49
+    .line 50
     .end local v13    # "tels":Lorg/json/JSONArray;
     .restart local v12    # "tels":Lorg/json/JSONArray;
     :goto_2
@@ -222,18 +231,18 @@
 
     goto :goto_0
 
-    .line 46
+    .line 47
     :catch_0
     move-exception v8
 
-    .line 47
+    .line 48
     .local v8, "e":Lorg/json/JSONException;
     :goto_3
     invoke-virtual {v8}, Lorg/json/JSONException;->printStackTrace()V
 
     goto :goto_2
 
-    .line 56
+    .line 57
     .end local v7    # "contactName":Ljava/lang/String;
     .end local v8    # "e":Lorg/json/JSONException;
     .end local v9    # "infos":Lorg/json/JSONObject;
@@ -242,13 +251,13 @@
     :catch_1
     move-exception v8
 
-    .line 57
+    .line 58
     .restart local v8    # "e":Lorg/json/JSONException;
     invoke-virtual {v8}, Lorg/json/JSONException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 46
+    .line 47
     .end local v8    # "e":Lorg/json/JSONException;
     .restart local v7    # "contactName":Ljava/lang/String;
     .restart local v9    # "infos":Lorg/json/JSONObject;

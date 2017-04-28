@@ -8,15 +8,15 @@
 # static fields
 .field private static d:Lcom/alipay/b/a/a/c/b;
 
-.field private static e:Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+.field private static e:Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
 
 
 # instance fields
-.field private a:Lcom/alipay/android/phone/mrpc/core/w;
+.field private a:Lcom/alipay/android/phone/mrpc/core/RpcClient;
 
 .field private b:Lcom/alipay/tscenter/biz/rpc/deviceFp/BugTrackMessageService;
 
-.field private c:Lcom/alipay/tscenter/biz/rpc/vkeydfp/DeviceDataReportService;
+.field private c:Lcom/alipay/tscenter/biz/rpc/report/general/DataReportService;
 
 
 # direct methods
@@ -37,29 +37,29 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->a:Lcom/alipay/android/phone/mrpc/core/w;
+    iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->a:Lcom/alipay/android/phone/mrpc/core/RpcClient;
 
     iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->b:Lcom/alipay/tscenter/biz/rpc/deviceFp/BugTrackMessageService;
 
-    iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->c:Lcom/alipay/tscenter/biz/rpc/vkeydfp/DeviceDataReportService;
+    iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->c:Lcom/alipay/tscenter/biz/rpc/report/general/DataReportService;
 
-    new-instance v1, Lcom/alipay/android/phone/mrpc/core/aa;
+    new-instance v1, Lcom/alipay/android/phone/mrpc/core/RpcParams;
 
-    invoke-direct {v1}, Lcom/alipay/android/phone/mrpc/core/aa;-><init>()V
+    invoke-direct {v1}, Lcom/alipay/android/phone/mrpc/core/RpcParams;-><init>()V
 
-    invoke-virtual {v1, p2}, Lcom/alipay/android/phone/mrpc/core/aa;->a(Ljava/lang/String;)V
+    invoke-virtual {v1, p2}, Lcom/alipay/android/phone/mrpc/core/RpcParams;->setGwUrl(Ljava/lang/String;)V
 
-    new-instance v0, Lcom/alipay/android/phone/mrpc/core/h;
+    new-instance v0, Lcom/alipay/android/phone/mrpc/core/DefaultRpcClient;
 
-    invoke-direct {v0, p1}, Lcom/alipay/android/phone/mrpc/core/h;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/alipay/android/phone/mrpc/core/DefaultRpcClient;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->a:Lcom/alipay/android/phone/mrpc/core/w;
+    iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->a:Lcom/alipay/android/phone/mrpc/core/RpcClient;
 
-    iget-object v0, p0, Lcom/alipay/b/a/a/c/b;->a:Lcom/alipay/android/phone/mrpc/core/w;
+    iget-object v0, p0, Lcom/alipay/b/a/a/c/b;->a:Lcom/alipay/android/phone/mrpc/core/RpcClient;
 
     const-class v2, Lcom/alipay/tscenter/biz/rpc/deviceFp/BugTrackMessageService;
 
-    invoke-virtual {v0, v2, v1}, Lcom/alipay/android/phone/mrpc/core/w;->a(Ljava/lang/Class;Lcom/alipay/android/phone/mrpc/core/aa;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lcom/alipay/android/phone/mrpc/core/RpcClient;->getRpcProxy(Ljava/lang/Class;Lcom/alipay/android/phone/mrpc/core/RpcParams;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -67,17 +67,17 @@
 
     iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->b:Lcom/alipay/tscenter/biz/rpc/deviceFp/BugTrackMessageService;
 
-    iget-object v0, p0, Lcom/alipay/b/a/a/c/b;->a:Lcom/alipay/android/phone/mrpc/core/w;
+    iget-object v0, p0, Lcom/alipay/b/a/a/c/b;->a:Lcom/alipay/android/phone/mrpc/core/RpcClient;
 
-    const-class v2, Lcom/alipay/tscenter/biz/rpc/vkeydfp/DeviceDataReportService;
+    const-class v2, Lcom/alipay/tscenter/biz/rpc/report/general/DataReportService;
 
-    invoke-virtual {v0, v2, v1}, Lcom/alipay/android/phone/mrpc/core/w;->a(Ljava/lang/Class;Lcom/alipay/android/phone/mrpc/core/aa;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lcom/alipay/android/phone/mrpc/core/RpcClient;->getRpcProxy(Ljava/lang/Class;Lcom/alipay/android/phone/mrpc/core/RpcParams;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/DeviceDataReportService;
+    check-cast v0, Lcom/alipay/tscenter/biz/rpc/report/general/DataReportService;
 
-    iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->c:Lcom/alipay/tscenter/biz/rpc/vkeydfp/DeviceDataReportService;
+    iput-object v0, p0, Lcom/alipay/b/a/a/c/b;->c:Lcom/alipay/tscenter/biz/rpc/report/general/DataReportService;
 
     return-void
 .end method
@@ -117,48 +117,48 @@
     throw v0
 .end method
 
-.method static synthetic a(Lcom/alipay/b/a/a/c/b;)Lcom/alipay/tscenter/biz/rpc/vkeydfp/DeviceDataReportService;
+.method static synthetic a(Lcom/alipay/b/a/a/c/b;)Lcom/alipay/tscenter/biz/rpc/report/general/DataReportService;
     .locals 1
 
-    iget-object v0, p0, Lcom/alipay/b/a/a/c/b;->c:Lcom/alipay/tscenter/biz/rpc/vkeydfp/DeviceDataReportService;
+    iget-object v0, p0, Lcom/alipay/b/a/a/c/b;->c:Lcom/alipay/tscenter/biz/rpc/report/general/DataReportService;
 
     return-object v0
 .end method
 
-.method static synthetic a()Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+.method static synthetic a()Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
     .locals 1
 
-    sget-object v0, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+    sget-object v0, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;)Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+.method static synthetic a(Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;)Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
     .locals 0
 
-    sput-object p0, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+    sput-object p0, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
 
     return-object p0
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;)Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+.method public final a(Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;)Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
     .locals 4
 
-    iget-object v0, p0, Lcom/alipay/b/a/a/c/b;->c:Lcom/alipay/tscenter/biz/rpc/vkeydfp/DeviceDataReportService;
+    iget-object v0, p0, Lcom/alipay/b/a/a/c/b;->c:Lcom/alipay/tscenter/biz/rpc/report/general/DataReportService;
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+    sput-object v0, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
 
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/alipay/b/a/a/c/c;
 
-    invoke-direct {v1, p0, p1}, Lcom/alipay/b/a/a/c/c;-><init>(Lcom/alipay/b/a/a/c/b;Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;)V
+    invoke-direct {v1, p0, p1}, Lcom/alipay/b/a/a/c/c;-><init>(Lcom/alipay/b/a/a/c/b;Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;)V
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -167,7 +167,7 @@
     const v0, 0x493e0
 
     :goto_0
-    sget-object v1, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+    sget-object v1, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
 
     if-nez v1, :cond_0
 
@@ -182,7 +182,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v0, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+    sget-object v0, Lcom/alipay/b/a/a/c/b;->e:Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
 
     return-object v0
 .end method
@@ -217,7 +217,7 @@
 
     invoke-interface {v2, v3}, Lcom/alipay/tscenter/biz/rpc/deviceFp/BugTrackMessageService;->logCollect(Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v0
 

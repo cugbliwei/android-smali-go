@@ -18,12 +18,8 @@
 .end method
 
 .method private a(IILjava/lang/String;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/activity/GetuiExtActivity$Up_.smali"
-    const-string v3,  ".method private a(IILjava/lang/String;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/activity/GetuiExtActivity$UpgradeProgressReceiver;->a:Lcom/igexin/getuiext/activity/GetuiExtActivity;
 
     invoke-static {v0}, Lcom/igexin/getuiext/activity/GetuiExtActivity;->a(Lcom/igexin/getuiext/activity/GetuiExtActivity;)I
@@ -106,12 +102,8 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/activity/GetuiExtActivity$Up_.smali"
-    const-string v5,  ".method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0

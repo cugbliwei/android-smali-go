@@ -4,11 +4,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/h.smali"
-    const-string v1,  ".method public constructor <init>()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -18,11 +14,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/h.smali"
-    const-string v3,  ".method public run()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     invoke-static {}, Landroid/os/Looper;->prepare()V
 

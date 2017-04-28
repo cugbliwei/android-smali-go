@@ -17,12 +17,8 @@
 
 # virtual methods
 .method public a(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/getuiext/a/j.smali"
-    const-string v8,  ".method public a(Landroid/content/Context;Landroid/content/Intent;)V"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v6, 0x2afb
 
     sget v0, Lcom/igexin/getuiext/data/Consts;->verifyCode:I

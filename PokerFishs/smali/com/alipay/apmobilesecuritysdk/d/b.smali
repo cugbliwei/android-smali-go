@@ -79,7 +79,7 @@
 
     move-result-object v7
 
-    invoke-static {p0}, Lcom/alipay/apmobilesecuritysdk/f/h;->c(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/alipay/apmobilesecuritysdk/f/h;->f(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v8
 

@@ -14,12 +14,8 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/promotion/UrlImageView.smali"
-    const-string v4,  ".method public a(Ljava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Lcom/igexin/getuiext/ui/promotion/UrlImageView;->getContext()Landroid/content/Context;
 
     move-result-object v0

@@ -17,11 +17,7 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/igexin/push/core/bean/e;Z)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/d/h.smali"
-    const-string v1,  ".method public constructor <init>(Landroid/content/Context;Lcom/igexin/push/core/bean/e;Z)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,11 +33,7 @@
 
 # virtual methods
 .method protected a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 11
-
-    const-string v9, "======================== PokerFishs/smali/com/igexin/push/core/d/h.smali"
-    const-string v10,  ".method protected a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 9
 
     const/4 v8, 0x3
 
@@ -658,11 +650,7 @@
 .end method
 
 .method public run()V
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/core/d/h.smali"
-    const-string v4,  ".method public run()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     :cond_0
     :goto_0

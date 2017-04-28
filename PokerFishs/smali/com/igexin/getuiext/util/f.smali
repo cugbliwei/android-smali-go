@@ -4,12 +4,8 @@
 
 # direct methods
 .method public static a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/util/f.smali"
-    const-string v3,  ".method public static a"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;

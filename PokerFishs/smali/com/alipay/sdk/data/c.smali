@@ -189,20 +189,20 @@
     if-eqz v1, :cond_0
 
     .line 90
-    const-string v1, "Msp/15.2.2"
+    const-string v1, "Msp/15.2.7"
 
     .line 93
-    invoke-static {}, Lcom/alipay/sdk/util/l;->a()Ljava/lang/String;
+    invoke-static {}, Lcom/alipay/sdk/util/l;->b()Ljava/lang/String;
 
     move-result-object v2
 
     .line 96
-    invoke-static {}, Lcom/alipay/sdk/util/l;->b()Ljava/lang/String;
+    invoke-static {}, Lcom/alipay/sdk/util/l;->c()Ljava/lang/String;
 
     move-result-object v4
 
     .line 99
-    invoke-static {v5}, Lcom/alipay/sdk/util/l;->e(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v5}, Lcom/alipay/sdk/util/l;->f(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -224,7 +224,7 @@
     move-result-object v7
 
     .line 105
-    invoke-static {v5}, Lcom/alipay/sdk/util/l;->f(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v5}, Lcom/alipay/sdk/util/l;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -1268,7 +1268,7 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     .line 68
-    sput-object p1, Lcom/alipay/sdk/cons/a;->b:Ljava/lang/String;
+    sput-object p1, Lcom/alipay/sdk/cons/a;->c:Ljava/lang/String;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

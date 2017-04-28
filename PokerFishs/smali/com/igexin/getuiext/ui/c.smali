@@ -24,12 +24,8 @@
 
 # virtual methods
 .method protected varargs a([Ljava/lang/Void;)Ljava/lang/String;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/ui/c.smali"
-    const-string v3,  ".method protected varargs a([Ljava/lang/Void;)Ljava/lang/String;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/ui/c;->a:Lcom/igexin/getuiext/data/a/d;
 
     iget-object v0, v0, Lcom/igexin/getuiext/data/a/d;->h:Ljava/lang/String;
@@ -70,12 +66,8 @@
 .end method
 
 .method protected a(Ljava/lang/String;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/c.smali"
-    const-string v4,  ".method protected a(Ljava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
     if-eqz p1, :cond_0

@@ -12,7 +12,7 @@
     .locals 0
 
     .prologue
-    .line 175
+    .line 178
     iput-object p1, p0, Lcom/alipay/sdk/util/g;->a:Lcom/alipay/sdk/util/e;
 
     invoke-direct {p0}, Lcom/alipay/android/app/IRemoteServiceCallback$Stub;-><init>()V
@@ -31,7 +31,7 @@
     .end annotation
 
     .prologue
-    .line 179
+    .line 182
     const/4 v0, 0x0
 
     return v0
@@ -46,7 +46,7 @@
     .end annotation
 
     .prologue
-    .line 184
+    .line 187
     return-void
 .end method
 
@@ -59,7 +59,7 @@
     .end annotation
 
     .prologue
-    .line 190
+    .line 193
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.MAIN"
@@ -68,31 +68,31 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 192
+    .line 195
     if-nez p4, :cond_0
 
-    .line 193
+    .line 196
     new-instance p4, Landroid/os/Bundle;
 
     invoke-direct {p4}, Landroid/os/Bundle;-><init>()V
 
-    .line 196
+    .line 199
     :cond_0
     :try_start_0
     const-string v1, "CallingPid"
 
     invoke-virtual {p4, v1, p3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 197
+    .line 200
     invoke-virtual {v0, p4}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 200
+    .line 203
     :goto_0
     invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 201
+    .line 204
     iget-object v1, p0, Lcom/alipay/sdk/util/g;->a:Lcom/alipay/sdk/util/e;
 
     invoke-static {v1}, Lcom/alipay/sdk/util/e;->b(Lcom/alipay/sdk/util/e;)Landroid/app/Activity;
@@ -101,7 +101,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 202
+    .line 205
     iget-object v1, p0, Lcom/alipay/sdk/util/g;->a:Lcom/alipay/sdk/util/e;
 
     invoke-static {v1}, Lcom/alipay/sdk/util/e;->b(Lcom/alipay/sdk/util/e;)Landroid/app/Activity;
@@ -110,7 +110,7 @@
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 204
+    .line 207
     :cond_1
     return-void
 

@@ -1101,7 +1101,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/alipay/sdk/util/l;->d(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/alipay/sdk/util/l;->e(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 

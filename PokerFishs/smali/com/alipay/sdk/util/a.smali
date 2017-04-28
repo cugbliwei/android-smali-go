@@ -114,7 +114,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 47
+    .line 44
     iget-object v0, p0, Lcom/alipay/sdk/util/a;->a:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -123,12 +123,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 48
     const-string v0, "00:00:00:00:00:00"
 
     iput-object v0, p0, Lcom/alipay/sdk/util/a;->a:Ljava/lang/String;
 
-    .line 52
+    .line 50
     :cond_1
     :goto_0
     return-void
@@ -142,7 +141,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 47
+    .line 46
     iget-object v0, p0, Lcom/alipay/sdk/util/a;->a:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -151,7 +150,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 48
     const-string v0, "00:00:00:00:00:00"
 
     iput-object v0, p0, Lcom/alipay/sdk/util/a;->a:Ljava/lang/String;
@@ -170,7 +168,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 48
     const-string v1, "00:00:00:00:00:00"
 
     iput-object v1, p0, Lcom/alipay/sdk/util/a;->a:Ljava/lang/String;

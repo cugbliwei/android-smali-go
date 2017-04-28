@@ -73,161 +73,90 @@
 
 
 # virtual methods
-.method public final a(Lcom/alipay/b/a/a/c/a/c;)Lcom/alipay/b/a/a/c/a/b;
+.method public final a(Lcom/alipay/b/a/a/c/a/d;)Lcom/alipay/b/a/a/c/a/c;
     .locals 4
 
-    new-instance v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;
+    new-instance v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;
 
-    invoke-direct {v0}, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;-><init>()V
+    invoke-direct {v0}, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;-><init>()V
 
-    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/c;->a()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;->os:Ljava/lang/String;
-
-    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/c;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/d;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;->apdid:Ljava/lang/String;
+    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;->os:Ljava/lang/String;
 
-    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/c;->c()Ljava/lang/String;
+    const-string v1, "8"
+
+    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;->rpcVersion:Ljava/lang/String;
+
+    const-string v1, "1"
+
+    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;->bizType:Ljava/lang/String;
+
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;->bizData:Ljava/util/Map;
+
+    iget-object v1, v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;->bizData:Ljava/util/Map;
+
+    const-string v2, "apdid"
+
+    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/d;->b()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;->bizData:Ljava/util/Map;
+
+    const-string v2, "apdidToken"
+
+    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/d;->c()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;->bizData:Ljava/util/Map;
+
+    const-string v2, "umidToken"
+
+    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/d;->d()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v1, v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;->bizData:Ljava/util/Map;
+
+    const-string v2, "dynamicKey"
+
+    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/d;->f()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/d;->e()Ljava/util/Map;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;->pubApdid:Ljava/lang/String;
-
-    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/c;->d()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;->priApdid:Ljava/lang/String;
-
-    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/c;->e()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;->token:Ljava/lang/String;
-
-    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/c;->f()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;->umidToken:Ljava/lang/String;
-
-    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/c;->g()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;->version:Ljava/lang/String;
-
-    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/c;->h()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;->lastTime:Ljava/lang/String;
-
-    invoke-virtual {p1}, Lcom/alipay/b/a/a/c/a/c;->i()Ljava/util/Map;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;->dataMap:Ljava/util/Map;
+    iput-object v1, v0, Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;->deviceData:Ljava/util/Map;
 
     sget-object v1, Lcom/alipay/b/a/a/c/b/b;->b:Lcom/alipay/b/a/a/c/a;
 
-    invoke-interface {v1, v0}, Lcom/alipay/b/a/a/c/a;->a(Lcom/alipay/tscenter/biz/rpc/vkeydfp/request/DeviceDataReportRequest;)Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;
+    invoke-interface {v1, v0}, Lcom/alipay/b/a/a/c/a;->a(Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportRequest;)Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;
 
-    move-result-object v1
+    move-result-object v0
 
-    new-instance v0, Lcom/alipay/b/a/a/c/a/b;
+    invoke-static {v0}, Lcom/alipay/b/a/a/c/a/b;->a(Lcom/alipay/tscenter/biz/rpc/report/general/model/DataReportResult;)Lcom/alipay/b/a/a/c/a/c;
 
-    invoke-direct {v0}, Lcom/alipay/b/a/a/c/a/b;-><init>()V
+    move-result-object v0
 
-    if-nez v1, :cond_1
-
-    const/4 v0, 0x0
-
-    :cond_0
-    :goto_0
     return-object v0
-
-    :cond_1
-    iget-boolean v2, v1, Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;->success:Z
-
-    iput-boolean v2, v0, Lcom/alipay/b/a/a/c/a/b;->a:Z
-
-    iget-object v2, v1, Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;->resultCode:Ljava/lang/String;
-
-    iput-object v2, v0, Lcom/alipay/b/a/a/c/a/b;->b:Ljava/lang/String;
-
-    iget-object v2, v1, Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;->apdid:Ljava/lang/String;
-
-    iput-object v2, v0, Lcom/alipay/b/a/a/c/a/b;->c:Ljava/lang/String;
-
-    iget-object v2, v1, Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;->token:Ljava/lang/String;
-
-    iput-object v2, v0, Lcom/alipay/b/a/a/c/a/b;->d:Ljava/lang/String;
-
-    iget-object v2, v1, Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;->currentTime:Ljava/lang/String;
-
-    iput-object v2, v0, Lcom/alipay/b/a/a/c/a/b;->e:Ljava/lang/String;
-
-    iget-object v2, v1, Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;->version:Ljava/lang/String;
-
-    iput-object v2, v0, Lcom/alipay/b/a/a/c/a/b;->f:Ljava/lang/String;
-
-    iget-object v2, v1, Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;->vkeySwitch:Ljava/lang/String;
-
-    iput-object v2, v0, Lcom/alipay/b/a/a/c/a/b;->g:Ljava/lang/String;
-
-    iget-object v2, v1, Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;->appListVer:Ljava/lang/String;
-
-    iput-object v2, v0, Lcom/alipay/b/a/a/c/a/b;->i:Ljava/lang/String;
-
-    iget-object v1, v1, Lcom/alipay/tscenter/biz/rpc/vkeydfp/result/DeviceDataReportResult;->bugTrackSwitch:Ljava/lang/String;
-
-    const-string v2, "0"
-
-    iput-object v2, v0, Lcom/alipay/b/a/a/c/a/b;->h:Ljava/lang/String;
-
-    const-string v2, "0"
-
-    iput-object v2, v0, Lcom/alipay/b/a/a/c/a/b;->j:Ljava/lang/String;
-
-    invoke-static {v1}, Lcom/alipay/b/a/a/a/a;->b(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-lez v2, :cond_0
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v1, v3}, Ljava/lang/String;->charAt(I)C
-
-    move-result v1
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lcom/alipay/b/a/a/c/a/b;->h:Ljava/lang/String;
-
-    goto :goto_0
 .end method
 
 .method public final a(Ljava/lang/String;)Z

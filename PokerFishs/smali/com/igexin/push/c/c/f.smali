@@ -14,11 +14,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/c/c/f.smali"
-    const-string v2,  ".method public constructor <init>()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-direct {p0}, Lcom/igexin/push/c/c/e;-><init>()V
 
@@ -50,11 +46,7 @@
 .end method
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/c/c/f.smali"
-    const-string v2,  ".method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-direct {p0}, Lcom/igexin/push/c/c/e;-><init>()V
 
@@ -100,11 +92,7 @@
 
 # virtual methods
 .method public a()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/c/c/f.smali"
-    const-string v2,  ".method public a()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/c/c/f;->c:Ljava/lang/String;
 
@@ -112,11 +100,7 @@
 .end method
 
 .method public a([B)V
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/c/c/f.smali"
-    const-string v5,  ".method public a([B)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     const/4 v0, 0x0
 
@@ -197,11 +181,7 @@
 .end method
 
 .method public d()[B
-    .locals 10
-
-    const-string v8, "======================== PokerFishs/smali/com/igexin/push/c/c/f.smali"
-    const-string v9,  ".method public d()[B"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 8
 
     const/4 v7, 0x0
 

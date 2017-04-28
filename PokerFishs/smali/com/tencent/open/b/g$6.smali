@@ -115,7 +115,7 @@
     invoke-static {v1, v3}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 748
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -321,7 +321,7 @@
     invoke-direct {v1, v6}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
 
     .line 761
-    invoke-static {v3}, Lcom/tencent/open/utils/Util;->getBytesUTF8(Ljava/lang/String;)[B
+    invoke-static {v3}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v3
 

@@ -64,7 +64,7 @@
     .line 50
     new-instance v0, Lcom/tencent/open/b/f;
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 

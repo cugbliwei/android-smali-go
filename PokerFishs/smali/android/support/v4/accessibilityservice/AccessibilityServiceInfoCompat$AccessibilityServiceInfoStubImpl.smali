@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 38
+    .line 42
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +35,18 @@
     .param p1, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     .prologue
-    .line 41
+    .line 46
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getCapabilities(Landroid/accessibilityservice/AccessibilityServiceInfo;)I
+    .locals 1
+    .param p1, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
+
+    .prologue
+    .line 71
     const/4 v0, 0x0
 
     return v0
@@ -46,7 +57,7 @@
     .param p1, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     .prologue
-    .line 45
+    .line 51
     const/4 v0, 0x0
 
     return-object v0
@@ -57,7 +68,7 @@
     .param p1, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     .prologue
-    .line 49
+    .line 56
     const/4 v0, 0x0
 
     return-object v0
@@ -68,7 +79,7 @@
     .param p1, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     .prologue
-    .line 53
+    .line 61
     const/4 v0, 0x0
 
     return-object v0
@@ -79,7 +90,19 @@
     .param p1, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     .prologue
-    .line 57
+    .line 66
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public loadDescription(Landroid/accessibilityservice/AccessibilityServiceInfo;Landroid/content/pm/PackageManager;)Ljava/lang/String;
+    .locals 1
+    .param p1, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
+    .param p2, "pm"    # Landroid/content/pm/PackageManager;
+
+    .prologue
+    .line 76
     const/4 v0, 0x0
 
     return-object v0

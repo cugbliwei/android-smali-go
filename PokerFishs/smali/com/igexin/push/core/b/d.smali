@@ -11,11 +11,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/igexin/push/core/b/c;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/b/d.smali"
-    const-string v1,  ".method constructor <init>(Lcom/igexin/push/core/b/c;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/b/d;->a:Lcom/igexin/push/core/b/c;
 
@@ -27,11 +23,7 @@
 
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/core/b/d.smali"
-    const-string v6,  ".method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     invoke-static {}, Lcom/igexin/push/core/b/b;->a()Lcom/igexin/push/core/b/b;
 
@@ -134,11 +126,7 @@
 .end method
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/b/d.smali"
-    const-string v3,  ".method public onServiceDisconnected(Landroid/content/ComponentName;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     invoke-static {}, Lcom/igexin/push/core/b/b;->a()Lcom/igexin/push/core/b/b;
 

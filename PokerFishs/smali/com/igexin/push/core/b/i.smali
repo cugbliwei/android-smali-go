@@ -16,11 +16,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
-
-    const-string v6, "======================== PokerFishs/smali/com/igexin/push/core/b/i.smali"
-    const-string v7,  ".method static constructor <clinit>()V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 6
 
     const/4 v5, 0x3
 
@@ -88,11 +84,7 @@
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/b/i.smali"
-    const-string v1,  ".method private constructor <init>(Ljava/lang/String;I)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 

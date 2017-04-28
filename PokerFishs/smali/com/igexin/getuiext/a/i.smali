@@ -17,12 +17,8 @@
 
 # virtual methods
 .method public a(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/a/i.smali"
-    const-string v2,  ".method public a(Landroid/content/Context;Landroid/content/Intent;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-string v0, "action"
 
     invoke-virtual {p2, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;

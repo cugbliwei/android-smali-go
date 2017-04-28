@@ -117,13 +117,13 @@
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_5
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 99
+    .line 96
     :try_start_3
     invoke-virtual {v1}, Ljava/lang/Process;->destroy()V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 103
+    .line 99
     :goto_0
     return-object v0
 
@@ -134,7 +134,7 @@
 
     move-object v0, v2
 
-    .line 99
+    .line 97
     :goto_1
     :try_start_4
     invoke-virtual {v1}, Ljava/lang/Process;->destroy()V
@@ -159,14 +159,12 @@
 
     move-object v0, v5
 
-    .line 99
     :goto_2
     :try_start_5
     invoke-virtual {v1}, Ljava/lang/Process;->destroy()V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
 
-    .line 101
     :goto_3
     throw v0
 

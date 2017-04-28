@@ -30,11 +30,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v6,  ".method static constructor <clinit>()V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     const/4 v4, 0x1
 
@@ -132,11 +128,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v1,  ".method public constructor <init>()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -144,11 +136,7 @@
 .end method
 
 .method public static getAmpServiceUrl()Ljava/lang/String;
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v4,  ".method public static getAmpServiceUrl()Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -178,11 +166,7 @@
 .end method
 
 .method public static getBiUploadServiceUrl()Ljava/lang/String;
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v4,  ".method public static getBiUploadServiceUrl()Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -212,11 +196,7 @@
 .end method
 
 .method public static getCmAddress()Ljava/lang/String;
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v4,  ".method public static getCmAddress()Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     const/4 v2, 0x0
 
@@ -296,11 +276,7 @@
 .end method
 
 .method public static getConfigServiceUrl()Ljava/lang/String;
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v4,  ".method public static getConfigServiceUrl()Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -330,11 +306,7 @@
 .end method
 
 .method public static getIdcConfigUrl()[Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v2,  ".method public static getIdcConfigUrl()[Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     sget-object v0, Lcom/igexin/push/config/SDKUrlConfig;->a:[Ljava/lang/String;
 
@@ -342,11 +314,7 @@
 .end method
 
 .method public static getIncreaseServiceUrl()Ljava/lang/String;
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v4,  ".method public static getIncreaseServiceUrl()Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -376,11 +344,7 @@
 .end method
 
 .method public static getLbsServiceUrl()Ljava/lang/String;
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v4,  ".method public static getLbsServiceUrl()Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -410,11 +374,7 @@
 .end method
 
 .method public static getLocation()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v2,  ".method public static getLocation()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     sget-object v0, Lcom/igexin/push/config/SDKUrlConfig;->b:Ljava/lang/String;
 
@@ -422,11 +382,7 @@
 .end method
 
 .method public static getLogServiceUrl()Ljava/lang/String;
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v4,  ".method public static getLogServiceUrl()Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -456,11 +412,7 @@
 .end method
 
 .method public static getStatServiceUrl()Ljava/lang/String;
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v4,  ".method public static getStatServiceUrl()Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -490,11 +442,7 @@
 .end method
 
 .method public static setCmAddress(Ljava/lang/String;)V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v3,  ".method public static setCmAddress(Ljava/lang/String;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -528,11 +476,7 @@
 .end method
 
 .method public static setIdcConfigUrl([Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v1,  ".method public static setIdcConfigUrl([Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     sput-object p0, Lcom/igexin/push/config/SDKUrlConfig;->a:[Ljava/lang/String;
 
@@ -540,11 +484,7 @@
 .end method
 
 .method public static setLocation(Ljava/lang/String;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/config/SDKUrlConfig.smali"
-    const-string v2,  ".method public static setLocation(Ljava/lang/String;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

@@ -60,12 +60,8 @@
 .end method
 
 .method public declared-synchronized a(Landroid/content/Context;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/b/c.smali"
-    const-string v3,  ".method public declared-synchronized a(Landroid/content/Context;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     monitor-enter p0
 
     :try_start_0

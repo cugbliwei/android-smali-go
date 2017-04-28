@@ -110,12 +110,8 @@
 .end method
 
 .method public static a(Ljava/lang/String;Lcom/igexin/a/a/b/c;)Lcom/igexin/a/a/b/a/a/e;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/a/e.smali"
-    const-string v3,  ".method public static a(Ljava/lang/String;Lcom/igexin/a/a/b/c;)Lcom/igexin/a/a/b/a/a/e;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     sget-object v0, Lcom/igexin/a/a/b/a/a/e;->k:Lcom/igexin/a/a/b/a/a/e;
 
     if-eqz v0, :cond_1
@@ -231,12 +227,8 @@
 
 # virtual methods
 .method final a(Ljava/nio/channels/SocketChannel;)V
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/a/a/b/a/a/e.smali"
-    const-string v9,  ".method final a(Ljava/nio/channels/SocketChannel;)V"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-string v0, "niosockettask|toRead"
 
     invoke-static {v0}, Lcom/igexin/a/a/c/a;->a(Ljava/lang/String;)V
@@ -437,12 +429,8 @@
 .end method
 
 .method public a_()V
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/a/a/b/a/a/e.smali"
-    const-string v10,  ".method public a_()V"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x1
 
     const/4 v8, 0x0
@@ -1530,12 +1518,8 @@
 .end method
 
 .method public final d()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/a/e.smali"
-    const-string v3,  ".method public final d()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x1
 
     const-string v0, "niosockettask|initTask"
@@ -1570,12 +1554,8 @@
 .end method
 
 .method public f()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/b/a/a/e.smali"
-    const-string v4,  ".method public f()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     sget-object v0, Lcom/igexin/a/a/b/a/a/e;->k:Lcom/igexin/a/a/b/a/a/e;
@@ -1756,12 +1736,8 @@
 .end method
 
 .method final g()V
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/a/a/b/a/a/e.smali"
-    const-string v9,  ".method final g()V"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v7, 0x1
 
     iget-object v0, p0, Lcom/igexin/a/a/b/a/a/e;->e:Ljava/nio/channels/Selector;
@@ -2100,12 +2076,8 @@
 .end method
 
 .method public i()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/b/a/a/e.smali"
-    const-string v4,  ".method public i()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/a/a/b/a/a/e;->e:Ljava/nio/channels/Selector;
 
     if-nez v0, :cond_0

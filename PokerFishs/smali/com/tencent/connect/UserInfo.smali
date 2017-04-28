@@ -8,17 +8,6 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/tencent/connect/auth/QQAuth;Lcom/tencent/connect/auth/QQToken;)V
-    .locals 0
-
-    .prologue
-    .line 26
-    invoke-direct {p0, p2, p3}, Lcom/tencent/connect/common/BaseApi;-><init>(Lcom/tencent/connect/auth/QQAuth;Lcom/tencent/connect/auth/QQToken;)V
-
-    .line 27
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;)V
     .locals 0
 
@@ -30,6 +19,17 @@
     return-void
 .end method
 
+.method public constructor <init>(Landroid/content/Context;Lcom/tencent/connect/auth/c;Lcom/tencent/connect/auth/QQToken;)V
+    .locals 0
+
+    .prologue
+    .line 26
+    invoke-direct {p0, p2, p3}, Lcom/tencent/connect/common/BaseApi;-><init>(Lcom/tencent/connect/auth/c;Lcom/tencent/connect/auth/QQToken;)V
+
+    .line 27
+    return-void
+.end method
+
 
 # virtual methods
 .method public getOpenId(Lcom/tencent/tauth/IUiListener;)V
@@ -37,7 +37,7 @@
 
     .prologue
     .line 67
-    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->composeCGIParams()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->a()Landroid/os/Bundle;
 
     move-result-object v3
 
@@ -47,9 +47,9 @@
     invoke-direct {v5, p0, p1}, Lcom/tencent/connect/common/BaseApi$TempRequestListener;-><init>(Lcom/tencent/connect/common/BaseApi;Lcom/tencent/tauth/IUiListener;)V
 
     .line 69
-    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->mToken:Lcom/tencent/connect/auth/QQToken;
+    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->b:Lcom/tencent/connect/auth/QQToken;
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -68,7 +68,7 @@
 
     .prologue
     .line 55
-    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->composeCGIParams()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->a()Landroid/os/Bundle;
 
     move-result-object v3
 
@@ -85,9 +85,9 @@
     invoke-direct {v5, p0, p1}, Lcom/tencent/connect/common/BaseApi$TempRequestListener;-><init>(Lcom/tencent/connect/common/BaseApi;Lcom/tencent/tauth/IUiListener;)V
 
     .line 58
-    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->mToken:Lcom/tencent/connect/auth/QQToken;
+    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->b:Lcom/tencent/connect/auth/QQToken;
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -106,7 +106,7 @@
 
     .prologue
     .line 30
-    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->composeCGIParams()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->a()Landroid/os/Bundle;
 
     move-result-object v3
 
@@ -116,9 +116,9 @@
     invoke-direct {v5, p0, p1}, Lcom/tencent/connect/common/BaseApi$TempRequestListener;-><init>(Lcom/tencent/connect/common/BaseApi;Lcom/tencent/tauth/IUiListener;)V
 
     .line 32
-    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->mToken:Lcom/tencent/connect/auth/QQToken;
+    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->b:Lcom/tencent/connect/auth/QQToken;
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -137,7 +137,7 @@
 
     .prologue
     .line 37
-    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->composeCGIParams()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->a()Landroid/os/Bundle;
 
     move-result-object v3
 
@@ -147,9 +147,9 @@
     invoke-direct {v5, p0, p1}, Lcom/tencent/connect/common/BaseApi$TempRequestListener;-><init>(Lcom/tencent/connect/common/BaseApi;Lcom/tencent/tauth/IUiListener;)V
 
     .line 39
-    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->mToken:Lcom/tencent/connect/auth/QQToken;
+    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->b:Lcom/tencent/connect/auth/QQToken;
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
 
@@ -168,7 +168,7 @@
 
     .prologue
     .line 44
-    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->composeCGIParams()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/tencent/connect/UserInfo;->a()Landroid/os/Bundle;
 
     move-result-object v3
 
@@ -178,9 +178,9 @@
     invoke-direct {v5, p0, p1}, Lcom/tencent/connect/common/BaseApi$TempRequestListener;-><init>(Lcom/tencent/connect/common/BaseApi;Lcom/tencent/tauth/IUiListener;)V
 
     .line 46
-    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->mToken:Lcom/tencent/connect/auth/QQToken;
+    iget-object v0, p0, Lcom/tencent/connect/UserInfo;->b:Lcom/tencent/connect/auth/QQToken;
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
 

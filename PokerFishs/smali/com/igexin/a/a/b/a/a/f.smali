@@ -23,12 +23,8 @@
 
 # virtual methods
 .method public a(Lcom/igexin/a/a/b/a/a/g;Lcom/igexin/a/a/b/a/a/g;)I
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/a/a/b/a/a/f.smali"
-    const-string v9,  ".method public a(Lcom/igexin/a/a/b/a/a/g;Lcom/igexin/a/a/b/a/a/g;)I"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x1
 
     const/4 v1, -0x1

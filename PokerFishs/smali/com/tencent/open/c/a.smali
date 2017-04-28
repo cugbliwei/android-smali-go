@@ -179,7 +179,7 @@
 
     sub-int/2addr v1, v2
 
-    invoke-interface {v0, v1}, Lcom/tencent/open/c/a$a;->onKeyboardShown(I)V
+    invoke-interface {v0, v1}, Lcom/tencent/open/c/a$a;->a(I)V
 
     .line 98
     :cond_0
@@ -193,7 +193,7 @@
     :cond_1
     iget-object v0, p0, Lcom/tencent/open/c/a;->d:Lcom/tencent/open/c/a$a;
 
-    invoke-interface {v0}, Lcom/tencent/open/c/a$a;->onKeyboardHidden()V
+    invoke-interface {v0}, Lcom/tencent/open/c/a$a;->a()V
 
     goto :goto_0
 .end method

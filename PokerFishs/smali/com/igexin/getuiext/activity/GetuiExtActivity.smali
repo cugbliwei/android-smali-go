@@ -64,12 +64,8 @@
 .end method
 
 .method private a(Landroid/os/Bundle;)Lcom/igexin/getuiext/data/a/e;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v5,  ".method private a(Landroid/os/Bundle;)Lcom/igexin/getuiext/data/a/e;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lcom/igexin/getuiext/data/a/e;
 
     invoke-direct {v0}, Lcom/igexin/getuiext/data/a/e;-><init>()V
@@ -218,12 +214,8 @@
 .end method
 
 .method private b(Landroid/os/Bundle;)Lcom/igexin/getuiext/ui/promotion/c;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v5,  ".method private b(Landroid/os/Bundle;)Lcom/igexin/getuiext/ui/promotion/c;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     sget-object v0, Lcom/igexin/getuiext/ui/promotion/m;->d:Lcom/igexin/getuiext/ui/promotion/m;
@@ -320,12 +312,8 @@
 .end method
 
 .method private b()V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v2,  ".method private b()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Lcom/igexin/getuiext/activity/GetuiExtActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -380,12 +368,8 @@
 .end method
 
 .method private c()V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v7,  ".method private c()V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Landroid/util/DisplayMetrics;
 
     invoke-direct {v0}, Landroid/util/DisplayMetrics;-><init>()V
@@ -434,12 +418,8 @@
 .end method
 
 .method private d()V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v7,  ".method private d()V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v4, 0x3f4
 
     const/high16 v3, 0x43120000    # 146.0f
@@ -513,12 +493,8 @@
 .end method
 
 .method private e()V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v5,  ".method private e()V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-string v0, "package"
 
     const-string v0, "com.android.settings.ApplicationPkgName"
@@ -608,12 +584,8 @@
 .end method
 
 .method private f()Landroid/widget/RelativeLayout;
-    .locals 14
+    .locals 12
 
-    const-string v12, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v13,  ".method private f()Landroid/widget/RelativeLayout;"
-    invoke-static {v12,v13} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/high16 v11, 0x41400000    # 12.0f
 
     const/4 v10, 0x3
@@ -1891,12 +1863,8 @@
 
 # virtual methods
 .method public a()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v4,  ".method public a()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     sget-object v0, Lcom/igexin/getuiext/activity/a;->a:[I
 
     iget-object v1, p0, Lcom/igexin/getuiext/activity/GetuiExtActivity;->k:Lcom/igexin/getuiext/ui/d;
@@ -2050,12 +2018,8 @@
 .end method
 
 .method public onClick(Landroid/view/View;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v4,  ".method public onClick(Landroid/view/View;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
@@ -2308,12 +2272,8 @@
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v5,  ".method protected onCreate(Landroid/os/Bundle;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v3, -0x2
 
     const/4 v2, -0x1
@@ -2488,12 +2448,8 @@
 .end method
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/getuiext/activity/GetuiExtActivity.smali"
-    const-string v6,  ".method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v4, 0x4
 
     const/4 v3, 0x3

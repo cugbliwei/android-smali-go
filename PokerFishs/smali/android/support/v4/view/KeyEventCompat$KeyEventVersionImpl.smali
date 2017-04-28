@@ -15,6 +15,9 @@
 
 
 # virtual methods
+.method public abstract isCtrlPressed(Landroid/view/KeyEvent;)Z
+.end method
+
 .method public abstract metaStateHasModifiers(II)Z
 .end method
 

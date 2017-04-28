@@ -16,11 +16,11 @@
 
 
 # static fields
-.field static final a:Landroid/widget/FrameLayout$LayoutParams;
+.field static final c:Landroid/widget/FrameLayout$LayoutParams;
 
-.field static b:Landroid/widget/Toast;
+.field static d:Landroid/widget/Toast;
 
-.field private static d:Ljava/lang/ref/WeakReference;
+.field private static f:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference",
@@ -33,7 +33,7 @@
 
 
 # instance fields
-.field private c:Ljava/lang/ref/WeakReference;
+.field private e:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference",
@@ -44,21 +44,21 @@
     .end annotation
 .end field
 
-.field private e:Ljava/lang/String;
+.field private g:Ljava/lang/String;
 
-.field private f:Lcom/tencent/open/TDialog$OnTimeListener;
+.field private h:Lcom/tencent/open/TDialog$OnTimeListener;
 
-.field private g:Lcom/tencent/tauth/IUiListener;
+.field private i:Lcom/tencent/tauth/IUiListener;
 
-.field private h:Landroid/widget/FrameLayout;
+.field private j:Landroid/widget/FrameLayout;
 
-.field private i:Lcom/tencent/open/c/b;
+.field private k:Lcom/tencent/open/c/b;
 
-.field private j:Landroid/os/Handler;
+.field private l:Landroid/os/Handler;
 
-.field private k:Z
+.field private m:Z
 
-.field private l:Lcom/tencent/connect/auth/QQToken;
+.field private n:Lcom/tencent/connect/auth/QQToken;
 
 
 # direct methods
@@ -73,12 +73,12 @@
 
     invoke-direct {v0, v1, v1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    sput-object v0, Lcom/tencent/open/TDialog;->a:Landroid/widget/FrameLayout$LayoutParams;
+    sput-object v0, Lcom/tencent/open/TDialog;->c:Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 463
+    .line 467
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sput-object v0, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     return-void
 .end method
@@ -95,22 +95,22 @@
     .line 84
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/tencent/open/TDialog;->k:Z
+    iput-boolean v0, p0, Lcom/tencent/open/TDialog;->m:Z
 
     .line 86
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/open/TDialog;->l:Lcom/tencent/connect/auth/QQToken;
+    iput-object v0, p0, Lcom/tencent/open/TDialog;->n:Lcom/tencent/connect/auth/QQToken;
 
     .line 191
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lcom/tencent/open/TDialog;->c:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/ref/WeakReference;
 
     .line 192
-    iput-object p3, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/String;
+    iput-object p3, p0, Lcom/tencent/open/TDialog;->g:Ljava/lang/String;
 
     .line 193
     new-instance v0, Lcom/tencent/open/TDialog$OnTimeListener;
@@ -129,12 +129,12 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/tencent/open/TDialog$OnTimeListener;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;)V
 
-    iput-object v0, p0, Lcom/tencent/open/TDialog;->f:Lcom/tencent/open/TDialog$OnTimeListener;
+    iput-object v0, p0, Lcom/tencent/open/TDialog;->h:Lcom/tencent/open/TDialog$OnTimeListener;
 
     .line 194
     new-instance v0, Lcom/tencent/open/TDialog$THandler;
 
-    iget-object v1, p0, Lcom/tencent/open/TDialog;->f:Lcom/tencent/open/TDialog$OnTimeListener;
+    iget-object v1, p0, Lcom/tencent/open/TDialog;->h:Lcom/tencent/open/TDialog$OnTimeListener;
 
     invoke-virtual {p1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
@@ -142,13 +142,13 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/tencent/open/TDialog$THandler;-><init>(Lcom/tencent/open/TDialog;Lcom/tencent/open/TDialog$OnTimeListener;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/tencent/open/TDialog;->j:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/tencent/open/TDialog;->l:Landroid/os/Handler;
 
     .line 195
-    iput-object p4, p0, Lcom/tencent/open/TDialog;->g:Lcom/tencent/tauth/IUiListener;
+    iput-object p4, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/tauth/IUiListener;
 
     .line 196
-    iput-object p5, p0, Lcom/tencent/open/TDialog;->l:Lcom/tencent/connect/auth/QQToken;
+    iput-object p5, p0, Lcom/tencent/open/TDialog;->n:Lcom/tencent/connect/auth/QQToken;
 
     .line 197
     return-void
@@ -159,7 +159,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/ref/WeakReference;
 
     return-object v0
 .end method
@@ -173,7 +173,7 @@
     .line 219
     new-instance v1, Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -196,7 +196,7 @@
     .line 225
     new-instance v2, Lcom/tencent/open/c/b;
 
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -206,17 +206,17 @@
 
     invoke-direct {v2, v0}, Lcom/tencent/open/c/b;-><init>(Landroid/content/Context;)V
 
-    iput-object v2, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iput-object v2, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     .line 226
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     invoke-virtual {v0, v1}, Lcom/tencent/open/c/b;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 228
     new-instance v2, Landroid/widget/FrameLayout;
 
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -226,7 +226,7 @@
 
     invoke-direct {v2, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    iput-object v2, p0, Lcom/tencent/open/TDialog;->h:Landroid/widget/FrameLayout;
+    iput-object v2, p0, Lcom/tencent/open/TDialog;->j:Landroid/widget/FrameLayout;
 
     .line 229
     const/16 v0, 0x11
@@ -234,19 +234,19 @@
     iput v0, v1, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
     .line 230
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->h:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->j:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 231
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->h:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->j:Landroid/widget/FrameLayout;
 
-    iget-object v1, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v1, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
     .line 232
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->h:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->j:Landroid/widget/FrameLayout;
 
     invoke-virtual {p0, v0}, Lcom/tencent/open/TDialog;->setContentView(Landroid/view/View;)V
 
@@ -269,7 +269,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->j:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->l:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -290,17 +290,17 @@
     const/4 v3, 0x0
 
     .line 276
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     invoke-virtual {v0, v3}, Lcom/tencent/open/c/b;->setVerticalScrollBarEnabled(Z)V
 
     .line 277
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     invoke-virtual {v0, v3}, Lcom/tencent/open/c/b;->setHorizontalScrollBarEnabled(Z)V
 
     .line 278
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     new-instance v1, Lcom/tencent/open/TDialog$FbWebViewClient;
 
@@ -309,19 +309,19 @@
     invoke-virtual {v0, v1}, Lcom/tencent/open/c/b;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
     .line 279
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
-    iget-object v1, p0, Lcom/tencent/open/TDialog;->mChromeClient:Landroid/webkit/WebChromeClient;
+    iget-object v1, p0, Lcom/tencent/open/TDialog;->b:Landroid/webkit/WebChromeClient;
 
     invoke-virtual {v0, v1}, Lcom/tencent/open/c/b;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
 
     .line 280
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     invoke-virtual {v0}, Lcom/tencent/open/c/b;->clearFormData()V
 
     .line 283
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     invoke-virtual {v0}, Lcom/tencent/open/c/b;->getSettings()Landroid/webkit/WebSettings;
 
@@ -364,11 +364,11 @@
     invoke-virtual {v1, v4}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
     .line 300
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -380,7 +380,7 @@
     invoke-virtual {v1, v4}, Landroid/webkit/WebSettings;->setDatabaseEnabled(Z)V
 
     .line 302
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->c:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -409,7 +409,7 @@
     invoke-virtual {v1, v4}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
 
     .line 307
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->jsBridge:Lcom/tencent/open/a;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->a:Lcom/tencent/open/a;
 
     new-instance v1, Lcom/tencent/open/TDialog$JsListener;
 
@@ -420,28 +420,28 @@
     invoke-virtual {v0, v1, v2}, Lcom/tencent/open/a;->a(Lcom/tencent/open/a$b;Ljava/lang/String;)V
 
     .line 309
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
-    iget-object v1, p0, Lcom/tencent/open/TDialog;->e:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/open/TDialog;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/tencent/open/c/b;->loadUrl(Ljava/lang/String;)V
 
     .line 310
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
-    sget-object v1, Lcom/tencent/open/TDialog;->a:Landroid/widget/FrameLayout$LayoutParams;
+    sget-object v1, Lcom/tencent/open/TDialog;->c:Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-virtual {v0, v1}, Lcom/tencent/open/c/b;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 311
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/tencent/open/c/b;->setVisibility(I)V
 
     .line 312
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     invoke-virtual {v0}, Lcom/tencent/open/c/b;->getSettings()Landroid/webkit/WebSettings;
 
@@ -467,7 +467,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->f:Lcom/tencent/open/TDialog$OnTimeListener;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->h:Lcom/tencent/open/TDialog$OnTimeListener;
 
     return-object v0
 .end method
@@ -478,59 +478,59 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 468
+    .line 472
     :try_start_0
-    invoke-static {p1}, Lcom/tencent/open/utils/Util;->parseJson(Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/tencent/open/utils/i;->d(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    .line 469
+    .line 473
     const-string v1, "type"
 
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 471
+    .line 475
     const-string v2, "msg"
 
     invoke-virtual {v0, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 473
+    .line 477
     if-nez v1, :cond_2
 
-    .line 474
-    sget-object v1, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    .line 478
+    sget-object v1, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     if-nez v1, :cond_1
 
-    .line 475
+    .line 479
     const/4 v1, 0x0
 
     invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sput-object v0, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
-    .line 482
+    .line 486
     :goto_0
-    sget-object v0, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sget-object v0, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 498
+    .line 502
     :cond_0
     :goto_1
     return-void
 
-    .line 478
+    .line 482
     :cond_1
-    sget-object v1, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sget-object v1, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
-    sget-object v2, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sget-object v2, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     invoke-virtual {v2}, Landroid/widget/Toast;->getView()Landroid/view/View;
 
@@ -538,13 +538,13 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Toast;->setView(Landroid/view/View;)V
 
-    .line 479
-    sget-object v1, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    .line 483
+    sget-object v1, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     invoke-virtual {v1, v0}, Landroid/widget/Toast;->setText(Ljava/lang/CharSequence;)V
 
-    .line 480
-    sget-object v0, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    .line 484
+    sget-object v0, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     const/4 v1, 0x0
 
@@ -554,47 +554,47 @@
 
     goto :goto_0
 
-    .line 494
+    .line 498
     :catch_0
     move-exception v0
 
-    .line 496
+    .line 500
     invoke-virtual {v0}, Lorg/json/JSONException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 483
+    .line 487
     :cond_2
     if-ne v1, v3, :cond_0
 
-    .line 484
+    .line 488
     :try_start_1
-    sget-object v1, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sget-object v1, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     if-nez v1, :cond_3
 
-    .line 485
+    .line 489
     const/4 v1, 0x1
 
     invoke-static {p0, v0, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v0
 
-    sput-object v0, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sput-object v0, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
-    .line 492
+    .line 496
     :goto_2
-    sget-object v0, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sget-object v0, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     goto :goto_1
 
-    .line 488
+    .line 492
     :cond_3
-    sget-object v1, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sget-object v1, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
-    sget-object v2, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    sget-object v2, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     invoke-virtual {v2}, Landroid/widget/Toast;->getView()Landroid/view/View;
 
@@ -602,13 +602,13 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Toast;->setView(Landroid/view/View;)V
 
-    .line 489
-    sget-object v1, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    .line 493
+    sget-object v1, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     invoke-virtual {v1, v0}, Landroid/widget/Toast;->setText(Ljava/lang/CharSequence;)V
 
-    .line 490
-    sget-object v0, Lcom/tencent/open/TDialog;->b:Landroid/widget/Toast;
+    .line 494
+    sget-object v0, Lcom/tencent/open/TDialog;->d:Landroid/widget/Toast;
 
     const/4 v1, 0x1
 
@@ -624,7 +624,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     return-object v0
 .end method
@@ -633,48 +633,48 @@
     .locals 3
 
     .prologue
-    .line 502
+    .line 506
     if-eqz p0, :cond_0
 
     if-nez p1, :cond_1
 
-    .line 536
+    .line 540
     :cond_0
     :goto_0
     return-void
 
-    .line 505
+    .line 509
     :cond_1
     :try_start_0
-    invoke-static {p1}, Lcom/tencent/open/utils/Util;->parseJson(Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/tencent/open/utils/i;->d(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    .line 506
+    .line 510
     const-string v1, "action"
 
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 507
+    .line 511
     const-string v2, "msg"
 
     invoke-virtual {v0, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 508
+    .line 512
     const/4 v0, 0x1
 
     if-ne v1, v0, :cond_4
 
-    .line 509
-    sget-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    .line 513
+    sget-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -682,42 +682,42 @@
 
     if-nez v0, :cond_3
 
-    .line 510
+    .line 514
     :cond_2
     new-instance v0, Landroid/app/ProgressDialog;
 
     invoke-direct {v0, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    .line 511
+    .line 515
     invoke-virtual {v0, v2}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 512
+    .line 516
     new-instance v1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v1, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    sput-object v1, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    sput-object v1, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
-    .line 514
+    .line 518
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 532
+    .line 536
     :catch_0
     move-exception v0
 
-    .line 534
+    .line 538
     invoke-virtual {v0}, Lorg/json/JSONException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 516
+    .line 520
     :cond_3
     :try_start_1
-    sget-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -727,8 +727,8 @@
 
     invoke-virtual {v0, v2}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 517
-    sget-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    .line 521
+    sget-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -742,8 +742,8 @@
 
     if-nez v0, :cond_0
 
-    .line 518
-    sget-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    .line 522
+    sget-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -755,17 +755,17 @@
 
     goto :goto_0
 
-    .line 521
+    .line 525
     :cond_4
     if-nez v1, :cond_0
 
-    .line 522
-    sget-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    .line 526
+    sget-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
 
-    .line 525
-    sget-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    .line 529
+    sget-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -773,7 +773,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -787,8 +787,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 527
-    sget-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    .line 531
+    sget-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -798,10 +798,10 @@
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 528
+    .line 532
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/tencent/open/TDialog;->d:Ljava/lang/ref/WeakReference;
+    sput-object v0, Lcom/tencent/open/TDialog;->f:Ljava/lang/ref/WeakReference;
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -810,29 +810,7 @@
 
 
 # virtual methods
-.method public onBackPressed()V
-    .locals 1
-
-    .prologue
-    .line 212
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->f:Lcom/tencent/open/TDialog$OnTimeListener;
-
-    if-eqz v0, :cond_0
-
-    .line 213
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->f:Lcom/tencent/open/TDialog$OnTimeListener;
-
-    invoke-virtual {v0}, Lcom/tencent/open/TDialog$OnTimeListener;->onCancel()V
-
-    .line 215
-    :cond_0
-    invoke-super {p0}, Lcom/tencent/open/b;->onBackPressed()V
-
-    .line 216
-    return-void
-.end method
-
-.method protected onConsoleMessage(Ljava/lang/String;)V
+.method protected a(Ljava/lang/String;)V
     .locals 2
 
     .prologue
@@ -845,9 +823,9 @@
 
     .line 240
     :try_start_0
-    iget-object v0, p0, Lcom/tencent/open/TDialog;->jsBridge:Lcom/tencent/open/a;
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->a:Lcom/tencent/open/a;
 
-    iget-object v1, p0, Lcom/tencent/open/TDialog;->i:Lcom/tencent/open/c/b;
+    iget-object v1, p0, Lcom/tencent/open/TDialog;->k:Lcom/tencent/open/c/b;
 
     invoke-virtual {v0, v1, p1}, Lcom/tencent/open/a;->a(Landroid/webkit/WebView;Ljava/lang/String;)Z
     :try_end_0
@@ -862,6 +840,28 @@
     move-exception v0
 
     goto :goto_0
+.end method
+
+.method public onBackPressed()V
+    .locals 1
+
+    .prologue
+    .line 212
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->h:Lcom/tencent/open/TDialog$OnTimeListener;
+
+    if-eqz v0, :cond_0
+
+    .line 213
+    iget-object v0, p0, Lcom/tencent/open/TDialog;->h:Lcom/tencent/open/TDialog$OnTimeListener;
+
+    invoke-virtual {v0}, Lcom/tencent/open/TDialog$OnTimeListener;->onCancel()V
+
+    .line 215
+    :cond_0
+    invoke-super {p0}, Lcom/tencent/open/b;->onBackPressed()V
+
+    .line 216
+    return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V

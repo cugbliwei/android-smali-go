@@ -22,12 +22,8 @@
 .end method
 
 .method private a()Ljava/lang/String;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/g.smali"
-    const-string v2,  ".method private a()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/g;->b:Lcom/igexin/download/DownloadInfo;
 
     iget-object v0, v0, Lcom/igexin/download/DownloadInfo;->mUserAgent:Ljava/lang/String;
@@ -44,12 +40,8 @@
 .end method
 
 .method private a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/g.smali"
-    const-string v4,  ".method private a(Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -92,12 +84,8 @@
 .end method
 
 .method private a(IZIIZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 2
+    .locals 0
 
-    const-string v1, "======================== igexin/download/g.smali"
-    const-string v2,  ".method private a(IZIIZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-direct/range {p0 .. p8}, Lcom/igexin/download/g;->b(IZIIZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

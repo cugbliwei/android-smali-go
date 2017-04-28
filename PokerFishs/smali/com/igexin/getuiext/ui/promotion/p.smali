@@ -27,12 +27,8 @@
 
 # virtual methods
 .method public run()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/promotion/p.smali"
-    const-string v4,  ".method public run()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/ui/promotion/p;->a:Lcom/igexin/getuiext/ui/promotion/o;
 
     iget-object v0, v0, Lcom/igexin/getuiext/ui/promotion/o;->a:Lcom/igexin/getuiext/ui/promotion/UrlImageView;

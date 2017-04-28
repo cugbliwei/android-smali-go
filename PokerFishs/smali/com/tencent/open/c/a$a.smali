@@ -15,8 +15,8 @@
 
 
 # virtual methods
-.method public abstract onKeyboardHidden()V
+.method public abstract a()V
 .end method
 
-.method public abstract onKeyboardShown(I)V
+.method public abstract a(I)V
 .end method

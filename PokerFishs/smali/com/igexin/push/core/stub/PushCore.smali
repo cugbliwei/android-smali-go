@@ -13,11 +13,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public constructor <init>()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,11 +29,7 @@
 
 # virtual methods
 .method public onActivityConfigurationChanged(Landroid/app/Activity;Landroid/content/res/Configuration;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onActivityConfigurationChanged(Landroid/app/Activity;Landroid/content/res/Configuration;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->b:Ljava/util/Map;
 
@@ -56,11 +48,7 @@
 .end method
 
 .method public onActivityCreateOptionsMenu(Landroid/app/Activity;Landroid/view/Menu;)Z
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onActivityCreateOptionsMenu(Landroid/app/Activity;Landroid/view/Menu;)Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->b:Ljava/util/Map;
 
@@ -86,11 +74,7 @@
 .end method
 
 .method public onActivityDestroy(Landroid/app/Activity;)V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v3,  ".method public onActivityDestroy(Landroid/app/Activity;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->b:Ljava/util/Map;
 
@@ -119,11 +103,7 @@
 .end method
 
 .method public onActivityKeyDown(Landroid/app/Activity;ILandroid/view/KeyEvent;)Z
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onActivityKeyDown(Landroid/app/Activity;ILandroid/view/KeyEvent;)Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->b:Ljava/util/Map;
 
@@ -149,11 +129,7 @@
 .end method
 
 .method public onActivityNewIntent(Landroid/app/Activity;Landroid/content/Intent;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onActivityNewIntent(Landroid/app/Activity;Landroid/content/Intent;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->b:Ljava/util/Map;
 
@@ -172,11 +148,7 @@
 .end method
 
 .method public onActivityPause(Landroid/app/Activity;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onActivityPause(Landroid/app/Activity;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->b:Ljava/util/Map;
 
@@ -195,11 +167,7 @@
 .end method
 
 .method public onActivityRestart(Landroid/app/Activity;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onActivityRestart(Landroid/app/Activity;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->b:Ljava/util/Map;
 
@@ -218,11 +186,7 @@
 .end method
 
 .method public onActivityResume(Landroid/app/Activity;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onActivityResume(Landroid/app/Activity;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->b:Ljava/util/Map;
 
@@ -241,11 +205,7 @@
 .end method
 
 .method public onActivityStart(Landroid/app/Activity;Landroid/content/Intent;)V
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v5,  ".method public onActivityStart(Landroid/app/Activity;Landroid/content/Intent;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     if-eqz p1, :cond_0
 
@@ -300,11 +260,7 @@
 .end method
 
 .method public onActivityStop(Landroid/app/Activity;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onActivityStop(Landroid/app/Activity;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->b:Ljava/util/Map;
 
@@ -323,11 +279,7 @@
 .end method
 
 .method public onServiceBind(Landroid/content/Intent;)Landroid/os/IBinder;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onServiceBind(Landroid/content/Intent;)Landroid/os/IBinder;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-static {}, Lcom/igexin/push/core/o;->a()Lcom/igexin/sdk/aidl/c;
 
@@ -337,11 +289,7 @@
 .end method
 
 .method public onServiceDestroy()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public onServiceDestroy()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/stub/PushCore;->a:Lcom/igexin/push/core/f;
 
@@ -351,11 +299,7 @@
 .end method
 
 .method public onServiceStartCommand(Landroid/content/Intent;II)I
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v3,  ".method public onServiceStartCommand(Landroid/content/Intent;II)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     if-eqz p1, :cond_0
 
@@ -409,11 +353,7 @@
 .end method
 
 .method public start(Landroid/content/Context;)Z
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/stub/PushCore.smali"
-    const-string v2,  ".method public start(Landroid/content/Context;)Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-static {}, Lcom/igexin/push/core/f;->a()Lcom/igexin/push/core/f;
 

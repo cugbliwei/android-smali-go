@@ -307,12 +307,8 @@
 .end method
 
 .method a(Lcom/igexin/a/a/b/f;Ljava/lang/Object;ZIJBLjava/lang/Object;Lcom/igexin/a/a/d/a/d;)Z
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/b/a/d.smali"
-    const-string v2,  ".method a(Lcom/igexin/a/a/b/f;Ljava/lang/Object;ZIJBLjava/lang/Object;Lcom/igexin/a/a/d/a/d;)Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iput-object p2, p1, Lcom/igexin/a/a/b/f;->c:Ljava/lang/Object;
 
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;

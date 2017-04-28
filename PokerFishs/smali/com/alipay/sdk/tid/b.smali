@@ -206,14 +206,14 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 65
+    .line 63
     invoke-virtual {v1}, Lcom/alipay/sdk/tid/a;->close()V
 
     .line 66
     :goto_0
     return-void
 
-    .line 65
+    .line 64
     :catch_0
     move-exception v0
 
@@ -221,6 +221,7 @@
 
     goto :goto_0
 
+    .line 65
     :catchall_0
     move-exception v0
 

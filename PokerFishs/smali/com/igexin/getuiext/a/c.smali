@@ -23,12 +23,8 @@
 .end method
 
 .method private static a(J)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/a/c.smali"
-    const-string v3,  ".method private static a(J)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     sput-wide p0, Lcom/igexin/getuiext/data/a;->b:J
 
     invoke-static {}, Lcom/igexin/getuiext/b/c;->d()Lcom/igexin/getuiext/b/c;
@@ -45,12 +41,8 @@
 .end method
 
 .method private a(Landroid/content/Context;J)V
-    .locals 12
+    .locals 10
 
-    const-string v10, "======================== igexin/getuiext/a/c.smali"
-    const-string v11,  ".method private a(Landroid/content/Context;J)V"
-    invoke-static {v10,v11} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     new-instance v2, Ljava/util/ArrayList;
@@ -304,12 +296,8 @@
 .end method
 
 .method private a(Landroid/content/Context;Ljava/util/List;)V
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/getuiext/a/c.smali"
-    const-string v9,  ".method private a(Landroid/content/Context;Ljava/util/List;)V"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     new-instance v2, Lcom/igexin/getuiext/a/d;
@@ -396,12 +384,8 @@
 
 # virtual methods
 .method public a(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/a/c.smali"
-    const-string v7,  ".method public a(Landroid/content/Context;Landroid/content/Intent;)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-string v0, "cid"
 
     invoke-virtual {p2, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;

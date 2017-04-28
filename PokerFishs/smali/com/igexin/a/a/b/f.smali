@@ -43,12 +43,8 @@
 .end method
 
 .method private final a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/b/a/f.smali"
-    const-string v2,  ".method private final a(Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {p1}, Lcom/igexin/a/a/b/g;->a(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
@@ -63,12 +59,8 @@
 
 # virtual methods
 .method public f()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/b/a/f.smali"
-    const-string v4,  ".method public f()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     iget-object v0, p0, Lcom/igexin/a/a/b/f;->b:Lcom/igexin/a/a/b/c;

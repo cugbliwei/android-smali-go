@@ -8,11 +8,7 @@
 
 # direct methods
 .method private constructor <init>()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/config/j.smali"
-    const-string v1,  ".method private constructor <init>()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -20,11 +16,7 @@
 .end method
 
 .method public static declared-synchronized a()Lcom/igexin/push/config/j;
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/config/j.smali"
-    const-string v3,  ".method public static declared-synchronized a()Lcom/igexin/push/config/j;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     const-class v1, Lcom/igexin/push/config/j;
 
@@ -61,11 +53,7 @@
 
 # virtual methods
 .method public b()Z
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/config/j.smali"
-    const-string v2,  ".method public b()Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-static {}, Lcom/igexin/push/config/o;->a()V
 

@@ -42,17 +42,13 @@
 
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
-    .locals 4
+    .locals 2
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
     .line 26
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    const-string v2, "======================== speedfish/pokerfishs/wxapi/WXEntryActivity.smali"
-    const-string v3,  ".method public onCreate(Landroid/os/Bundle;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     .line 27
     const-string v0, "wxbffae0764e6dbd19"
 
@@ -76,17 +72,13 @@
 .end method
 
 .method protected onNewIntent(Landroid/content/Intent;)V
-    .locals 3
+    .locals 1
     .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
     .line 33
     invoke-super {p0, p1}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 
-    const-string v1, "======================== speedfish/pokerfishs/wxapi/WXEntryActivity.smali"
-    const-string v2,  ".method protected onNewIntent(Landroid/content/Intent;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     .line 34
     invoke-virtual {p0, p1}, Lcom/speedfish/pokerfishs/wxapi/WXEntryActivity;->setIntent(Landroid/content/Intent;)V
 
@@ -100,12 +92,7 @@
 .end method
 
 .method public onReq(Lcom/tencent/mm/sdk/modelbase/BaseReq;)V
-    .locals 6
-
-    const-string v4, "======================== speedfish/pokerfishs/wxapi/WXEntryActivity.smali"
-    const-string v5,  ".method public onReq(Lcom/tencent/mm/sdk/modelbase/BaseReq;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
+    .locals 4
     .param p1, "req"    # Lcom/tencent/mm/sdk/modelbase/BaseReq;
 
     .prologue
@@ -151,12 +138,7 @@
 .end method
 
 .method public onResp(Lcom/tencent/mm/sdk/modelbase/BaseResp;)V
-    .locals 4
-
-    const-string v2, "======================== speedfish/pokerfishs/wxapi/WXEntryActivity.smali"
-    const-string v3,  ".method public onResp(Lcom/tencent/mm/sdk/modelbase/BaseResp;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
+    .locals 2
     .param p1, "resp"    # Lcom/tencent/mm/sdk/modelbase/BaseResp;
 
     .prologue

@@ -8,11 +8,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/config/n.smali"
-    const-string v3,  ".method static constructor <clinit>()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -40,11 +36,7 @@
 .end method
 
 .method public static a(Ljava/lang/String;)V
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/config/n.smali"
-    const-string v4,  ".method public static a(Ljava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -332,11 +324,7 @@
 .end method
 
 .method private static a(Lorg/json/JSONObject;Ljava/lang/String;)[Ljava/lang/String;
-    .locals 8
-
-    const-string v6, "======================== PokerFishs/smali/com/igexin/push/config/n.smali"
-    const-string v7,  ".method private static a(Lorg/json/JSONObject;Ljava/lang/String;)[Ljava/lang/String;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 6
 
     :try_start_0
     invoke-virtual {p0, p1}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;

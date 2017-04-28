@@ -20,12 +20,8 @@
 
 # virtual methods
 .method public a(I)Lcom/igexin/getuiext/data/a/a;
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/getuiext/b/a.smali"
-    const-string v9,  ".method public a(I)Lcom/igexin/getuiext/data/a/a;"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     iget-object v0, p0, Lcom/igexin/getuiext/b/a;->a:Lcom/igexin/getuiext/data/a;
@@ -212,12 +208,8 @@
 .end method
 
 .method public a(ILcom/igexin/getuiext/data/a/a;)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/b/a.smali"
-    const-string v7,  ".method public a(ILcom/igexin/getuiext/data/a/a;)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-eqz p2, :cond_8
 
     new-instance v1, Landroid/content/ContentValues;
@@ -395,12 +387,8 @@
 .end method
 
 .method public b(I)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/b/a.smali"
-    const-string v7,  ".method public b(I)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/b/a;->a:Lcom/igexin/getuiext/data/a;
 
     const-string v1, "appinfo"

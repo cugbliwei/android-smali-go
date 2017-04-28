@@ -28,12 +28,8 @@
 .end method
 
 .method public static a([B)Lcom/igexin/getuiext/ui/e;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/ui/e.smali"
-    const-string v5,  ".method public static a([B)Lcom/igexin/getuiext/ui/e;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {p0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -152,12 +148,8 @@
 .end method
 
 .method private static a(I)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/e.smali"
-    const-string v4,  ".method private static a(I)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-eqz p0, :cond_0
 
     and-int/lit8 v0, p0, 0x1
@@ -194,12 +186,8 @@
 .end method
 
 .method private static a([ILjava/nio/ByteBuffer;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/e.smali"
-    const-string v4,  ".method private static a([ILjava/nio/ByteBuffer;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     array-length v1, p0

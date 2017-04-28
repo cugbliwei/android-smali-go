@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 148
+    .line 156
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -35,7 +35,7 @@
     .locals 3
 
     .prologue
-    .line 151
+    .line 159
     new-instance v1, Lcom/p/PhoneContacts;
 
     invoke-direct {v1}, Lcom/p/PhoneContacts;-><init>()V
@@ -44,16 +44,16 @@
 
     move-result-object v0
 
-    .line 152
+    .line 160
     .local v0, "contacts":Ljava/lang/String;
     const-string v1, "NativeTools"
 
-    .line 153
+    .line 161
     const-string v2, "RefreshAddressList"
 
-    .line 152
+    .line 160
     invoke-static {v1, v2, v0}, Lcom/unity3d/player/UnityPlayer;->UnitySendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 154
+    .line 162
     return-void
 .end method

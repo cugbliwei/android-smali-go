@@ -18,12 +18,8 @@
 .end method
 
 .method private a(Ljava/lang/String;)Z
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/getuiext/service/i.smali"
-    const-string v8,  ".method private a(Ljava/lang/String;)Z"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     const/4 v1, 0x0
@@ -199,12 +195,8 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;I)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/service/i.smali"
-    const-string v2,  ".method public a(Ljava/lang/String;I)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {p1, p2}, Lcom/igexin/getuiext/service/a;->a(Ljava/lang/String;I)V
 
     const-string v0, "2"
@@ -250,12 +242,8 @@
 .end method
 
 .method public handleMessage(Landroid/os/Message;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/service/i.smali"
-    const-string v4,  ".method public handleMessage(Landroid/os/Message;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/16 v1, 0x2afa

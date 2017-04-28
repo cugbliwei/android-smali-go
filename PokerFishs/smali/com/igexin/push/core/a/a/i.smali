@@ -11,11 +11,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/a/a/i.smali"
-    const-string v2,  ".method static constructor <clinit>()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     sget-object v0, Lcom/igexin/push/config/k;->a:Ljava/lang/String;
 
@@ -25,11 +21,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/a/a/i.smali"
-    const-string v1,  ".method public constructor <init>()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,11 +31,7 @@
 
 # virtual methods
 .method public a(Lcom/igexin/push/core/bean/PushTaskBean;Lcom/igexin/push/core/bean/BaseAction;)Lcom/igexin/push/core/b;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/a/a/i.smali"
-    const-string v2,  ".method public a(Lcom/igexin/push/core/bean/PushTaskBean;Lcom/igexin/push/core/bean/BaseAction;)Lcom/igexin/push/core/b;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     sget-object v0, Lcom/igexin/push/core/b;->a:Lcom/igexin/push/core/b;
 
@@ -51,11 +39,7 @@
 .end method
 
 .method public a(Lorg/json/JSONObject;)Lcom/igexin/push/core/bean/BaseAction;
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/a/a/i.smali"
-    const-string v3,  ".method public a(Lorg/json/JSONObject;)Lcom/igexin/push/core/bean/BaseAction;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     :try_start_0
     new-instance v0, Lcom/igexin/push/core/bean/BaseAction;
@@ -96,11 +80,7 @@
 .end method
 
 .method public b(Lcom/igexin/push/core/bean/PushTaskBean;Lcom/igexin/push/core/bean/BaseAction;)Z
-    .locals 13
-
-    const-string v11, "======================== PokerFishs/smali/com/igexin/push/core/a/a/i.smali"
-    const-string v12,  ".method public b(Lcom/igexin/push/core/bean/PushTaskBean;Lcom/igexin/push/core/bean/BaseAction;)Z"
-    invoke-static {v11,v12} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 11
 
     const/4 v2, 0x0
 

@@ -105,12 +105,8 @@
 .end method
 
 .method private a(Lcom/igexin/download/DownloadInfo;Landroid/app/Notification;Lcom/igexin/getuiext/data/a/d;)Landroid/app/Notification;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/service/d.smali"
-    const-string v5,  ".method private a 6666666"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-boolean v0, p1, Lcom/igexin/download/DownloadInfo;->mNotice:Z
 
     if-nez v0, :cond_0
@@ -1402,12 +1398,8 @@
 .end method
 
 .method private a(Ljava/lang/String;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/service/d.smali"
-    const-string v4,  ".method private a(Ljava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Lcom/igexin/getuiext/service/c;->a()Lcom/igexin/getuiext/service/c;
 
     move-result-object v0
@@ -1447,12 +1439,8 @@
 .end method
 
 .method private a(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/service/d.smali"
-    const-string v4,  ".method private a(Ljava/lang/String;Ljava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -1518,12 +1506,8 @@
 .end method
 
 .method public update(Lcom/igexin/download/DownloadInfo;)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/service/d.smali"
-    const-string v7,  ".method public update(Lcom/igexin/download/DownloadInfo;)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;

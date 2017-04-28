@@ -290,62 +290,87 @@
 .end method
 
 .method public static declared-synchronized a(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 6
+    .locals 8
 
-    const-class v1, Lcom/alipay/apmobilesecuritysdk/f/i;
+    const-wide/32 v0, 0x5265c00
 
-    monitor-enter v1
+    const-class v4, Lcom/alipay/apmobilesecuritysdk/f/i;
+
+    monitor-enter v4
 
     :try_start_0
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    invoke-static {p0, p1}, Lcom/alipay/apmobilesecuritysdk/f/h;->c(Landroid/content/Context;Ljava/lang/String;)J
-
-    move-result-wide v4
-
-    sub-long/2addr v2, v4
-
-    invoke-static {v2, v3}, Ljava/lang/Math;->abs(J)J
+    invoke-static {p0}, Lcom/alipay/apmobilesecuritysdk/f/h;->a(Landroid/content/Context;)J
     :try_end_0
-    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result-wide v2
 
-    const-wide/32 v4, 0x5265c00
+    const-wide/16 v6, 0x0
 
-    cmp-long v0, v2, v4
+    cmp-long v5, v2, v6
+
+    if-gez v5, :cond_1
+
+    :goto_0
+    :try_start_1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v2
+
+    invoke-static {p0, p1}, Lcom/alipay/apmobilesecuritysdk/f/h;->g(Landroid/content/Context;Ljava/lang/String;)J
+
+    move-result-wide v6
+
+    sub-long/2addr v2, v6
+
+    invoke-static {v2, v3}, Ljava/lang/Math;->abs(J)J
+    :try_end_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    move-result-wide v2
+
+    cmp-long v0, v2, v0
 
     if-gez v0, :cond_0
 
     const/4 v0, 0x1
 
-    :goto_0
-    monitor-exit v1
+    :goto_1
+    monitor-exit v4
 
     return v0
 
     :catch_0
     move-exception v0
 
-    :try_start_1
+    :try_start_2
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/c/a;->a(Ljava/lang/Throwable;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     :cond_0
     const/4 v0, 0x0
+
+    goto :goto_1
+
+    :catch_1
+    move-exception v2
 
     goto :goto_0
 
     :catchall_0
     move-exception v0
 
-    monitor-exit v1
+    monitor-exit v4
 
     throw v0
+
+    :cond_1
+    move-wide v0, v2
+
+    goto :goto_0
 .end method
 
 .method public static declared-synchronized b()Ljava/lang/String;

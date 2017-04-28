@@ -43,7 +43,7 @@
     .prologue
     .line 32
     :try_start_0
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v0
 

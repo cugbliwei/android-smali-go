@@ -15,11 +15,11 @@
 
 
 # instance fields
+.field final synthetic a:Lcom/tencent/connect/common/UIListenerManager;
+
 .field public mListener:Lcom/tencent/tauth/IUiListener;
 
 .field public mRequestCode:I
-
-.field final synthetic this$0:Lcom/tencent/connect/common/UIListenerManager;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 280
-    iput-object p1, p0, Lcom/tencent/connect/common/UIListenerManager$ApiTask;->this$0:Lcom/tencent/connect/common/UIListenerManager;
+    iput-object p1, p0, Lcom/tencent/connect/common/UIListenerManager$ApiTask;->a:Lcom/tencent/connect/common/UIListenerManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

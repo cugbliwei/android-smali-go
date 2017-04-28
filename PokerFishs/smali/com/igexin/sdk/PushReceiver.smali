@@ -28,12 +28,8 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/sdk/PushReceiver.smali"
-    const-string v7,  ".method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     invoke-static {}, Lcom/igexin/push/core/a/e;->a()Lcom/igexin/push/core/a/e;
 

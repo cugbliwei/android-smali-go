@@ -4,12 +4,8 @@
 
 # direct methods
 .method public static a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/getuiext/util/g.smali"
-    const-string v10,  ".method public static a(Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     const/16 v8, 0x10
@@ -115,12 +111,8 @@
 .end method
 
 .method public static a([BII)Ljava/lang/String;
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/util/g.smali"
-    const-string v7,  ".method public static a([BII)Ljava/lang/String;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -167,12 +159,8 @@
 .end method
 
 .method public static a([B)[B
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/getuiext/util/g.smali"
-    const-string v10,  ".method public static a([B)[B"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     const/16 v8, 0x8

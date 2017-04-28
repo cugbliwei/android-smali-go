@@ -4,11 +4,7 @@
 
 # direct methods
 .method public static a()V
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/config/o.smali"
-    const-string v5,  ".method public static a()V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     :try_start_0
     sget-object v0, Lcom/igexin/push/core/g;->g:Landroid/content/Context;
@@ -111,11 +107,7 @@
 .end method
 
 .method private static a(Ljava/lang/String;)V
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/config/o.smali"
-    const-string v6,  ".method private static a(Ljava/lang/String;)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     const/4 v4, 0x1
 

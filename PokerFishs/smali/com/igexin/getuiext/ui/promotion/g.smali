@@ -4,12 +4,8 @@
 
 # direct methods
 .method public static a(Landroid/content/Context;Lcom/igexin/getuiext/ui/promotion/m;)Lcom/igexin/getuiext/ui/promotion/c;
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/promotion/g.smali"
-    const-string v4,  ".method public static a"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     sget-object v1, Lcom/igexin/getuiext/ui/promotion/h;->a:[I

@@ -3,528 +3,551 @@
 .source "AlbumUtil.java"
 
 
+# static fields
+.field public static act:Landroid/app/Activity;
+
+.field public static album_h:I
+
+.field public static album_w:I
+
+.field public static fileUri:Landroid/net/Uri;
+
+.field private static lis:Lcom/p/Listen;
+
+
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    const/4 v0, 0x0
+
+    .line 26
+    sput v0, Lcom/p/AlbumUtil;->album_w:I
+
+    .line 27
+    sput v0, Lcom/p/AlbumUtil;->album_h:I
+
+    .line 30
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 12
+    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static getDataColumn(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
-    .locals 10
-    .param p0, "context"    # Landroid/content/Context;
-    .param p1, "uri"    # Landroid/net/Uri;
-    .param p2, "selection"    # Ljava/lang/String;
-    .param p3, "selectionArgs"    # [Ljava/lang/String;
+.method public static CropImage(Landroid/net/Uri;)V
+    .locals 3
+    .param p0, "uri"    # Landroid/net/Uri;
 
     .prologue
-    const/4 v9, 0x0
+    .line 48
+    sput-object p0, Lcom/p/AlbumUtil;->fileUri:Landroid/net/Uri;
 
-    .line 98
-    const/4 v7, 0x0
+    .line 49
+    new-instance v0, Landroid/content/Intent;
 
-    .line 99
-    .local v7, "cursor":Landroid/database/Cursor;
-    const-string v6, "_data"
+    sget-object v1, Lcom/p/AlbumUtil;->act:Landroid/app/Activity;
 
-    .line 100
-    .local v6, "column":Ljava/lang/String;
-    const/4 v0, 0x1
+    const-class v2, Lcom/p/CropActivity;
 
-    new-array v2, v0, [Ljava/lang/String;
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
+    .line 50
+    .local v0, "intent":Landroid/content/Intent;
+    sget-object v1, Lcom/p/AlbumUtil;->act:Landroid/app/Activity;
+
+    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+
+    .line 51
+    return-void
+.end method
+
+.method public static actionPath(Ljava/lang/String;)V
+    .locals 1
+    .param p0, "path"    # Ljava/lang/String;
+
+    .prologue
+    .line 43
+    sget-object v0, Lcom/p/AlbumUtil;->lis:Lcom/p/Listen;
+
+    invoke-interface {v0, p0}, Lcom/p/Listen;->actionPath(Ljava/lang/String;)V
+
+    .line 44
+    return-void
+.end method
+
+.method public static getCameraFile(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
+    .locals 8
+    .param p0, "ctx"    # Landroid/content/Context;
+    .param p1, "path"    # Ljava/lang/String;
+
+    .prologue
+    .line 87
+    const/4 v3, 0x0
+
+    .line 89
+    .local v3, "file":Ljava/io/File;
     const/4 v0, 0x0
 
-    const-string v1, "_data"
-
-    aput-object v1, v2, v0
-
-    .line 103
-    .local v2, "projection":[Ljava/lang/String;
+    .line 90
+    .local v0, "dirs":Ljava/io/File;
     :try_start_0
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    const-string v7, "."
 
-    .line 104
-    const/4 v5, 0x0
+    invoke-direct {v6, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-object v1, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    .line 103
-    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 105
-    if-eqz v7, :cond_2
-
-    invoke-interface {v7}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 106
-    const-string v0, "_data"
-
-    invoke-interface {v7, v0}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
-
-    move-result v8
-
-    .line 107
-    .local v8, "index":I
-    invoke-interface {v7, v8}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-result-object v0
-
-    .line 110
-    if-eqz v7, :cond_0
-
-    .line 111
-    invoke-interface {v7}, Landroid/database/Cursor;->close()V
-
-    .line 113
-    .end local v8    # "index":I
-    :cond_0
-    :goto_0
-    return-object v0
-
-    .line 109
-    :catchall_0
-    move-exception v0
-
-    .line 110
-    if-eqz v7, :cond_1
-
-    .line 111
-    invoke-interface {v7}, Landroid/database/Cursor;->close()V
-
-    .line 112
-    :cond_1
-    throw v0
-
-    .line 110
-    :cond_2
-    if-eqz v7, :cond_3
-
-    .line 111
-    invoke-interface {v7}, Landroid/database/Cursor;->close()V
-
-    :cond_3
-    move-object v0, v9
-
-    .line 113
-    goto :goto_0
-.end method
-
-.method public static getPath(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
-    .locals 13
-    .param p0, "context"    # Landroid/content/Context;
-    .param p1, "uri"    # Landroid/net/Uri;
-
-    .prologue
-    const/4 v9, 0x1
-
-    const/4 v10, 0x0
-
-    const/4 v8, 0x0
-
-    .line 15
-    sget v11, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v12, 0x13
-
-    if-lt v11, v12, :cond_1
-
-    move v3, v9
-
-    .line 18
-    .local v3, "isKitKat":Z
-    :goto_0
-    if-eqz v3, :cond_7
-
-    invoke-static {p0, p1}, Landroid/provider/DocumentsContract;->isDocumentUri(Landroid/content/Context;Landroid/net/Uri;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_7
-
-    .line 20
-    invoke-static {p1}, Lcom/p/AlbumUtil;->isExternalStorageDocument(Landroid/net/Uri;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_2
-
-    .line 21
-    invoke-static {p1}, Landroid/provider/DocumentsContract;->getDocumentId(Landroid/net/Uri;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 22
-    .local v1, "docId":Ljava/lang/String;
-    const-string v11, ":"
-
-    invoke-virtual {v1, v11}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v6
 
-    .line 23
-    .local v6, "split":[Ljava/lang/String;
-    aget-object v7, v6, v10
+    sget-object v7, Ljava/io/File;->separator:Ljava/lang/String;
 
-    .line 25
-    .local v7, "type":Ljava/lang/String;
-    const-string v10, "primary"
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v10, v7}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    move-result-object v6
 
-    move-result v10
+    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    if-eqz v10, :cond_0
+    move-result-object v6
 
-    .line 26
-    new-instance v8, Ljava/lang/StringBuilder;
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object p1
+
+    .line 91
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 92
+    const-string v7, "mounted"
+
+    .line 91
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    .line 92
+    if-eqz v6, :cond_0
+
+    .line 93
+    new-instance v1, Ljava/io/File;
 
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
-    move-result-object v10
+    move-result-object v6
 
-    invoke-virtual {v8, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v6, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    move-result-object v8
+    .end local v0    # "dirs":Ljava/io/File;
+    .local v1, "dirs":Ljava/io/File;
+    move-object v0, v1
 
-    const-string v10, "/"
+    .line 96
+    .end local v1    # "dirs":Ljava/io/File;
+    .restart local v0    # "dirs":Ljava/io/File;
+    :goto_0
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
-    invoke-virtual {v8, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v6
 
-    move-result-object v8
+    if-nez v6, :cond_1
 
-    .line 27
-    aget-object v9, v6, v9
+    .line 97
+    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v6
 
-    move-result-object v8
+    if-nez v6, :cond_1
 
-    .line 26
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 98
+    const/4 v6, 0x0
 
-    move-result-object v8
-
-    .line 78
-    .end local v1    # "docId":Ljava/lang/String;
-    .end local v6    # "split":[Ljava/lang/String;
-    .end local v7    # "type":Ljava/lang/String;
-    :cond_0
+    .line 107
     :goto_1
-    return-object v8
+    return-object v6
 
-    .end local v3    # "isKitKat":Z
-    :cond_1
-    move v3, v10
+    .line 95
+    :cond_0
+    new-instance v1, Ljava/io/File;
 
-    .line 15
-    goto :goto_0
-
-    .line 33
-    .restart local v3    # "isKitKat":Z
-    :cond_2
-    invoke-static {p1}, Lcom/p/AlbumUtil;->isDownloadsDocument(Landroid/net/Uri;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_3
-
-    .line 35
-    invoke-static {p1}, Landroid/provider/DocumentsContract;->getDocumentId(Landroid/net/Uri;)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 37
-    .local v2, "id":Ljava/lang/String;
-    const-string v9, "content://downloads/public_downloads"
-
-    invoke-static {v9}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v9
-
-    .line 38
-    invoke-static {v2}, Ljava/lang/Long;->valueOf(Ljava/lang/String;)Ljava/lang/Long;
-
-    move-result-object v10
-
-    invoke-virtual {v10}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v10
-
-    .line 36
-    invoke-static {v9, v10, v11}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
-
-    move-result-object v0
-
-    .line 40
-    .local v0, "contentUri":Landroid/net/Uri;
-    invoke-static {p0, v0, v8, v8}, Lcom/p/AlbumUtil;->getDataColumn(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-
-    goto :goto_1
-
-    .line 43
-    .end local v0    # "contentUri":Landroid/net/Uri;
-    .end local v2    # "id":Ljava/lang/String;
-    :cond_3
-    invoke-static {p1}, Lcom/p/AlbumUtil;->isMediaDocument(Landroid/net/Uri;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_0
-
-    .line 44
-    invoke-static {p1}, Landroid/provider/DocumentsContract;->getDocumentId(Landroid/net/Uri;)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 45
-    .restart local v1    # "docId":Ljava/lang/String;
-    const-string v8, ":"
-
-    invoke-virtual {v1, v8}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object v6
 
-    .line 46
-    .restart local v6    # "split":[Ljava/lang/String;
-    aget-object v7, v6, v10
+    invoke-direct {v1, v6, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 48
-    .restart local v7    # "type":Ljava/lang/String;
-    const/4 v0, 0x0
+    .end local v0    # "dirs":Ljava/io/File;
+    .restart local v1    # "dirs":Ljava/io/File;
+    move-object v0, v1
 
-    .line 49
-    .restart local v0    # "contentUri":Landroid/net/Uri;
-    const-string v8, "image"
+    .end local v1    # "dirs":Ljava/io/File;
+    .restart local v0    # "dirs":Ljava/io/File;
+    goto :goto_0
 
-    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 99
+    :cond_1
+    new-instance v6, Ljava/text/SimpleDateFormat;
 
-    move-result v8
+    const-string v7, "yyyyMMdd_HHmmss"
 
-    if-eqz v8, :cond_5
+    invoke-direct {v6, v7}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    .line 50
-    sget-object v0, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    .line 100
+    new-instance v7, Ljava/util/Date;
+
+    invoke-direct {v7}, Ljava/util/Date;-><init>()V
+
+    invoke-virtual {v6, v7}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 101
+    .local v5, "timeStamp":Ljava/lang/String;
+    new-instance v4, Ljava/io/File;
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v7}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-direct {v6, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    sget-object v7, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, "IMG_"
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, ".png"
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-direct {v4, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .end local v3    # "file":Ljava/io/File;
+    .local v4, "file":Ljava/io/File;
+    move-object v3, v4
+
+    .end local v4    # "file":Ljava/io/File;
+    .end local v5    # "timeStamp":Ljava/lang/String;
+    .restart local v3    # "file":Ljava/io/File;
+    :goto_2
+    move-object v6, v3
+
+    .line 107
+    goto :goto_1
+
+    .line 102
+    :catch_0
+    move-exception v2
+
+    .line 104
+    .local v2, "e":Ljava/lang/Exception;
+    invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_2
+.end method
+
+.method public static getImage(Landroid/app/Activity;IILcom/p/Listen;)V
+    .locals 0
+    .param p0, "act"    # Landroid/app/Activity;
+    .param p1, "w"    # I
+    .param p2, "h"    # I
+    .param p3, "lis"    # Lcom/p/Listen;
+
+    .prologue
+    .line 34
+    sput p1, Lcom/p/AlbumUtil;->album_w:I
+
+    .line 35
+    sput p2, Lcom/p/AlbumUtil;->album_h:I
+
+    .line 36
+    sput-object p0, Lcom/p/AlbumUtil;->act:Landroid/app/Activity;
+
+    .line 37
+    sput-object p3, Lcom/p/AlbumUtil;->lis:Lcom/p/Listen;
+
+    .line 38
+    invoke-static {p0}, Lcom/p/AlbumUtil;->openImageSelect(Landroid/app/Activity;)V
+
+    .line 39
+    return-void
+.end method
+
+.method public static getUriForFile(Landroid/content/Context;Ljava/io/File;)Landroid/net/Uri;
+    .locals 4
+    .param p0, "ctx"    # Landroid/content/Context;
+    .param p1, "file"    # Ljava/io/File;
+
+    .prologue
+    .line 75
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v3, 0x18
+
+    if-lt v2, v3, :cond_0
+
+    .line 76
+    new-instance v0, Landroid/content/ContentValues;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v2}, Landroid/content/ContentValues;-><init>(I)V
+
+    .line 77
+    .local v0, "contentValues":Landroid/content/ContentValues;
+    const-string v2, "_data"
+
+    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 78
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    sget-object v3, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+
+    invoke-virtual {v2, v3, v0}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    .line 82
+    .end local v0    # "contentValues":Landroid/content/ContentValues;
+    .local v1, "uri":Landroid/net/Uri;
+    :goto_0
+    return-object v1
+
+    .line 80
+    .end local v1    # "uri":Landroid/net/Uri;
+    :cond_0
+    invoke-static {p1}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    .restart local v1    # "uri":Landroid/net/Uri;
+    goto :goto_0
+.end method
+
+.method private static openImageSelect(Landroid/app/Activity;)V
+    .locals 5
+    .param p0, "act"    # Landroid/app/Activity;
+
+    .prologue
+    const/4 v4, 0x1
+
+    .line 112
+    new-instance v0, Landroid/app/AlertDialog$Builder;
+
+    invoke-direct {v0, p0, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    .line 113
+    const v1, 0x1080093
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setIcon(I)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 114
+    const-string v1, "select"
+
+    invoke-static {p0, v1}, Lcom/p/ResTools;->getString(Landroid/app/Activity;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 116
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    const-string v3, "camera"
+
+    invoke-static {p0, v3}, Lcom/p/ResTools;->getString(Landroid/app/Activity;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    aput-object v3, v1, v2
+
+    .line 117
+    const-string v2, "album"
+
+    invoke-static {p0, v2}, Lcom/p/ResTools;->getString(Landroid/app/Activity;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    aput-object v2, v1, v4
+
+    .line 118
+    new-instance v2, Lcom/p/AlbumUtil$1;
+
+    invoke-direct {v2, p0}, Lcom/p/AlbumUtil$1;-><init>(Landroid/app/Activity;)V
+
+    .line 115
+    invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 130
+    invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+
+    .line 131
+    return-void
+.end method
+
+.method public static saveBitmapToContext(Landroid/content/Context;Landroid/graphics/Bitmap;)Ljava/lang/String;
+    .locals 6
+    .param p0, "ctx"    # Landroid/content/Context;
+    .param p1, "bm"    # Landroid/graphics/Bitmap;
+
+    .prologue
+    .line 56
+    :try_start_0
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+
+    move-result-object v4
+
+    const-string v5, "pics"
+
+    invoke-direct {v0, v4, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 57
-    :cond_4
-    :goto_2
-    const-string v4, "_id=?"
+    .local v0, "dirs":Ljava/io/File;
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
 
     .line 58
-    .local v4, "selection":Ljava/lang/String;
-    new-array v5, v9, [Ljava/lang/String;
-
-    aget-object v8, v6, v9
-
-    aput-object v8, v5, v10
+    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     .line 60
-    .local v5, "selectionArgs":[Ljava/lang/String;
-    const-string v8, "_id=?"
+    :cond_0
+    new-instance v2, Ljava/io/File;
 
-    invoke-static {p0, v0, v8, v5}, Lcom/p/AlbumUtil;->getDataColumn(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
 
-    goto :goto_1
+    move-result-object v5
 
-    .line 51
-    .end local v4    # "selection":Ljava/lang/String;
-    .end local v5    # "selectionArgs":[Ljava/lang/String;
-    :cond_5
-    const-string v8, "video"
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result-object v5
 
-    move-result v8
+    invoke-direct {v4, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    if-eqz v8, :cond_6
+    sget-object v5, Ljava/io/File;->separator:Ljava/lang/String;
 
-    .line 52
-    sget-object v0, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 53
-    goto :goto_2
+    move-result-object v4
 
-    :cond_6
-    const-string v8, "audio"
+    const-string v5, "IMG_account.png"
 
-    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v8
+    move-result-object v4
 
-    if-eqz v8, :cond_4
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 54
-    sget-object v0, Landroid/provider/MediaStore$Audio$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    move-result-object v4
 
-    goto :goto_2
+    invoke-direct {v2, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 61
+    .local v2, "file":Ljava/io/File;
+    new-instance v3, Ljava/io/FileOutputStream;
+
+    invoke-direct {v3, v2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    .line 62
+    .local v3, "out":Ljava/io/FileOutputStream;
+    sget-object v4, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
+
+    const/16 v5, 0x5a
+
+    invoke-virtual {p1, v4, v5, v3}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
+
+    .line 63
+    invoke-virtual {v3}, Ljava/io/FileOutputStream;->flush()V
+
+    .line 64
+    invoke-virtual {v3}, Ljava/io/FileOutputStream;->close()V
 
     .line 65
-    .end local v0    # "contentUri":Landroid/net/Uri;
-    .end local v1    # "docId":Ljava/lang/String;
-    .end local v6    # "split":[Ljava/lang/String;
-    .end local v7    # "type":Ljava/lang/String;
-    :cond_7
-    const-string v9, "content"
+    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {p1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
+    move-result-object v4
 
-    move-result-object v10
+    .line 70
+    .end local v0    # "dirs":Ljava/io/File;
+    .end local v2    # "file":Ljava/io/File;
+    .end local v3    # "out":Ljava/io/FileOutputStream;
+    :goto_0
+    return-object v4
 
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_9
+    .line 66
+    :catch_0
+    move-exception v1
 
     .line 68
-    invoke-static {p1}, Lcom/p/AlbumUtil;->isGooglePhotosUri(Landroid/net/Uri;)Z
+    .local v1, "e":Ljava/lang/Exception;
+    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
-    move-result v9
+    .line 70
+    const/4 v4, 0x0
 
-    if-eqz v9, :cond_8
-
-    .line 69
-    invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
-
-    move-result-object v8
-
-    goto :goto_1
-
-    .line 71
-    :cond_8
-    invoke-static {p0, p1, v8, v8}, Lcom/p/AlbumUtil;->getDataColumn(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-
-    goto/16 :goto_1
-
-    .line 74
-    :cond_9
-    const-string v9, "file"
-
-    invoke-virtual {p1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_0
-
-    .line 75
-    invoke-virtual {p1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
-
-    move-result-object v8
-
-    goto/16 :goto_1
-.end method
-
-.method public static isDownloadsDocument(Landroid/net/Uri;)Z
-    .locals 2
-    .param p0, "uri"    # Landroid/net/Uri;
-
-    .prologue
-    .line 132
-    const-string v0, "com.android.providers.downloads.documents"
-
-    .line 133
-    invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 132
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public static isExternalStorageDocument(Landroid/net/Uri;)Z
-    .locals 2
-    .param p0, "uri"    # Landroid/net/Uri;
-
-    .prologue
-    .line 122
-    const-string v0, "com.android.externalstorage.documents"
-
-    .line 123
-    invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 122
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public static isGooglePhotosUri(Landroid/net/Uri;)Z
-    .locals 2
-    .param p0, "uri"    # Landroid/net/Uri;
-
-    .prologue
-    .line 152
-    const-string v0, "com.google.android.apps.photos.content"
-
-    .line 153
-    invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 152
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public static isMediaDocument(Landroid/net/Uri;)Z
-    .locals 2
-    .param p0, "uri"    # Landroid/net/Uri;
-
-    .prologue
-    .line 142
-    const-string v0, "com.android.providers.media.documents"
-
-    .line 143
-    invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 142
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    return v0
+    goto :goto_0
 .end method

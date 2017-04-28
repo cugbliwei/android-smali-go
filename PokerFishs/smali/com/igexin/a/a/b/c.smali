@@ -31,12 +31,8 @@
 .end method
 
 .method protected final a(Lcom/igexin/a/a/b/c;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/b/a/c.smali"
-    const-string v2,  ".method protected final a(Lcom/igexin/a/a/b/c;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-nez p1, :cond_0
 
     :goto_0
@@ -55,12 +51,8 @@
 .end method
 
 .method public a(Z)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/b/a/c.smali"
-    const-string v4,  ".method public a(Z)VV"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-boolean v0, p0, Lcom/igexin/a/a/b/c;->d:Z
 
     if-eqz v0, :cond_1
@@ -95,12 +87,8 @@
 .end method
 
 .method public final d(Lcom/igexin/a/a/b/f;Lcom/igexin/a/a/b/e;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/c.smali"
-    const-string v3,  ".method public final d(Lcom/igexin/a/a/b/f;Lcom/igexin/a/a/b/e;Ljava/lang/Object;)Ljava/lang/Object;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-nez p3, :cond_0
 
     new-instance v0, Ljava/lang/NullPointerException;

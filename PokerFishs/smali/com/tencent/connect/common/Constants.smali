@@ -62,8 +62,6 @@
 
 .field public static final HTTP_POST:Ljava/lang/String; = "POST"
 
-.field private static final ISLITE:Z = true
-
 .field public static final KEY_ACTION:Ljava/lang/String; = "key_action"
 
 .field public static final KEY_APP_NAME:Ljava/lang/String; = "oauth_app_name"
@@ -200,17 +198,15 @@
 
 .field public static final REQUEST_SOCIAL_H5:I = 0x2b62
 
-.field public static final SDK_BUILD:Ljava/lang/String; = "5502"
+.field public static final SDK_BUILD:Ljava/lang/String; = "5575"
 
-.field public static final SDK_QUA:Ljava/lang/String; = "V1_AND_OpenSDK_2.9.4.lite_1077_RDM_B"
+.field public static final SDK_QUA:Ljava/lang/String; = "V1_AND_OpenSDK_3.1.2.lite_1077_RDM_B"
 
-.field private static final SDK_VER:Ljava/lang/String; = "2.9.4"
+.field public static final SDK_VERSION:Ljava/lang/String; = "3.1.2.lite"
 
-.field public static final SDK_VERSION:Ljava/lang/String; = "2.9.4.lite"
+.field public static final SDK_VERSION_REPORT:Ljava/lang/String; = "OpenSdk_3.1.2.lite"
 
-.field public static final SDK_VERSION_REPORT:Ljava/lang/String; = "OpenSdk_2.9.4.lite"
-
-.field public static final SDK_VERSION_STRING:Ljava/lang/String; = "Android_SDK_2.9.4.lite"
+.field public static final SDK_VERSION_STRING:Ljava/lang/String; = "Android_SDK_3.1.2.lite"
 
 .field public static final SIGNATRUE_QZONE:Ljava/lang/String; = "ec96e9ac1149251acbb1b0c5777cae95"
 
@@ -235,6 +231,8 @@
 .field public static final VIA_ACT_TYPE_FIVE:Ljava/lang/String; = "5"
 
 .field public static final VIA_ACT_TYPE_NINETEEN:Ljava/lang/String; = "19"
+
+.field public static final VIA_ACT_TYPE_SEVEN:Ljava/lang/String; = "7"
 
 .field public static final VIA_ACT_TYPE_THREE:Ljava/lang/String; = "3"
 
@@ -270,7 +268,7 @@
 
 .field public static final VIA_REPORT_TYPE_SHARE_TO_TROOPBAR:Ljava/lang/String; = "23"
 
-.field public static final VIA_REPORT_TYPE_SSO_LOGIN:Ljava/lang/String; = "310"
+.field public static final VIA_REPORT_TYPE_SSO_LOGIN:Ljava/lang/String; = "1"
 
 .field public static final VIA_REPORT_TYPE_START_GROUP:Ljava/lang/String; = "17"
 
@@ -304,6 +302,10 @@
 
 .field public static final VIA_SHARE_TYPE_MUSIC:Ljava/lang/String; = "3"
 
+.field public static final VIA_SHARE_TYPE_PUBLISHMOOD:Ljava/lang/String; = "7"
+
+.field public static final VIA_SHARE_TYPE_PUBLISHVIDEO:Ljava/lang/String; = "8"
+
 .field public static final VIA_SHARE_TYPE_TEXT:Ljava/lang/String; = "5"
 
 .field public static final VIA_SSO_LOGIN:Ljava/lang/String; = "2"
@@ -326,7 +328,7 @@
     .locals 0
 
     .prologue
-    .line 10
+    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

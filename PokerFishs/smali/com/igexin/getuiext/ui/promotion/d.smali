@@ -70,12 +70,8 @@
 
 # virtual methods
 .method public a(II)Landroid/view/View;
-    .locals 13
+    .locals 11
 
-    const-string v11, "======================== igexin/getuiext/ui/promotion/d.smali"
-    const-string v12,  ".method public a(II)Landroid/view/View;"
-    invoke-static {v11,v12} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/ui/promotion/d;->l:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -504,12 +500,8 @@
 .end method
 
 .method public a(IILjava/lang/String;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/promotion/d.smali"
-    const-string v4,  ".method public a(IILjava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/ui/promotion/d;->m:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -602,12 +594,8 @@
 .end method
 
 .method protected b(Landroid/view/View;)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/ui/promotion/d.smali"
-    const-string v7,  ".method protected b(Landroid/view/View;)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v5, 0x0
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
@@ -774,12 +762,8 @@
 .end method
 
 .method public c(Ljava/lang/String;)V
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/getuiext/ui/promotion/d.smali"
-    const-string v9,  ".method public c(Ljava/lang/String;)V"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/ui/promotion/d;->l:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V

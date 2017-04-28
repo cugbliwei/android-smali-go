@@ -46,12 +46,8 @@
 .end method
 
 .method private a(IJ)J
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/download/DownloadService.smali"
-    const-string v7,  ".method private a(IJ)J"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-wide/16 v2, 0x0
 
     iget-object v0, p0, Lcom/igexin/download/DownloadService;->c:Ljava/util/ArrayList;
@@ -149,12 +145,8 @@
 .end method
 
 .method private a(Ljava/lang/String;Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/download/DownloadService.smali"
-    const-string v8,  ".method private a(Ljava/lang/String;Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v6, 0x0
 
     invoke-interface {p2, p3}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
@@ -258,12 +250,8 @@
 .end method
 
 .method private a()V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadService.smali"
-    const-string v2,  ".method private a()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     monitor-enter p0
 
     const/4 v0, 0x1
@@ -1084,12 +1072,8 @@
 .end method
 
 .method private a(I)Z
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/download/DownloadService.smali"
-    const-string v9,  ".method private a(I)Z"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v4, 0x0
 
     const/4 v6, 0x1
@@ -1144,12 +1128,8 @@
 .end method
 
 .method private a(Landroid/database/Cursor;I)Z
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/download/DownloadService.smali"
-    const-string v9,  ".method private a(Landroid/database/Cursor;I)Z"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     const/4 v1, 0x1
@@ -1317,12 +1297,8 @@
 .end method
 
 .method private a(Ljava/lang/String;)Z
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadService.smali"
-    const-string v2,  ".method private a(Ljava/lang/String;)Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x1
 
     return v0
@@ -1345,12 +1321,8 @@
 .end method
 
 .method private b(I)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/DownloadService.smali"
-    const-string v4,  ".method private b(I)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/DownloadService;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1825,12 +1797,8 @@
 .end method
 
 .method private b()Z
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadService.smali"
-    const-string v2,  ".method private b()Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/DownloadService;->h:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
@@ -1873,12 +1841,8 @@
 .end method
 
 .method private c(I)Z
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadService.smali"
-    const-string v2,  ".method private c(I)Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/DownloadService;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1905,12 +1869,8 @@
 .end method
 
 .method private d(I)Z
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/DownloadService.smali"
-    const-string v3,  ".method private d(I)Z"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/DownloadService;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1999,12 +1959,8 @@
 
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/DownloadService.smali"
-    const-string v3,  ".method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Cannot bind to Download Manager Service"
@@ -2015,12 +1971,8 @@
 .end method
 
 .method public onCreate()V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/download/DownloadService.smali"
-    const-string v7,  ".method public onCreate()V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v5, 0x0
 
     const/4 v4, 0x0
@@ -2098,12 +2050,8 @@
 .end method
 
 .method public onDestroy()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/DownloadService.smali"
-    const-string v3,  ".method public onDestroy()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Lcom/igexin/download/DownloadService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -2118,12 +2066,8 @@
 .end method
 
 .method public onStart(Landroid/content/Intent;I)V
-    .locals 2
+    .locals 0
 
-    const-string v1, "======================== igexin/download/DownloadService.smali"
-    const-string v2,  ".method public onStart(Landroid/content/Intent;I)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-super {p0, p1, p2}, Landroid/app/Service;->onStart(Landroid/content/Intent;I)V
 
     invoke-direct {p0}, Lcom/igexin/download/DownloadService;->a()V

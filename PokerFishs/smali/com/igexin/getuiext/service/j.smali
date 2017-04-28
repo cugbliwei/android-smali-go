@@ -20,12 +20,8 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/service/j.smali"
-    const-string v5,  ".method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v3, 0x5
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;

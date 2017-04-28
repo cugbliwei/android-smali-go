@@ -3,12 +3,12 @@
 .source "ProGuard"
 
 # interfaces
-.implements Lcom/tencent/open/utils/AsynLoadImgBack;
+.implements Lcom/tencent/open/utils/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/tencent/connect/share/QQShare;->a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
+    value = Lcom/tencent/connect/share/QQShare;->b(Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 293
+    .line 292
     iput-object p1, p0, Lcom/tencent/connect/share/QQShare$2;->f:Lcom/tencent/connect/share/QQShare;
 
     iput-object p2, p0, Lcom/tencent/connect/share/QQShare$2;->a:Landroid/os/Bundle;
@@ -56,24 +56,7 @@
 
 
 # virtual methods
-.method public batchSaved(ILjava/util/ArrayList;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/util/ArrayList",
-            "<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    .prologue
-    .line 318
-    return-void
-.end method
-
-.method public saved(ILjava/lang/String;)V
+.method public a(ILjava/lang/String;)V
     .locals 10
 
     .prologue
@@ -81,17 +64,17 @@
 
     const/4 v7, 0x0
 
-    .line 296
+    .line 295
     if-nez p1, :cond_1
 
-    .line 297
+    .line 296
     iget-object v0, p0, Lcom/tencent/connect/share/QQShare$2;->a:Landroid/os/Bundle;
 
     const-string v1, "imageLocalUrl"
 
     invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 311
+    .line 310
     :cond_0
     iget-object v0, p0, Lcom/tencent/connect/share/QQShare$2;->f:Lcom/tencent/connect/share/QQShare;
 
@@ -103,11 +86,11 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/tencent/connect/share/QQShare;->a(Lcom/tencent/connect/share/QQShare;Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
 
-    .line 312
+    .line 311
     :goto_0
     return-void
 
-    .line 299
+    .line 298
     :cond_1
     iget-object v0, p0, Lcom/tencent/connect/share/QQShare$2;->b:Ljava/lang/String;
 
@@ -125,12 +108,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 300
+    .line 299
     iget-object v0, p0, Lcom/tencent/connect/share/QQShare$2;->d:Lcom/tencent/tauth/IUiListener;
 
     if-eqz v0, :cond_2
 
-    .line 301
+    .line 300
     iget-object v0, p0, Lcom/tencent/connect/share/QQShare$2;->d:Lcom/tencent/tauth/IUiListener;
 
     new-instance v2, Lcom/tencent/tauth/UiError;
@@ -145,14 +128,14 @@
 
     invoke-interface {v0, v2}, Lcom/tencent/tauth/IUiListener;->onError(Lcom/tencent/tauth/UiError;)V
 
-    .line 303
+    .line 302
     const-string v0, "openSDK_LOG.QQShare"
 
     const-string v2, "shareToMobileQQ -- error: \u83b7\u53d6\u5206\u4eab\u56fe\u7247\u5931\u8d25!"
 
     invoke-static {v0, v2}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 305
+    .line 304
     :cond_2
     invoke-static {}, Lcom/tencent/open/b/d;->a()Lcom/tencent/open/b/d;
 
@@ -191,4 +174,21 @@
     invoke-virtual/range {v0 .. v9}, Lcom/tencent/open/b/d;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;IILjava/lang/String;)V
 
     goto :goto_0
+.end method
+
+.method public a(ILjava/util/ArrayList;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/util/ArrayList",
+            "<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 317
+    return-void
 .end method

@@ -4,12 +4,8 @@
 
 # direct methods
 .method public static a(Landroid/content/Context;Lcom/igexin/getuiext/data/a/d;Z)I
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/getuiext/ui/b.smali"
-    const-string v8,  ".method public static a(Landroid/content/Context;Lcom/igexin/getuiext/data/a/d;Z)I"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, -0x1
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -59,12 +55,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;ILcom/igexin/getuiext/data/a/a;)V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/ui/b.smali"
-    const-string v5,  ".method public static a(Landroid/content/Context;ILcom/igexin/getuiext/data/a/a;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -120,12 +112,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;ILcom/igexin/getuiext/data/a/d;)V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/ui/b.smali"
-    const-string v5,  ".method public static a(Landroid/content/Context;ILcom/igexin/getuiext/data/a/d;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -181,12 +169,8 @@
 .end method
 
 .method private static a(Landroid/content/Context;Lcom/igexin/getuiext/data/a/d;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/ui/b.smali"
-    const-string v3,  ".method private static a(Landroid/content/Context;Lcom/igexin/getuiext/data/a/d;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lcom/igexin/getuiext/ui/c;
 
     invoke-direct {v0, p1, p0}, Lcom/igexin/getuiext/ui/c;-><init>(Lcom/igexin/getuiext/data/a/d;Landroid/content/Context;)V
@@ -201,12 +185,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/ui/b.smali"
-    const-string v2,  ".method public static a(Landroid/content/Context;Ljava/lang/String;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
@@ -224,12 +204,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;ILcom/igexin/getuiext/data/a/a;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/b.smali"
-    const-string v4,  ".method public static a(Landroid/content/Context;Ljava/lang/String;ILcom/igexin/getuiext/data/a/a;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.igexin.increment"

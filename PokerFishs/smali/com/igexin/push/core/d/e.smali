@@ -12,11 +12,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/igexin/push/core/d/c;Lcom/igexin/push/core/bean/PushTaskBean;Lcom/igexin/push/c/c/a;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/d/e.smali"
-    const-string v1,  ".method constructor <init>(Lcom/igexin/push/core/d/c;Lcom/igexin/push/core/bean/PushTaskBean;Lcom/igexin/push/c/c/a;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/d/e;->c:Lcom/igexin/push/core/d/c;
 
@@ -32,11 +28,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/core/d/e.smali"
-    const-string v4,  ".method public run()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     sget-object v0, Lcom/igexin/push/core/g;->ak:Ljava/util/HashMap;
 

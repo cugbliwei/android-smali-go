@@ -279,7 +279,9 @@
     move-result-object v1
 
     .line 193
-    const-string v2, "com.eg.android.AlipayGphone"
+    invoke-static {}, Lcom/alipay/sdk/util/l;->a()Ljava/lang/String;
+
+    move-result-object v2
 
     const/16 v3, 0x80
 
@@ -406,7 +408,6 @@
 
     move-result-object v0
 
-    .line 154
     invoke-direct {p0}, Lcom/alipay/sdk/app/AuthTask;->c()V
 
     .line 161
@@ -421,7 +422,7 @@
 
     goto :goto_0
 
-    .line 154
+    .line 148
     :cond_1
     invoke-direct {p0}, Lcom/alipay/sdk/app/AuthTask;->c()V
 
@@ -475,7 +476,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 154
+    .line 151
     invoke-direct {p0}, Lcom/alipay/sdk/app/AuthTask;->c()V
 
     move-object v0, v1
@@ -497,7 +498,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 154
+    .line 153
     invoke-direct {p0}, Lcom/alipay/sdk/app/AuthTask;->c()V
 
     move-object v0, v1
@@ -639,7 +640,7 @@
 
     move-result-object v0
 
-    .line 105
+    .line 102
     :cond_1
     :goto_0
     :try_start_2
@@ -651,17 +652,15 @@
 
     invoke-virtual {v1, v2}, Lcom/alipay/sdk/data/a;->a(Landroid/content/Context;)V
 
-    .line 106
     invoke-direct {p0}, Lcom/alipay/sdk/app/AuthTask;->c()V
 
-    .line 107
     iget-object v1, p0, Lcom/alipay/sdk/app/AuthTask;->c:Landroid/app/Activity;
 
     invoke-static {v1, p1}, Lcom/alipay/sdk/app/statistic/a;->a(Landroid/content/Context;Ljava/lang/String;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 109
+    .line 106
     :goto_1
     monitor-exit p0
 
@@ -692,10 +691,8 @@
 
     invoke-virtual {v0, v2}, Lcom/alipay/sdk/data/a;->a(Landroid/content/Context;)V
 
-    .line 106
     invoke-direct {p0}, Lcom/alipay/sdk/app/AuthTask;->c()V
 
-    .line 107
     iget-object v0, p0, Lcom/alipay/sdk/app/AuthTask;->c:Landroid/app/Activity;
 
     invoke-static {v0, p1}, Lcom/alipay/sdk/app/statistic/a;->a(Landroid/content/Context;Ljava/lang/String;)V
@@ -717,10 +714,8 @@
 
     invoke-virtual {v1, v2}, Lcom/alipay/sdk/data/a;->a(Landroid/content/Context;)V
 
-    .line 106
     invoke-direct {p0}, Lcom/alipay/sdk/app/AuthTask;->c()V
 
-    .line 107
     iget-object v1, p0, Lcom/alipay/sdk/app/AuthTask;->c:Landroid/app/Activity;
 
     invoke-static {v1, p1}, Lcom/alipay/sdk/app/statistic/a;->a(Landroid/content/Context;Ljava/lang/String;)V

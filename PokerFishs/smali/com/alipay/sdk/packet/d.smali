@@ -621,24 +621,20 @@
     :goto_1
     if-eqz v1, :cond_0
 
-    .line 292
     :try_start_3
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
 
-    .line 297
     :cond_0
     :goto_2
     if-eqz v2, :cond_1
 
-    .line 299
     :try_start_4
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 301
     :cond_1
     :goto_3
     throw v0
@@ -652,16 +648,14 @@
 
     move-result-object v0
 
-    .line 290
+    .line 289
     if-eqz v1, :cond_3
 
-    .line 292
     :try_start_6
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
 
-    .line 297
     :cond_3
     :goto_4
     :try_start_7
@@ -669,7 +663,7 @@
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_1
 
-    .line 305
+    .line 292
     :goto_5
     return-object v0
 
@@ -678,7 +672,7 @@
 
     goto :goto_4
 
-    .line 301
+    .line 303
     :catch_1
     move-exception v1
 
@@ -994,17 +988,17 @@
 
     if-eqz v2, :cond_0
 
-    const-string v2, "Msp/15.2.2"
-
-    invoke-static {}, Lcom/alipay/sdk/util/l;->a()Ljava/lang/String;
-
-    move-result-object v4
+    const-string v2, "Msp/15.2.7"
 
     invoke-static {}, Lcom/alipay/sdk/util/l;->b()Ljava/lang/String;
 
+    move-result-object v4
+
+    invoke-static {}, Lcom/alipay/sdk/util/l;->c()Ljava/lang/String;
+
     move-result-object v5
 
-    invoke-static {v11}, Lcom/alipay/sdk/util/l;->e(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v11}, Lcom/alipay/sdk/util/l;->f(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -1024,7 +1018,7 @@
 
     move-result-object v13
 
-    invoke-static {v11}, Lcom/alipay/sdk/util/l;->f(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v11}, Lcom/alipay/sdk/util/l;->g(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v14
 
@@ -1604,7 +1598,7 @@
 
     iget-object v3, v6, Lcom/alipay/sdk/sys/b;->a:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/alipay/sdk/util/l;->b(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/alipay/sdk/util/l;->c(Landroid/content/Context;)Z
 
     move-result v3
 
@@ -1615,7 +1609,7 @@
 
     iget-object v3, v6, Lcom/alipay/sdk/sys/b;->a:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/alipay/sdk/util/l;->a(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/alipay/sdk/util/l;->b(Landroid/content/Context;)Z
 
     move-result v3
 

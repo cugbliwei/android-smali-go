@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/tencent/connect/common/AssistActivity;
+.field final synthetic a:Lcom/tencent/connect/common/AssistActivity;
 
 
 # direct methods
@@ -23,8 +23,8 @@
     .locals 0
 
     .prologue
-    .line 39
-    iput-object p1, p0, Lcom/tencent/connect/common/AssistActivity$1;->this$0:Lcom/tencent/connect/common/AssistActivity;
+    .line 42
+    iput-object p1, p0, Lcom/tencent/connect/common/AssistActivity$1;->a:Lcom/tencent/connect/common/AssistActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -34,22 +34,22 @@
 
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 43
+    .line 46
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 50
+    .line 54
     :cond_0
     :goto_0
     return-void
 
-    .line 45
+    .line 48
     :pswitch_0
-    iget-object v0, p0, Lcom/tencent/connect/common/AssistActivity$1;->this$0:Lcom/tencent/connect/common/AssistActivity;
+    iget-object v0, p0, Lcom/tencent/connect/common/AssistActivity$1;->a:Lcom/tencent/connect/common/AssistActivity;
 
     invoke-virtual {v0}, Lcom/tencent/connect/common/AssistActivity;->isFinishing()Z
 
@@ -57,14 +57,23 @@
 
     if-nez v0, :cond_0
 
-    .line 46
-    iget-object v0, p0, Lcom/tencent/connect/common/AssistActivity$1;->this$0:Lcom/tencent/connect/common/AssistActivity;
+    .line 49
+    const-string v0, "openSDK_LOG.AssistActivity"
+
+    const-string v1, "-->finish by timeout"
+
+    invoke-static {v0, v1}, Lcom/tencent/open/a/f;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 50
+    iget-object v0, p0, Lcom/tencent/connect/common/AssistActivity$1;->a:Lcom/tencent/connect/common/AssistActivity;
 
     invoke-virtual {v0}, Lcom/tencent/connect/common/AssistActivity;->finish()V
 
     goto :goto_0
 
-    .line 43
+    .line 46
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

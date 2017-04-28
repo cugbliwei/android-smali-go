@@ -24,12 +24,8 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;)Ljava/util/ArrayList;
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/getuiext/b/b.smali"
-    const-string v10,  ".method public a(Ljava/lang/String;)Ljava/util/ArrayList;"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v8, 0x0
 
     const/4 v2, 0x0
@@ -119,12 +115,8 @@
 .end method
 
 .method public a(Ljava/lang/String;I)V
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/getuiext/b/b.smali"
-    const-string v8,  ".method public a(Ljava/lang/String;I)V"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/b/b;->a:Lcom/igexin/getuiext/data/a;
 
     const-string v1, "biinfo"

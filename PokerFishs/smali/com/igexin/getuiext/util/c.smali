@@ -4,12 +4,8 @@
 
 # direct methods
 .method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;)Ljava/io/InputStream;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/util/c.smali"
-    const-string v3,  ".method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;)Ljava/io/InputStream;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-nez p0, :cond_0
 
     const-string p0, "POST"
@@ -62,12 +58,8 @@
 .end method
 
 .method private static a(Ljava/lang/String;Ljava/util/HashMap;)Ljava/io/InputStream;
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/util/c.smali"
-    const-string v4,  ".method private static a(Ljava/lang/String;Ljava/util/HashMap;)Ljava/io/InputStream;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lorg/apache/http/impl/client/DefaultHttpClient;
 
     invoke-static {}, Lcom/igexin/getuiext/util/c;->a()Lorg/apache/http/params/HttpParams;
@@ -161,12 +153,8 @@
 .end method
 
 .method public static a(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/getuiext/util/c.smali"
-    const-string v9,  ".method public static a(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     if-nez p0, :cond_1
@@ -288,12 +276,8 @@
 .end method
 
 .method public static a(Ljava/lang/String;Lorg/json/JSONObject;I)Ljava/lang/String;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/util/c.smali"
-    const-string v2,  ".method public static a(Ljava/lang/String;Lorg/json/JSONObject;I)Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
@@ -314,12 +298,8 @@
 .end method
 
 .method public static a(Ljava/lang/String;[BI)Ljava/lang/String;
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/util/c.smali"
-    const-string v7,  ".method public static a(Ljava/lang/String;[BI)Ljava/lang/String;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     if-nez p0, :cond_1
@@ -417,12 +397,8 @@
 .end method
 
 .method private static a()Lorg/apache/http/params/HttpParams;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/util/c.smali"
-    const-string v3,  ".method private static a()Lorg/apache/http/params/HttpParams;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const v1, 0x1d4c0
 
     new-instance v0, Lorg/apache/http/params/BasicHttpParams;
@@ -441,12 +417,8 @@
 .end method
 
 .method private static b(Ljava/lang/String;Ljava/util/HashMap;)Ljava/io/InputStream;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/util/c.smali"
-    const-string v5,  ".method private static b(Ljava/lang/String;Ljava/util/HashMap;)Ljava/io/InputStream;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lorg/apache/http/impl/client/DefaultHttpClient;
 
     invoke-static {}, Lcom/igexin/getuiext/util/c;->a()Lorg/apache/http/params/HttpParams;

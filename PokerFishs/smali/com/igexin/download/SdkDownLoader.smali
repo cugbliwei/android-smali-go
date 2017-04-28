@@ -120,12 +120,8 @@
 .end method
 
 .method private a(Landroid/content/ContentValues;)I
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v5,  ".method private a(Landroid/content/ContentValues;)I"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/SdkDownLoader;->f:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -178,12 +174,8 @@
 .end method
 
 .method private a(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)I
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v4,  ".method private a(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)I"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
@@ -256,12 +248,8 @@
 .end method
 
 .method public static getInstantiate(Landroid/content/Context;)Lcom/igexin/download/SdkDownLoader;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v2,  "getInstantiate"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     sget-object v0, Lcom/igexin/download/SdkDownLoader;->c:Lcom/igexin/download/SdkDownLoader;
 
     if-nez v0, :cond_0
@@ -281,12 +269,8 @@
 
 # virtual methods
 .method a(Ljava/lang/String;)Lcom/igexin/download/IDownloadCallback;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v5,  ".method a(Ljava/lang/String;)Lcom/igexin/download/IDownloadCallback;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     const/4 v1, 0x0
 
     if-nez p1, :cond_0
@@ -335,12 +319,8 @@
 .end method
 
 .method protected a(Ljava/util/Collection;)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v7,  ".method protected a(Ljava/util/Collection;)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     iget-object v2, p0, Lcom/igexin/download/SdkDownLoader;->h:Ljava/lang/Object;
 
     monitor-enter v2
@@ -465,12 +445,8 @@
 .end method
 
 .method public deleteTask(I)Z
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v6,  ".method public deleteTask(I)Z"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     const/4 v4, 0x0
 
     iget-object v0, p0, Lcom/igexin/download/SdkDownLoader;->f:Landroid/content/Context;
@@ -495,12 +471,8 @@
 .end method
 
 .method public deleteTask([I)Z
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v5,  ".method public deleteTask([I)Z"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     iget-object v0, p0, Lcom/igexin/download/SdkDownLoader;->f:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -543,12 +515,8 @@
 .end method
 
 .method public getCallback(Ljava/lang/String;)Lcom/igexin/download/IDownloadCallback;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v5,  ".method public getCallback(Ljava/lang/String;)Lcom/igexin/download/IDownloadCallback;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     const/4 v1, 0x0
 
     if-nez p1, :cond_0
@@ -597,12 +565,8 @@
 .end method
 
 .method public isRegistered(Ljava/lang/String;)Z
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v3,  ".method public isRegistered(Ljava/lang/String;)Z"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     iget-object v0, p0, Lcom/igexin/download/SdkDownLoader;->g:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -646,12 +610,8 @@
 .end method
 
 .method public newTask(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)I
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v4,  ".method public newTask(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)I"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
@@ -686,12 +646,8 @@
 .end method
 
 .method public pauseAllTask()Z
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v10,  ".method public pauseAllTask()Z"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     const/16 v8, 0xc1
 
     const/4 v7, 0x1
@@ -770,12 +726,8 @@
 .end method
 
 .method public pauseTask(I)Z
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v8,  ".method public pauseTask(I)Z"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     const/4 v6, 0x0
 
     const/4 v3, 0x1
@@ -812,12 +764,8 @@
 .end method
 
 .method public queryTask(Ljava/lang/String;)Z
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v9,  ".method public queryTask(Ljava/lang/String;)Z"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     const/4 v2, 0x0
 
     const/4 v6, 0x1
@@ -877,12 +825,8 @@
 .end method
 
 .method public refreshList()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v3,  ".method public refreshList()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     new-instance v0, Landroid/os/Message;
 
     invoke-direct {v0}, Landroid/os/Message;-><init>()V
@@ -899,12 +843,8 @@
 .end method
 
 .method public registerDownloadCallback(Lcom/igexin/download/IDownloadCallback;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v2,  ".method public registerDownloadCallback(Lcom/igexin/download/IDownloadCallback;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     iget-object v0, p0, Lcom/igexin/download/SdkDownLoader;->g:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -922,24 +862,16 @@
 .end method
 
 .method public setDownloadDir(Ljava/lang/String;)V
-    .locals 2
+    .locals 0
 
-    const-string v0, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v1,  ".method public setDownloadDir(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     sput-object p1, Lcom/igexin/download/SdkDownLoader;->b:Ljava/lang/String;
 
     return-void
 .end method
 
 .method public startTask(I)Z
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v8,  ".method public startTask(I)Z"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     const/4 v6, 0x0
 
     const/4 v3, 0x0
@@ -986,12 +918,8 @@
 .end method
 
 .method public unregisterDownloadCallback(Lcom/igexin/download/IDownloadCallback;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v2,  "unregisterDownloadCallback"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     iget-object v0, p0, Lcom/igexin/download/SdkDownLoader;->g:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
@@ -1000,12 +928,8 @@
 .end method
 
 .method public updateTask(ILjava/lang/String;Ljava/lang/String;)Z
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/download/SdkDownLoader.smali"
-    const-string v7,  ".method public updateTask(ILjava/lang/String;Ljava/lang/String;)Z"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-   
     const/4 v3, 0x0
 
     new-instance v0, Landroid/content/ContentValues;

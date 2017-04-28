@@ -127,7 +127,7 @@
 .method public getSdkVersion()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "3.2.0-20160621"
+    const-string v0, "3.2.2-20160830"
 
     return-object v0
 .end method
@@ -157,7 +157,7 @@
 
     iget-object v1, p0, Lcom/alipay/apmobilesecuritysdk/face/APSecuritySdk;->b:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/alipay/apmobilesecuritysdk/f/h;->c(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/alipay/apmobilesecuritysdk/f/h;->f(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -223,7 +223,7 @@
 
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/face/APSecuritySdk;->b:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/f/h;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/f/h;->c(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -270,7 +270,7 @@
 
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/face/APSecuritySdk;->b:Landroid/content/Context;
 
-    invoke-static {v0, v1}, Lcom/alipay/apmobilesecuritysdk/f/h;->a(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/alipay/apmobilesecuritysdk/f/h;->c(Landroid/content/Context;Ljava/lang/String;)V
 
     :cond_1
     const-string v0, "utdid"
@@ -339,12 +339,6 @@
     const-string v0, "appchannel"
 
     const-string v1, ""
-
-    invoke-interface {v3, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v0, "rpcVersion"
-
-    const-string v1, "3"
 
     invoke-interface {v3, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

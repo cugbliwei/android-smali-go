@@ -8,11 +8,7 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/b/b.smali"
-    const-string v4,  ".method public constructor <init>(Landroid/content/Context;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     const/4 v2, 0x0
 
@@ -28,11 +24,7 @@
 .end method
 
 .method private a([Ljava/lang/String;[Ljava/lang/String;I)Ljava/lang/String;
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/b/b.smali"
-    const-string v6,  ".method private a([Ljava/lang/String;[Ljava/lang/String;I)Ljava/lang/String;"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     const/4 v0, 0x0
 
@@ -162,11 +154,7 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-    .locals 11
-
-    const-string v9, "======================== PokerFishs/smali/com/igexin/push/b/b.smali"
-    const-string v10,  ".method public a(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 9
 
     const/4 v1, 0x1
 
@@ -361,11 +349,7 @@
 .end method
 
 .method public a(Ljava/lang/String;Landroid/content/ContentValues;)V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/b/b.smali"
-    const-string v3,  ".method public a(Ljava/lang/String;Landroid/content/ContentValues;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     invoke-virtual {p0}, Lcom/igexin/push/b/b;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -418,11 +402,7 @@
 .end method
 
 .method public a(Ljava/lang/String;Landroid/content/ContentValues;[Ljava/lang/String;[Ljava/lang/String;)V
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/b/b.smali"
-    const-string v4,  ".method public a(Ljava/lang/String;Landroid/content/ContentValues;[Ljava/lang/String;[Ljava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     const/4 v1, 0x1
 
@@ -577,11 +557,7 @@
 .end method
 
 .method public a(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/b/b.smali"
-    const-string v3,  ".method public a(Ljava/lang/String;Ljava/lang/String;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     invoke-virtual {p0}, Lcom/igexin/push/b/b;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -634,11 +610,7 @@
 .end method
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/b/b.smali"
-    const-string v2,  ".method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -693,11 +665,7 @@
 .end method
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/b/b.smali"
-    const-string v1,  ".method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-virtual {p0, p1, p3, p2}, Lcom/igexin/push/b/b;->onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
 
@@ -705,11 +673,7 @@
 .end method
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/b/b.smali"
-    const-string v2,  ".method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     :try_start_0
     const-string v0, "drop table if exists config"

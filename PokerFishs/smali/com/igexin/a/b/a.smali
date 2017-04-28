@@ -88,12 +88,8 @@
 .end method
 
 .method public static a(I)Ljava/lang/String;
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/b/a.smali"
-    const-string v7,  ".method public static a(I)Ljava/lang/String;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v1, 0x64
 
     if-gez p0, :cond_2
@@ -149,12 +145,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/b/a.smali"
-    const-string v10,  ".method public static a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-string v0, "0"
 
     new-instance v1, Ljava/io/File;
@@ -248,12 +240,8 @@
 .end method
 
 .method public static a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/b/a.smali"
-    const-string v10,  ".method public static a(Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     const/16 v8, 0x10
@@ -359,12 +347,8 @@
 .end method
 
 .method public static a([BII)Ljava/lang/String;
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/b/a.smali"
-    const-string v7,  ".method public static a([BII)Ljava/lang/String;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -411,12 +395,8 @@
 .end method
 
 .method public static a([B)[B
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/b/a.smali"
-    const-string v3,  ".method public static a([B)[B"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     :try_start_0
@@ -472,12 +452,8 @@
 .end method
 
 .method public static b([B)[B
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/b/a.smali"
-    const-string v10,  ".method public static b([B)[B"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     const/16 v8, 0x8
@@ -547,12 +523,8 @@
 .end method
 
 .method public static c([B)[B
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/b/a.smali"
-    const-string v5,  ".method public static c([B)[B"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-eqz p0, :cond_0
 
     array-length v0, p0

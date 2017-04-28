@@ -131,21 +131,20 @@
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 150
+    .line 122
     invoke-static {}, Lcom/alipay/sdk/auth/h;->a()Lcom/alipay/sdk/widget/a;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 151
     invoke-static {}, Lcom/alipay/sdk/auth/h;->a()Lcom/alipay/sdk/widget/a;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/alipay/sdk/widget/a;->b()V
 
-    .line 153
+    .line 152
     :cond_1
     :goto_1
     return-void
@@ -265,14 +264,13 @@
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 150
+    .line 141
     invoke-static {}, Lcom/alipay/sdk/auth/h;->a()Lcom/alipay/sdk/widget/a;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 151
     invoke-static {}, Lcom/alipay/sdk/auth/h;->a()Lcom/alipay/sdk/widget/a;
 
     move-result-object v0
@@ -328,14 +326,13 @@
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 150
+    .line 148
     invoke-static {}, Lcom/alipay/sdk/auth/h;->a()Lcom/alipay/sdk/widget/a;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 151
     invoke-static {}, Lcom/alipay/sdk/auth/h;->a()Lcom/alipay/sdk/widget/a;
 
     move-result-object v0
@@ -344,7 +341,7 @@
 
     goto/16 :goto_1
 
-    .line 150
+    .line 149
     :catch_0
     move-exception v0
 
@@ -354,7 +351,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 151
     invoke-static {}, Lcom/alipay/sdk/auth/h;->a()Lcom/alipay/sdk/widget/a;
 
     move-result-object v0
@@ -373,7 +369,6 @@
 
     if-eqz v1, :cond_6
 
-    .line 151
     invoke-static {}, Lcom/alipay/sdk/auth/h;->a()Lcom/alipay/sdk/widget/a;
 
     move-result-object v1

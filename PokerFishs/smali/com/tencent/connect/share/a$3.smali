@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/tencent/connect/share/a;->a(Landroid/content/Context;Ljava/util/ArrayList;Lcom/tencent/open/utils/AsynLoadImgBack;)V
+    value = Lcom/tencent/connect/share/a;->a(Landroid/content/Context;Ljava/util/ArrayList;Lcom/tencent/open/utils/c;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field final synthetic a:Lcom/tencent/open/utils/AsynLoadImgBack;
+.field final synthetic a:Lcom/tencent/open/utils/c;
 
 
 # direct methods
-.method constructor <init>(Landroid/os/Looper;Lcom/tencent/open/utils/AsynLoadImgBack;)V
+.method constructor <init>(Landroid/os/Looper;Lcom/tencent/open/utils/c;)V
     .locals 0
 
     .prologue
     .line 131
-    iput-object p2, p0, Lcom/tencent/connect/share/a$3;->a:Lcom/tencent/open/utils/AsynLoadImgBack;
+    iput-object p2, p0, Lcom/tencent/connect/share/a$3;->a:Lcom/tencent/open/utils/c;
 
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -62,11 +62,11 @@
     move-result-object v0
 
     .line 138
-    iget-object v1, p0, Lcom/tencent/connect/share/a$3;->a:Lcom/tencent/open/utils/AsynLoadImgBack;
+    iget-object v1, p0, Lcom/tencent/connect/share/a$3;->a:Lcom/tencent/open/utils/c;
 
     const/4 v2, 0x0
 
-    invoke-interface {v1, v2, v0}, Lcom/tencent/open/utils/AsynLoadImgBack;->batchSaved(ILjava/util/ArrayList;)V
+    invoke-interface {v1, v2, v0}, Lcom/tencent/open/utils/c;->a(ILjava/util/ArrayList;)V
 
     goto :goto_0
 

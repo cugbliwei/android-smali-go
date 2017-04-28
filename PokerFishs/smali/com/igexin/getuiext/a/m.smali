@@ -42,12 +42,8 @@
 
 # virtual methods
 .method protected varargs a([Lorg/json/JSONObject;)Ljava/lang/Void;
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/getuiext/a/m.smali"
-    const-string v8,  ".method protected varargs a([Lorg/json/JSONObject;)Ljava/lang/Void;"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     aget-object v0, p1, v0

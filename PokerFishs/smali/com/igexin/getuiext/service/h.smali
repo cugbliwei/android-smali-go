@@ -18,12 +18,8 @@
 .end method
 
 .method private a(ILandroid/content/Intent;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/service/h.smali"
-    const-string v4,  ".method private a(ILandroid/content/Intent;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     packed-switch p1, :pswitch_data_0
 
     :cond_0
@@ -97,12 +93,8 @@
 .end method
 
 .method private a(Landroid/content/Intent;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/service/h.smali"
-    const-string v3,  ".method private a(Landroid/content/Intent;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-nez p1, :cond_1
 
     :cond_0
@@ -136,12 +128,8 @@
 
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/service/h.smali"
-    const-string v4,  ".method public handleMessage(Landroid/os/Message;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, -0x1
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;

@@ -10,11 +10,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/a/g.smali"
-    const-string v2,  ".method static constructor <clinit>()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     sget-object v0, Lcom/igexin/push/config/k;->a:Ljava/lang/String;
 
@@ -24,11 +20,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/core/a/g.smali"
-    const-string v4,  ".method public constructor <init>()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     invoke-direct {p0}, Lcom/igexin/push/core/a/a;-><init>()V
 
@@ -114,11 +106,7 @@
 
 # virtual methods
 .method public a(Lcom/igexin/a/a/d/d;)Z
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/a/g.smali"
-    const-string v2,  ".method public a(Lcom/igexin/a/a/d/d;)Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const/4 v0, 0x0
 
@@ -126,11 +114,7 @@
 .end method
 
 .method public a(Ljava/lang/Object;)Z
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/core/a/g.smali"
-    const-string v4,  ".method public a(Ljava/lang/Object;)Z"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     instance-of v0, p1, Lcom/igexin/push/c/c/n;
 

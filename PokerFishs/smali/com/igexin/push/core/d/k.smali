@@ -4,11 +4,7 @@
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;[BI)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/d/k.smali"
-    const-string v1,  ".method public constructor <init>(Ljava/lang/String;[BI)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0, p1}, Lcom/igexin/push/e/a/b;-><init>(Ljava/lang/String;)V
 
@@ -18,11 +14,7 @@
 .end method
 
 .method private a([BI)V
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/core/d/k.smali"
-    const-string v6,  ".method private a([BI)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     new-instance v0, Lorg/json/JSONObject;
 
@@ -93,11 +85,7 @@
 
 # virtual methods
 .method public a([B)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/d/k.smali"
-    const-string v2,  ".method public a([B)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     new-instance v0, Ljava/lang/String;
 
@@ -107,11 +95,7 @@
 .end method
 
 .method public b()I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/d/k.smali"
-    const-string v2,  ".method public b()I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const/4 v0, 0x0
 

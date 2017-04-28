@@ -40,12 +40,8 @@
 .end method
 
 .method private a()Landroid/content/Intent;
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/sdk/PushManager.smali"
-    const-string v4,  ".method private a()Landroid/content/Intent;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.igexin.sdk.action.pushmanager"
@@ -62,12 +58,8 @@
 .end method
 
 .method private a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/PushManager.smali"
-    const-string v6,  ".method private a(Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     const-string v0, "MD5"
 
@@ -147,12 +139,8 @@
 .end method
 
 .method private a(Landroid/content/Context;)[B
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/sdk/PushManager.smali"
-    const-string v8,  ".method private a(Landroid/content/Context;)[B"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -385,12 +373,8 @@
 .end method
 
 .method public static getInstance()Lcom/igexin/sdk/PushManager;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/sdk/PushManager.smali"
-    const-string v2,  ".method public static getInstance()Lcom/igexin/sdk/PushManager;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     sget-object v0, Lcom/igexin/sdk/PushManager;->a:Lcom/igexin/sdk/PushManager;
 
     if-nez v0, :cond_0
@@ -410,12 +394,8 @@
 
 # virtual methods
 .method public bindAlias(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/sdk/PushManager.smali"
-    const-string v7,  ".method public bindAlias(Landroid/content/Context;Ljava/lang/String;)Z"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -464,12 +444,8 @@
 .end method
 
 .method public getClientid(Landroid/content/Context;)Ljava/lang/String;
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/PushManager.smali"
-    const-string v6,  ".method public getClientid(Landroid/content/Context;)Ljava/lang/String;"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/sdk/PushManager;->e:[B
 
     if-eqz v0, :cond_1
@@ -550,12 +526,8 @@
 .end method
 
 .method public initialize(Landroid/content/Context;)V
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/PushManager.smali"
-    const-string v6,  ".method public initialize(Landroid/content/Context;)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -806,12 +778,8 @@
 .end method
 
 .method public sendFeedbackMessage(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Z
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/sdk/PushManager.smali"
-    const-string v4,  ".method public sendFeedbackMessage(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Z"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-eqz p2, :cond_0
 
     if-eqz p3, :cond_0
@@ -865,12 +833,8 @@
 .end method
 
 .method public sendMessage(Landroid/content/Context;Ljava/lang/String;[B)Z
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/sdk/PushManager.smali"
-    const-string v7,  ".method public sendMessage(Landroid/content/Context;Ljava/lang/String;[B)Z"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -932,12 +896,8 @@
 .end method
 
 .method public setHeartbeatInterval(Landroid/content/Context;I)Z
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/sdk/PushManager.smali"
-    const-string v4,  ".method public setHeartbeatInterval(Landroid/content/Context;I)Z"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-gez p2, :cond_0
 
     const/4 v0, 0x0
@@ -968,12 +928,8 @@
 .end method
 
 .method public setSilentTime(Landroid/content/Context;II)Z
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/sdk/PushManager.smali"
-    const-string v4,  ".method public setSilentTime(Landroid/content/Context;II)Z"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-ltz p2, :cond_0
 
     const/16 v0, 0x18
@@ -1019,12 +975,8 @@
 .end method
 
 .method public setSocketTimeout(Landroid/content/Context;I)Z
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/sdk/PushManager.smali"
-    const-string v4,  ".method public setSocketTimeout(Landroid/content/Context;I)Z"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-gez p2, :cond_0
 
     const/4 v0, 0x0
@@ -1055,12 +1007,8 @@
 .end method
 
 .method public setTag(Landroid/content/Context;[Lcom/igexin/sdk/Tag;)I
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/sdk/PushManager.smali"
-    const-string v9,  ".method public setTag(Landroid/content/Context;[Lcom/igexin/sdk/Tag;)I"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v1, 0x4e26
 
     const/4 v0, 0x0
@@ -1193,12 +1141,8 @@
 .end method
 
 .method public stopService(Landroid/content/Context;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/sdk/PushManager.smali"
-    const-string v4,  ".method public stopService(Landroid/content/Context;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-direct {p0}, Lcom/igexin/sdk/PushManager;->a()Landroid/content/Intent;
 
     move-result-object v0
@@ -1215,12 +1159,8 @@
 .end method
 
 .method public turnOffPush(Landroid/content/Context;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/sdk/PushManager.smali"
-    const-string v4,  ".method public turnOffPush(Landroid/content/Context;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-direct {p0}, Lcom/igexin/sdk/PushManager;->a()Landroid/content/Intent;
 
     move-result-object v0
@@ -1237,12 +1177,8 @@
 .end method
 
 .method public turnOnPush(Landroid/content/Context;)V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/sdk/PushManager.smali"
-    const-string v5,  ".method public turnOnPush(Landroid/content/Context;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1296,12 +1232,8 @@
 .end method
 
 .method public unBindAlias(Landroid/content/Context;Ljava/lang/String;Z)Z
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/sdk/PushManager.smali"
-    const-string v7,  ".method public unBindAlias(Landroid/content/Context;Ljava/lang/String;Z)Z"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0

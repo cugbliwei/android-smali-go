@@ -426,12 +426,8 @@
 .end method
 
 .method private static a(ILjava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/download/h.smali"
-    const-string v7,  ".method private static a(ILjava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x1
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -575,12 +571,8 @@
 .end method
 
 .method private static a(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/h.smali"
-    const-string v4,  ".method private static a(Ljava/lang/String;ILjava/lang/String;I)Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     if-eqz p0, :cond_1
@@ -634,12 +626,8 @@
 .end method
 
 .method private static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/download/h.smali"
-    const-string v6,  ".method private static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v4, 0x3f
 
     const/16 v3, 0x2f
@@ -793,12 +781,8 @@
 .end method
 
 .method private static a(Ljava/lang/String;Z)Ljava/lang/String;
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/h.smali"
-    const-string v4,  ".method private static a(Ljava/lang/String;Z)Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     if-eqz p0, :cond_0
@@ -878,12 +862,8 @@
 .end method
 
 .method private static a(Lcom/igexin/download/i;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/h.smali"
-    const-string v3,  ".method private static a(Lcom/igexin/download/i;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :goto_0
     invoke-virtual {p0}, Lcom/igexin/download/i;->a()I
 
@@ -939,12 +919,8 @@
 .end method
 
 .method public static a(Ljava/lang/String;Ljava/util/Set;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/h.smali"
-    const-string v3,  ".method public static a(Ljava/lang/String;Ljava/util/Set;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-nez p0, :cond_1
 
     :cond_0
@@ -983,12 +959,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;)Z
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/download/h.smali"
-    const-string v6,  ".method public static a(Landroid/content/Context;)Z"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     const-string v0, "connectivity"
@@ -1040,12 +1012,8 @@
 .end method
 
 .method public static final a(Landroid/content/Context;J)Z
-    .locals 13
+    .locals 11
 
-    const-string v11, "======================== igexin/download/h.smali"
-    const-string v12,  ".method public static final a(Landroid/content/Context;J)Z"
-    invoke-static {v11,v12} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-wide/16 v8, 0x0
 
     const/4 v6, 0x0
@@ -1220,12 +1188,8 @@
 .end method
 
 .method public static a(Ljava/lang/String;)Z
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/download/h.smali"
-    const-string v5,  ".method public static a(Ljava/lang/String;)Z"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -1289,12 +1253,8 @@
 .end method
 
 .method private static b(Ljava/lang/String;)Ljava/lang/String;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/h.smali"
-    const-string v3,  ".method private static b(Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     sget-object v0, Lcom/igexin/download/h;->b:Ljava/util/regex/Pattern;
 
@@ -1329,12 +1289,8 @@
 .end method
 
 .method private static b(Lcom/igexin/download/i;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/h.smali"
-    const-string v3,  ".method private static b(Lcom/igexin/download/i;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Lcom/igexin/download/i;->a()I
 
     move-result v0
@@ -1429,12 +1385,8 @@
 .end method
 
 .method public static b(Landroid/content/Context;)Z
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/h.smali"
-    const-string v3,  ".method public static b(Landroid/content/Context;)Z"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x1
 
     const-string v0, "connectivity"
@@ -1472,12 +1424,8 @@
 .end method
 
 .method public static c(Landroid/content/Context;)Z
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/h.smali"
-    const-string v2,  ".method public static c(Landroid/content/Context;)Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-string v0, "connectivity"
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;

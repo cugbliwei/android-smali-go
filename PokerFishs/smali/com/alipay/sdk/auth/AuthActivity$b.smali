@@ -204,9 +204,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/alipay/sdk/auth/AuthActivity$b;->a:Lcom/alipay/sdk/auth/AuthActivity;
 
-    const-string v2, "com.eg.android.AlipayGphone"
-
-    invoke-static {v1, v2}, Lcom/alipay/sdk/util/l;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/alipay/sdk/util/l$a;
+    invoke-static {v1}, Lcom/alipay/sdk/util/l;->a(Landroid/content/Context;)Lcom/alipay/sdk/util/l$a;
 
     move-result-object v1
 

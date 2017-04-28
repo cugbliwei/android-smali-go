@@ -4,11 +4,7 @@
 
 # direct methods
 .method constructor <init>(Ljava/lang/String;Lcom/igexin/a/a/b/c;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/c/a/a.smali"
-    const-string v2,  ".method constructor <init>(Ljava/lang/String;Lcom/igexin/a/a/b/c;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const/4 v0, 0x1
 
@@ -22,11 +18,7 @@
 
 # virtual methods
 .method public a(Lcom/igexin/a/a/b/f;Lcom/igexin/a/a/b/e;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/c/a/a.smali"
-    const-string v5,  ".method public a(Lcom/igexin/a/a/b/f;Lcom/igexin/a/a/b/e;Ljava/lang/Object;)Ljava/lang/Object;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     instance-of v0, p3, Lcom/igexin/push/c/c/e;
 
@@ -119,11 +111,7 @@
 .end method
 
 .method public b(Lcom/igexin/a/a/b/f;Lcom/igexin/a/a/b/e;Ljava/lang/Object;)Lcom/igexin/a/a/d/a/f;
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/c/a/a.smali"
-    const-string v3,  ".method public b(Lcom/igexin/a/a/b/f;Lcom/igexin/a/a/b/e;Ljava/lang/Object;)Lcom/igexin/a/a/d/a/f;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     const/4 v0, 0x0
 
@@ -208,11 +196,7 @@
 .end method
 
 .method public synthetic c(Lcom/igexin/a/a/b/f;Lcom/igexin/a/a/b/e;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/c/a/a.smali"
-    const-string v2,  ".method public synthetic c(Lcom/igexin/a/a/b/f;Lcom/igexin/a/a/b/e;Ljava/lang/Object;)Ljava/lang/Object;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/igexin/push/c/a/a;->b(Lcom/igexin/a/a/b/f;Lcom/igexin/a/a/b/e;Ljava/lang/Object;)Lcom/igexin/a/a/d/a/f;
 

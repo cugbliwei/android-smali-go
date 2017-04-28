@@ -48,12 +48,8 @@
 .end method
 
 .method private a(Ljava/lang/String;ILjava/lang/String;J)V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/data/a.smali"
-    const-string v5,  ".method private a(Ljava/lang/String;ILjava/lang/String;J)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     new-instance v0, Landroid/content/ContentValues;
 
@@ -97,12 +93,8 @@
 .end method
 
 .method private c()V
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/getuiext/data/a.smali"
-    const-string v6,  ".method private c()V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     invoke-virtual {p0}, Lcom/igexin/getuiext/data/a;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -230,12 +222,8 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;)Landroid/database/Cursor;
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/getuiext/data/a.smali"
-    const-string v9,  ".method public a(Ljava/lang/String;)Landroid/database/Cursor;"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     move-object v0, p0
@@ -305,12 +293,8 @@
 .end method
 
 .method public a()V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/data/a.smali"
-    const-string v7,  ".method public a()V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Lcom/igexin/getuiext/data/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
@@ -333,12 +317,8 @@
 .end method
 
 .method public a(Ljava/lang/String;Landroid/content/ContentValues;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/data/a.smali"
-    const-string v3,  ".method public a(Ljava/lang/String;Landroid/content/ContentValues;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Lcom/igexin/getuiext/data/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
@@ -364,12 +344,8 @@
 .end method
 
 .method public a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/data/a.smali"
-    const-string v2,  ".method public a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Lcom/igexin/getuiext/data/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
@@ -393,12 +369,8 @@
 .end method
 
 .method public b()V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/data/a.smali"
-    const-string v7,  ".method public b()V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Lcom/igexin/getuiext/data/a;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
@@ -421,12 +393,8 @@
 .end method
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/data/a.smali"
-    const-string v2,  ".method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     const-string v0, "create table if not exists config (id integer primary key,name text,value text)"
 
@@ -452,12 +420,8 @@
 .end method
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/data/a.smali"
-    const-string v2,  ".method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     const-string v0, "DROP TABLE IF EXISTS config"
 

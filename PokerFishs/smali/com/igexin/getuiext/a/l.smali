@@ -23,12 +23,8 @@
 .end method
 
 .method private a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/a/l.smali"
-    const-string v7,  ".method private a1"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
@@ -359,12 +355,8 @@
 
 # virtual methods
 .method public a(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/getuiext/a/l.smali"
-    const-string v9,  ".method private a2"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v7, 0x0
 
     const-string v0, "pkgName"

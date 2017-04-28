@@ -38,11 +38,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public constructor <init>()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const/4 v0, 0x0
 
@@ -60,11 +56,7 @@
 
 # virtual methods
 .method public getAction()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getAction()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->a:Ljava/lang/String;
 
@@ -72,11 +64,7 @@
 .end method
 
 .method public getActionChains()Ljava/util/List;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getActionChains()Ljava/util/List;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->f:Ljava/util/List;
 
@@ -84,11 +72,7 @@
 .end method
 
 .method public getAppKey()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getAppKey()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->i:Ljava/lang/String;
 
@@ -96,11 +80,7 @@
 .end method
 
 .method public getAppid()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getAppid()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->b:Ljava/lang/String;
 
@@ -108,11 +88,7 @@
 .end method
 
 .method public getBaseAction(Ljava/lang/String;)Lcom/igexin/push/core/bean/BaseAction;
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v4,  ".method public getBaseAction(Ljava/lang/String;)Lcom/igexin/push/core/bean/BaseAction;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     invoke-virtual {p0}, Lcom/igexin/push/core/bean/PushTaskBean;->getActionChains()Ljava/util/List;
 
@@ -155,11 +131,7 @@
 .end method
 
 .method public getConditionMap()Ljava/util/Map;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getConditionMap()Ljava/util/Map;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->o:Ljava/util/Map;
 
@@ -167,11 +139,7 @@
 .end method
 
 .method public getCurrentActionid()I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getCurrentActionid()I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->j:I
 
@@ -179,11 +147,7 @@
 .end method
 
 .method public getId()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getId()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->c:Ljava/lang/String;
 
@@ -191,11 +155,7 @@
 .end method
 
 .method public getMessageId()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getMessageId()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->d:Ljava/lang/String;
 
@@ -203,11 +163,7 @@
 .end method
 
 .method public getMsgAddress()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getMsgAddress()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->h:Ljava/lang/String;
 
@@ -215,11 +171,7 @@
 .end method
 
 .method public getMsgExtra()[B
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getMsgExtra()[B"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->g:[B
 
@@ -227,11 +179,7 @@
 .end method
 
 .method public getPerActionid()I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getPerActionid()I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->k:I
 
@@ -239,11 +187,7 @@
 .end method
 
 .method public getStatus()I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getStatus()I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->p:I
 
@@ -251,11 +195,7 @@
 .end method
 
 .method public getTaskId()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public getTaskId()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->e:Ljava/lang/String;
 
@@ -263,11 +203,7 @@
 .end method
 
 .method public isCDNType()Z
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public isCDNType()Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-boolean v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->n:Z
 
@@ -275,11 +211,7 @@
 .end method
 
 .method public isHttpImg()Z
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public isHttpImg()Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-boolean v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->l:Z
 
@@ -287,11 +219,7 @@
 .end method
 
 .method public isStop()Z
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v2,  ".method public isStop()Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-boolean v0, p0, Lcom/igexin/push/core/bean/PushTaskBean;->m:Z
 
@@ -299,11 +227,7 @@
 .end method
 
 .method public setAction(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setAction(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->a:Ljava/lang/String;
 
@@ -311,11 +235,7 @@
 .end method
 
 .method public setActionChains(Ljava/util/List;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setActionChains(Ljava/util/List;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->f:Ljava/util/List;
 
@@ -323,11 +243,7 @@
 .end method
 
 .method public setAppKey(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setAppKey(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->i:Ljava/lang/String;
 
@@ -335,11 +251,7 @@
 .end method
 
 .method public setAppid(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setAppid(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->b:Ljava/lang/String;
 
@@ -347,11 +259,7 @@
 .end method
 
 .method public setCDNType(Z)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setCDNType(Z)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-boolean p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->n:Z
 
@@ -359,11 +267,7 @@
 .end method
 
 .method public setConditionMap(Ljava/util/Map;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setConditionMap(Ljava/util/Map;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->o:Ljava/util/Map;
 
@@ -371,11 +275,7 @@
 .end method
 
 .method public setCurrentActionid(I)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setCurrentActionid(I)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->j:I
 
@@ -383,11 +283,7 @@
 .end method
 
 .method public setHttpImg(Z)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setHttpImg(Z)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-boolean p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->l:Z
 
@@ -395,11 +291,7 @@
 .end method
 
 .method public setId(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setId(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->c:Ljava/lang/String;
 
@@ -407,11 +299,7 @@
 .end method
 
 .method public setMessageId(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setMessageId(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->d:Ljava/lang/String;
 
@@ -419,11 +307,7 @@
 .end method
 
 .method public setMsgAddress(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setMsgAddress(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->h:Ljava/lang/String;
 
@@ -431,11 +315,7 @@
 .end method
 
 .method public setMsgExtra([B)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setMsgExtra([B)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->g:[B
 
@@ -443,11 +323,7 @@
 .end method
 
 .method public setPerActionid(I)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setPerActionid(I)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->k:I
 
@@ -455,11 +331,7 @@
 .end method
 
 .method public setStatus(I)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setStatus(I)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->p:I
 
@@ -467,11 +339,7 @@
 .end method
 
 .method public setStop(Z)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setStop(Z)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-boolean p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->m:Z
 
@@ -479,11 +347,7 @@
 .end method
 
 .method public setTaskId(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/PushTaskBean.smali"
-    const-string v1,  ".method public setTaskId(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/PushTaskBean;->e:Ljava/lang/String;
 

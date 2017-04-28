@@ -60,19 +60,19 @@
 
     .line 357
     :cond_0
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v0
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v2}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
+    invoke-static {v0, v2}, Lcom/tencent/open/utils/e;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/e;
 
     move-result-object v0
 
     const-string v2, "Common_HttpRetryCount"
 
-    invoke-virtual {v0, v2}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v0, v2}, Lcom/tencent/open/utils/e;->a(Ljava/lang/String;)I
 
     move-result v0
 
@@ -117,7 +117,7 @@
 
     .line 366
     :try_start_1
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
@@ -156,7 +156,7 @@
     move-result-object v6
 
     .line 374
-    invoke-static {v6}, Lcom/tencent/open/utils/Util;->getBytesUTF8(Ljava/lang/String;)[B
+    invoke-static {v6}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v6
 

@@ -23,13 +23,13 @@
     .locals 0
 
     .prologue
-    .line 49
+    .line 51
     iput-object p1, p0, Lcom/alipay/sdk/widget/a$a;->a:Lcom/alipay/sdk/widget/a;
 
-    .line 50
+    .line 52
     invoke-direct {p0, p2}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
-    .line 51
+    .line 53
     return-void
 .end method
 
@@ -37,14 +37,14 @@
     .locals 1
 
     .prologue
-    .line 136
+    .line 139
     if-nez p0, :cond_0
 
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 137
+    .line 140
     :goto_0
     invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -52,14 +52,14 @@
 
     iget v0, v0, Landroid/util/DisplayMetrics;->density:F
 
-    .line 138
+    .line 141
     mul-float/2addr v0, p1
 
     float-to-int v0, v0
 
     return v0
 
-    .line 136
+    .line 139
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -74,8 +74,8 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 113
     .line 116
+    .line 119
     :try_start_0
     new-instance v2, Ljava/io/ByteArrayInputStream;
 
@@ -88,18 +88,18 @@
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 117
+    .line 120
     :try_start_1
     new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 118
+    .line 121
     const/16 v3, 0x1e0
 
     iput v3, v0, Landroid/graphics/BitmapFactory$Options;->inDensity:I
 
-    .line 119
+    .line 122
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -112,14 +112,14 @@
 
     iput v3, v0, Landroid/graphics/BitmapFactory$Options;->inTargetDensity:I
 
-    .line 120
+    .line 123
     const/4 v3, 0x0
 
     invoke-static {v2, v3, v0}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
     move-result-object v3
 
-    .line 121
+    .line 124
     new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -137,20 +137,19 @@
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 132
+    .line 130
     :goto_0
     return-object v0
 
-    .line 123
+    .line 126
     :catch_0
     move-exception v0
 
     move-object v0, v1
 
     :goto_1
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
-    .line 127
     :try_start_3
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_3
@@ -158,36 +157,36 @@
 
     move-object v0, v1
 
-    .line 129
     goto :goto_0
 
     :catch_1
     move-exception v0
 
+    :cond_0
     move-object v0, v1
 
+    .line 134
     goto :goto_0
 
-    .line 125
+    .line 128
     :catchall_0
     move-exception v0
 
     move-object v2, v1
 
     :goto_2
-    if-eqz v2, :cond_0
+    if-eqz v2, :cond_1
 
-    .line 127
     :try_start_4
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 129
-    :cond_0
+    :cond_1
     :goto_3
     throw v0
 
+    .line 134
     :catch_2
     move-exception v1
 
@@ -198,24 +197,19 @@
 
     goto :goto_3
 
-    .line 125
+    .line 128
     :catchall_1
     move-exception v0
 
     goto :goto_2
 
-    .line 123
+    .line 126
     :catch_4
     move-exception v0
 
     move-object v0, v2
 
     goto :goto_1
-
-    :cond_1
-    move-object v0, v1
-
-    goto :goto_0
 .end method
 
 .method private a(Landroid/content/Context;)Landroid/view/View;
@@ -232,12 +226,12 @@
 
     const/4 v9, 0x0
 
-    .line 63
+    .line 66
     new-instance v7, Landroid/widget/LinearLayout;
 
     invoke-direct {v7, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 64
+    .line 67
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
     const/high16 v1, 0x42480000    # 50.0f
@@ -248,28 +242,28 @@
 
     invoke-direct {v0, v10, v1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    .line 66
+    .line 69
     const/16 v1, 0x11
 
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
-    .line 68
+    .line 71
     invoke-virtual {v7, v9}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 69
+    .line 72
     invoke-virtual {v7, v0}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 71
+    .line 74
     new-instance v0, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {v0}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
-    .line 72
+    .line 75
     const v1, -0x1ae0dcc9
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 73
+    .line 76
     const/high16 v1, 0x40a00000    # 5.0f
 
     invoke-static {p1, v1}, Lcom/alipay/sdk/widget/a$a;->a(Landroid/content/Context;F)I
@@ -280,15 +274,15 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 74
+    .line 77
     invoke-virtual {v7, v0}, Landroid/widget/LinearLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 77
+    .line 80
     new-instance v8, Landroid/widget/ImageView;
 
     invoke-direct {v8, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 78
+    .line 81
     new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
 
     const/high16 v1, 0x41a00000    # 20.0f
@@ -305,12 +299,12 @@
 
     invoke-direct {v0, v1, v2}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 80
+    .line 83
     const/16 v1, 0x10
 
     iput v1, v0, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 81
+    .line 84
     iget-object v1, p0, Lcom/alipay/sdk/widget/a$a;->a:Lcom/alipay/sdk/widget/a;
 
     invoke-static {v1}, Lcom/alipay/sdk/widget/a;->a(Lcom/alipay/sdk/widget/a;)Landroid/app/Activity;
@@ -355,15 +349,15 @@
 
     invoke-virtual {v0, v1, v2, v3, v5}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 84
+    .line 87
     invoke-virtual {v8, v0}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 85
+    .line 88
     sget-object v0, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v8, v0}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 86
+    .line 89
     sget-object v0, Lcom/alipay/sdk/widget/a;->d:Ljava/lang/String;
 
     invoke-static {p1, v0}, Lcom/alipay/sdk/widget/a$a;->a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
@@ -372,7 +366,7 @@
 
     invoke-virtual {v8, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 87
+    .line 90
     new-instance v0, Landroid/view/animation/RotateAnimation;
 
     const/4 v1, 0x0
@@ -387,32 +381,32 @@
 
     invoke-direct/range {v0 .. v6}, Landroid/view/animation/RotateAnimation;-><init>(FFIFIF)V
 
-    .line 89
+    .line 92
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setRepeatCount(I)V
 
-    .line 90
+    .line 93
     const-wide/16 v2, 0x384
 
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    .line 91
+    .line 94
     new-instance v1, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v1}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 92
+    .line 95
     invoke-virtual {v8, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 95
+    .line 98
     new-instance v1, Landroid/widget/TextView;
 
     invoke-direct {v1, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 96
+    .line 99
     iget-object v0, p0, Lcom/alipay/sdk/widget/a$a;->a:Lcom/alipay/sdk/widget/a;
 
     invoke-static {v0}, Lcom/alipay/sdk/widget/a;->b(Lcom/alipay/sdk/widget/a;)Ljava/lang/String;
@@ -430,46 +424,46 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 97
+    .line 100
     const/high16 v0, 0x41800000    # 16.0f
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 98
+    .line 101
     const/4 v0, -0x1
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 100
+    .line 103
     new-instance v0, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v0, v10, v10}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 102
+    .line 105
     const/16 v2, 0x10
 
     iput v2, v0, Landroid/widget/LinearLayout$LayoutParams;->gravity:I
 
-    .line 103
+    .line 106
     invoke-static {p1, v11}, Lcom/alipay/sdk/widget/a$a;->a(Landroid/content/Context;F)I
 
     move-result v2
 
     invoke-virtual {v0, v9, v9, v2, v9}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 104
+    .line 107
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 106
+    .line 109
     invoke-virtual {v7, v8}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 107
+    .line 110
     invoke-virtual {v7, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 109
+    .line 112
     return-object v7
 
-    .line 96
+    .line 99
     :cond_0
     iget-object v0, p0, Lcom/alipay/sdk/widget/a$a;->a:Lcom/alipay/sdk/widget/a;
 
@@ -496,10 +490,10 @@
 
     const/4 v10, 0x0
 
-    .line 55
+    .line 57
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->onCreate(Landroid/os/Bundle;)V
 
-    .line 56
+    .line 58
     invoke-virtual {p0}, Lcom/alipay/sdk/widget/a$a;->getContext()Landroid/content/Context;
 
     move-result-object v7
@@ -709,13 +703,26 @@
 
     invoke-virtual {p0, v8}, Lcom/alipay/sdk/widget/a$a;->setContentView(Landroid/view/View;)V
 
-    .line 57
+    .line 59
     invoke-virtual {p0, v10}, Lcom/alipay/sdk/widget/a$a;->setCancelable(Z)V
 
-    .line 58
+    .line 60
+    invoke-virtual {p0}, Lcom/alipay/sdk/widget/a$a;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/graphics/drawable/ColorDrawable;
+
+    const v2, 0x106000d
+
+    invoke-direct {v1, v2}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    .line 61
     return-void
 
-    .line 56
+    .line 58
     :cond_0
     iget-object v0, p0, Lcom/alipay/sdk/widget/a$a;->a:Lcom/alipay/sdk/widget/a;
 

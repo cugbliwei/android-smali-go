@@ -3,6 +3,62 @@
 
 
 # direct methods
+.method public static declared-synchronized a()Ljava/util/Map;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    const-class v1, Lcom/alipay/apmobilesecuritysdk/d/d;
+
+    monitor-enter v1
+
+    :try_start_0
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :try_start_1
+    const-string v2, "AE16"
+
+    new-instance v3, Lcom/alipay/apmobilesecuritysdk/c/b;
+
+    invoke-direct {v3}, Lcom/alipay/apmobilesecuritysdk/c/b;-><init>()V
+
+    const-string v3, ""
+
+    invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :goto_0
+    monitor-exit v1
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+
+    throw v0
+
+    :catch_0
+    move-exception v2
+
+    goto :goto_0
+.end method
+
 .method public static declared-synchronized a(Landroid/content/Context;)Ljava/util/Map;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;

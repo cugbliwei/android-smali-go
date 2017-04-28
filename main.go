@@ -60,5 +60,5 @@ func readDir(root string) {
 }
 
 func main() {
-	readDir("./PokerFishs/smali/com/igexin/push/")
+	readDir("./PokerFishs1/smali/com/unity3d/")
 }

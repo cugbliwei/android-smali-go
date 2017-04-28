@@ -23,7 +23,7 @@
 
 # virtual methods
 .method public final run()V
-    .locals 2
+    .locals 3
 
     const/4 v0, 0x0
 
@@ -50,11 +50,23 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/util/LinkedList;->pollFirst()Ljava/lang/Object;
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Ljava/util/LinkedList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Runnable;
+
+    iget-object v1, p0, Lcom/alipay/apmobilesecuritysdk/g/c;->a:Lcom/alipay/apmobilesecuritysdk/g/b;
+
+    invoke-static {v1}, Lcom/alipay/apmobilesecuritysdk/g/b;->a(Lcom/alipay/apmobilesecuritysdk/g/b;)Ljava/util/LinkedList;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Ljava/util/LinkedList;->remove(I)Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 

@@ -78,12 +78,8 @@
 
 # virtual methods
 .method final a()Lcom/igexin/a/a/d/d;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/a/a/d/f.smali"
-    const-string v5,  ".method final a()Lcom/igexin/a/a/d/d;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :cond_0
     :goto_0
     :try_start_0
@@ -144,12 +140,8 @@
 .end method
 
 .method final a(Lcom/igexin/a/a/d/d;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/d/f.smali"
-    const-string v4,  ".method final a(Lcom/igexin/a/a/d/d;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-nez p1, :cond_0
 
     new-instance v0, Ljava/lang/NullPointerException;
@@ -212,12 +204,8 @@
 .end method
 
 .method final a(Lcom/igexin/a/a/d/g;)Z
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/d/f.smali"
-    const-string v4,  ".method final a(Lcom/igexin/a/a/d/g;)Z"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v1, p0, Lcom/igexin/a/a/d/f;->c:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
@@ -296,12 +284,8 @@
 .end method
 
 .method final b(Lcom/igexin/a/a/d/d;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/d/f.smali"
-    const-string v3,  ".method final b(Lcom/igexin/a/a/d/d;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget v0, p0, Lcom/igexin/a/a/d/f;->g:I
 
     iget v1, p0, Lcom/igexin/a/a/d/f;->f:I
@@ -344,12 +328,8 @@
 .end method
 
 .method final c(Lcom/igexin/a/a/d/d;)Z
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/a/a/d/f.smali"
-    const-string v5,  ".method final c(Lcom/igexin/a/a/d/d;)Z"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     iget-object v1, p0, Lcom/igexin/a/a/d/f;->c:Ljava/util/concurrent/locks/ReentrantLock;
@@ -395,12 +375,8 @@
 .end method
 
 .method final d(Lcom/igexin/a/a/d/d;)Z
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/a/a/d/f.smali"
-    const-string v5,  ".method final d(Lcom/igexin/a/a/d/d;)Z"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     iget-object v1, p0, Lcom/igexin/a/a/d/f;->c:Ljava/util/concurrent/locks/ReentrantLock;
@@ -446,12 +422,8 @@
 .end method
 
 .method final e(Lcom/igexin/a/a/d/d;)V
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/a/a/d/f.smali"
-    const-string v6,  ".method final e(Lcom/igexin/a/a/d/d;)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     iget-object v1, p0, Lcom/igexin/a/a/d/f;->c:Ljava/util/concurrent/locks/ReentrantLock;
@@ -506,12 +478,8 @@
 .end method
 
 .method final f(Lcom/igexin/a/a/d/d;)Ljava/lang/Thread;
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/d/f.smali"
-    const-string v4,  ".method final f(Lcom/igexin/a/a/d/d;)Ljava/lang/Thread;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lcom/igexin/a/a/d/g;
 
     invoke-direct {v0, p0, p1}, Lcom/igexin/a/a/d/g;-><init>(Lcom/igexin/a/a/d/f;Lcom/igexin/a/a/d/d;)V

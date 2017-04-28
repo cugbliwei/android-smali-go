@@ -19,12 +19,8 @@
 .end method
 
 .method public static a(Landroid/os/IBinder;)Lcom/igexin/sdk/aidl/IGexinMsgService;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/sdk/aldl/c.smali"
-    const-string v3,  ".method public static a(Landroid/os/IBinder;)Lcom/igexin/sdk/aidl/IGexinMsgService;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-nez p0, :cond_0
 
     const/4 v0, 0x0
@@ -66,12 +62,8 @@
 .end method
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/sdk/aldl/c.smali"
-    const-string v8,  ".method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v6, 0x1
 
     sparse-switch p1, :sswitch_data_0

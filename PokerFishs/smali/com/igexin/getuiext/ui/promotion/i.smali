@@ -36,12 +36,8 @@
 
 # virtual methods
 .method public a(II)Landroid/view/View;
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/ui/promotion/i.smali"
-    const-string v7,  ".method public a(II)Landroid/view/View;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Landroid/widget/RelativeLayout;
 
     iget-object v1, p0, Lcom/igexin/getuiext/ui/promotion/c;->b:Landroid/content/Context;
@@ -124,12 +120,8 @@
 .end method
 
 .method protected b(Landroid/view/View;)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/ui/promotion/i.smali"
-    const-string v7,  ".method protected b(Landroid/view/View;)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v5, 0x0
 
     iget-object v0, p0, Lcom/igexin/getuiext/ui/promotion/i;->b:Landroid/content/Context;
@@ -294,12 +286,8 @@
 .end method
 
 .method public c(Ljava/lang/String;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/promotion/i.smali"
-    const-string v4,  ".method public c(Ljava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0, p1}, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V

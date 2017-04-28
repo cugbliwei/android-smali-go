@@ -140,7 +140,7 @@
     sput v0, Lcom/tencent/open/a/c;->g:I
 
     .line 37
-    const/16 v0, 0x2000
+    const/16 v0, 0x400
 
     sput v0, Lcom/tencent/open/a/c;->h:I
 

@@ -22,11 +22,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 10
-
-    const-string v8, "======================== PokerFishs/smali/com/igexin/push/core/c.smali"
-    const-string v9,  ".method static constructor <clinit>()V"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 8
 
     const/4 v7, 0x4
 
@@ -140,11 +136,7 @@
 .end method
 
 .method private constructor <init>(Ljava/lang/String;I)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/c.smali"
-    const-string v1,  ".method private constructor <init>(Ljava/lang/String;I)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
@@ -152,11 +144,7 @@
 .end method
 
 .method public static a()[Lcom/igexin/push/core/c;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/c.smali"
-    const-string v2,  ".method public static a()[Lcom/igexin/push/core/c;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     sget-object v0, Lcom/igexin/push/core/c;->h:[Lcom/igexin/push/core/c;
 

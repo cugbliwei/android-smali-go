@@ -2,6 +2,14 @@
 .super Ljava/lang/RuntimeException;
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/alipay/android/phone/mrpc/core/RpcException$ErrorCode;
+    }
+.end annotation
+
+
 # static fields
 .field private static final serialVersionUID:J = -0x27e79b9ef4131536L
 
@@ -18,7 +26,7 @@
 .method public constructor <init>(Ljava/lang/Integer;Ljava/lang/String;)V
     .locals 1
 
-    invoke-static {p1, p2}, Lcom/alipay/android/phone/mrpc/core/RpcException;->a(Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Lcom/alipay/android/phone/mrpc/core/RpcException;->format(Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -38,7 +46,7 @@
 .method public constructor <init>(Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
 
-    invoke-static {p1, p2}, Lcom/alipay/android/phone/mrpc/core/RpcException;->a(Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Lcom/alipay/android/phone/mrpc/core/RpcException;->format(Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -83,7 +91,7 @@
     return-void
 .end method
 
-.method private static a(Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;
+.method protected static format(Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
     new-instance v0, Ljava/lang/StringBuilder;

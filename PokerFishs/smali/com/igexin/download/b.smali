@@ -28,12 +28,8 @@
 
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/b.smali"
-    const-string v2,  ".method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/b;->a:Lcom/igexin/download/DownloadProvider;
 
     invoke-static {v0, p1}, Lcom/igexin/download/DownloadProvider;->a(Lcom/igexin/download/DownloadProvider;Landroid/database/sqlite/SQLiteDatabase;)V
@@ -42,12 +38,8 @@
 .end method
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/b.smali"
-    const-string v2,  "onUpgrade"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v0, 0x1f
 
     if-ne p2, v0, :cond_0

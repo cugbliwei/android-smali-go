@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 102
+    .line 110
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1
@@ -35,38 +35,38 @@
     .locals 3
 
     .prologue
-    .line 105
+    .line 113
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 106
+    .line 114
     .local v0, "filter":Landroid/content/IntentFilter;
     const-string v1, "android.intent.action.BATTERY_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 107
+    .line 115
     const-string v1, "android.intent.action.BATTERY_LOW"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 108
+    .line 116
     const-string v1, "android.intent.action.BATTERY_OKAY"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 109
+    .line 117
     sget-object v1, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
 
-    .line 110
+    .line 118
     new-instance v2, Lcom/p/BatteryBroadcastReciver;
 
     invoke-direct {v2}, Lcom/p/BatteryBroadcastReciver;-><init>()V
 
-    .line 109
+    .line 117
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 111
+    .line 119
     return-void
 .end method

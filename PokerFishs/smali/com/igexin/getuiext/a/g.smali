@@ -29,12 +29,8 @@
 .end method
 
 .method private a(Ljava/lang/String;Landroid/content/Intent;)Ljava/lang/String;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/a/g.smali"
-    const-string v3,  ".method private a(Ljava/lang/String;Landroid/content/Intent;)Ljava/lang/String;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     if-nez p1, :cond_1
@@ -952,12 +948,8 @@
 
 # virtual methods
 .method a(Landroid/content/Context;Lcom/igexin/getuiext/data/a/e;Ljava/lang/String;Ljava/lang/String;I)Landroid/app/PendingIntent;
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/a/g.smali"
-    const-string v7,  ".method a"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.igexin.increment"

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/tencent/connect/share/a;->a(Landroid/content/Context;Ljava/lang/String;Lcom/tencent/open/utils/AsynLoadImgBack;)V
+    value = Lcom/tencent/connect/share/a;->a(Landroid/content/Context;Ljava/lang/String;Lcom/tencent/open/utils/c;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -82,7 +82,7 @@
     .line 86
     iget-object v2, p0, Lcom/tencent/connect/share/a$2;->a:Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/tencent/open/utils/Util;->encrypt(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/tencent/open/utils/i;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 

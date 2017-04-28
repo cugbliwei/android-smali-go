@@ -24,12 +24,8 @@
 
 # virtual methods
 .method public onChange(Z)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/d.smali"
-    const-string v2,  "onChange"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/d;->a:Lcom/igexin/download/DownloadService;
 
     invoke-static {v0}, Lcom/igexin/download/DownloadService;->a(Lcom/igexin/download/DownloadService;)V

@@ -26,7 +26,7 @@
 
     sput-object v0, Lcom/alipay/apmobilesecuritysdk/d/e;->a:Ljava/util/Map;
 
-    const/16 v0, 0x31
+    const/16 v0, 0x30
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -188,137 +188,131 @@
 
     const/16 v1, 0x1a
 
-    const-string v2, "AD32"
+    const-string v2, "AD34"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1b
 
-    const-string v2, "AD34"
+    const-string v2, "AA1"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1c
 
-    const-string v2, "AA1"
+    const-string v2, "AA2"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1d
 
-    const-string v2, "AA2"
+    const-string v2, "AA3"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1e
 
-    const-string v2, "AA3"
+    const-string v2, "AA4"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x1f
 
-    const-string v2, "AA4"
+    const-string v2, "AA5"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x20
 
-    const-string v2, "AA5"
+    const-string v2, "AC4"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x21
 
-    const-string v2, "AC4"
+    const-string v2, "AE1"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x22
 
-    const-string v2, "AE1"
+    const-string v2, "AE2"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x23
 
-    const-string v2, "AE2"
+    const-string v2, "AE3"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x24
 
-    const-string v2, "AE3"
+    const-string v2, "AE4"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x25
 
-    const-string v2, "AE4"
+    const-string v2, "AE5"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x26
 
-    const-string v2, "AE5"
+    const-string v2, "AE6"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x27
 
-    const-string v2, "AE6"
+    const-string v2, "AE7"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x28
 
-    const-string v2, "AE7"
+    const-string v2, "AE8"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x29
 
-    const-string v2, "AE8"
+    const-string v2, "AE9"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2a
 
-    const-string v2, "AE9"
+    const-string v2, "AE10"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2b
 
-    const-string v2, "AE10"
+    const-string v2, "AE11"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2c
 
-    const-string v2, "AE11"
+    const-string v2, "AE12"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2d
 
-    const-string v2, "AE12"
+    const-string v2, "AE13"
 
     aput-object v2, v0, v1
 
     const/16 v1, 0x2e
 
-    const-string v2, "AE13"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x2f
-
     const-string v2, "AE14"
 
     aput-object v2, v0, v1
 
-    const/16 v1, 0x30
+    const/16 v1, 0x2f
 
     const-string v2, "AE15"
 
@@ -438,7 +432,7 @@
 .end method
 
 .method public static declared-synchronized a(Landroid/content/Context;Ljava/util/Map;)Ljava/util/Map;
-    .locals 2
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -468,6 +462,14 @@
     invoke-static {p0, p1}, Lcom/alipay/apmobilesecuritysdk/d/e;->c(Landroid/content/Context;Ljava/util/Map;)V
 
     :cond_0
+    sget-object v0, Lcom/alipay/apmobilesecuritysdk/d/e;->a:Ljava/util/Map;
+
+    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/d/d;->a()Ljava/util/Map;
+
+    move-result-object v2
+
+    invoke-interface {v0, v2}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+
     sget-object v0, Lcom/alipay/apmobilesecuritysdk/d/e;->a:Ljava/util/Map;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

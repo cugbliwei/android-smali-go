@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field private mL:Lcom/tencent/open/TDialog$OnTimeListener;
+.field final synthetic a:Lcom/tencent/open/TDialog;
 
-.field final synthetic this$0:Lcom/tencent/open/TDialog;
+.field private b:Lcom/tencent/open/TDialog$OnTimeListener;
 
 
 # direct methods
@@ -26,13 +26,13 @@
 
     .prologue
     .line 92
-    iput-object p1, p0, Lcom/tencent/open/TDialog$THandler;->this$0:Lcom/tencent/open/TDialog;
+    iput-object p1, p0, Lcom/tencent/open/TDialog$THandler;->a:Lcom/tencent/open/TDialog;
 
     .line 93
     invoke-direct {p0, p3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     .line 94
-    iput-object p2, p0, Lcom/tencent/open/TDialog$THandler;->mL:Lcom/tencent/open/TDialog$OnTimeListener;
+    iput-object p2, p0, Lcom/tencent/open/TDialog$THandler;->b:Lcom/tencent/open/TDialog$OnTimeListener;
 
     .line 95
     return-void
@@ -82,20 +82,19 @@
 
     .line 102
     :pswitch_1
-    iget-object v1, p0, Lcom/tencent/open/TDialog$THandler;->mL:Lcom/tencent/open/TDialog$OnTimeListener;
+    iget-object v1, p0, Lcom/tencent/open/TDialog$THandler;->b:Lcom/tencent/open/TDialog$OnTimeListener;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/String;
 
-    # invokes: Lcom/tencent/open/TDialog$OnTimeListener;->onComplete(Ljava/lang/String;)V
-    invoke-static {v1, v0}, Lcom/tencent/open/TDialog$OnTimeListener;->access$000(Lcom/tencent/open/TDialog$OnTimeListener;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/tencent/open/TDialog$OnTimeListener;->a(Lcom/tencent/open/TDialog$OnTimeListener;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 106
     :pswitch_2
-    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->mL:Lcom/tencent/open/TDialog$OnTimeListener;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->b:Lcom/tencent/open/TDialog$OnTimeListener;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog$OnTimeListener;->onCancel()V
 
@@ -103,7 +102,7 @@
 
     .line 112
     :pswitch_3
-    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -111,7 +110,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -124,7 +123,7 @@
     if-eqz v0, :cond_0
 
     .line 113
-    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -146,7 +145,7 @@
 
     .line 120
     :pswitch_4
-    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -154,7 +153,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -167,7 +166,7 @@
     if-eqz v0, :cond_0
 
     .line 121
-    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$THandler;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 

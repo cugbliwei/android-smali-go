@@ -86,35 +86,29 @@
     :goto_1
     if-eqz v3, :cond_0
 
-    .line 31
     :try_start_4
     invoke-virtual {v3}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 35
     :cond_0
     :goto_2
     if-eqz v2, :cond_1
 
-    .line 37
     :try_start_5
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_4
 
-    .line 41
     :cond_1
     :goto_3
     if-eqz v1, :cond_2
 
-    .line 43
     :try_start_6
     invoke-virtual {v1}, Ljava/util/zip/GZIPOutputStream;->close()V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_5
 
-    .line 45
     :cond_2
     :goto_4
     throw v0
@@ -134,27 +128,25 @@
 
     move-result-object v0
 
-    .line 29
+    .line 28
     :try_start_8
     invoke-virtual {v4}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_8
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_0
 
-    .line 35
     :goto_5
     :try_start_9
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_1
 
-    .line 41
     :goto_6
     :try_start_a
     invoke-virtual {v1}, Ljava/util/zip/GZIPOutputStream;->close()V
     :try_end_a
     .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_2
 
-    .line 48
+    .line 31
     :goto_7
     return-object v0
 
@@ -168,7 +160,7 @@
 
     goto :goto_6
 
-    .line 45
+    .line 47
     :catch_2
     move-exception v1
 
@@ -293,28 +285,24 @@
 
     move-object v3, v4
 
-    .line 70
     :goto_1
     :try_start_4
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 74
     :goto_2
     :try_start_5
     invoke-virtual {v1}, Ljava/util/zip/GZIPInputStream;->close()V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_4
 
-    .line 78
     :goto_3
     :try_start_6
     invoke-virtual {v3}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_5
 
-    .line 80
     :goto_4
     throw v0
 
@@ -330,27 +318,25 @@
 
     move-result-object v0
 
-    .line 70
+    .line 68
     :try_start_8
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_8
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_0
 
-    .line 74
     :goto_5
     :try_start_9
     invoke-virtual {v1}, Ljava/util/zip/GZIPInputStream;->close()V
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_1
 
-    .line 78
     :goto_6
     :try_start_a
     invoke-virtual {v4}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_a
     .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_2
 
-    .line 82
+    .line 70
     :goto_7
     return-object v0
 

@@ -84,14 +84,14 @@
     iput-object v0, p0, Lcom/tencent/open/b/g;->c:Ljava/util/List;
 
     .line 114
-    invoke-static {}, Lcom/tencent/open/utils/ThreadManager;->newSerialExecutor()Ljava/util/concurrent/Executor;
+    invoke-static {}, Lcom/tencent/open/utils/h;->b()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/tencent/open/b/g;->g:Ljava/util/concurrent/Executor;
 
     .line 115
-    invoke-static {}, Lcom/tencent/open/utils/ThreadManager;->newSerialExecutor()Ljava/util/concurrent/Executor;
+    invoke-static {}, Lcom/tencent/open/utils/h;->b()Ljava/util/concurrent/Executor;
 
     move-result-object v0
 
@@ -207,17 +207,17 @@
     if-nez p1, :cond_1
 
     .line 492
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
+    invoke-static {v0, v1}, Lcom/tencent/open/utils/e;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/e;
 
     move-result-object v0
 
     const-string v1, "Common_CGIReportFrequencySuccess"
 
-    invoke-virtual {v0, v1}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, Lcom/tencent/open/utils/e;->a(Ljava/lang/String;)I
 
     move-result v0
 
@@ -233,17 +233,17 @@
 
     .line 497
     :cond_1
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
+    invoke-static {v0, v1}, Lcom/tencent/open/utils/e;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/e;
 
     move-result-object v0
 
     const-string v1, "Common_CGIReportFrequencyFailed"
 
-    invoke-virtual {v0, v1}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, Lcom/tencent/open/utils/e;->a(Ljava/lang/String;)I
 
     move-result v0
 
@@ -523,7 +523,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/tencent/open/b/g$6;-><init>(Lcom/tencent/open/b/g;Landroid/os/Bundle;Ljava/lang/String;ZLjava/lang/String;)V
 
-    invoke-static {v0}, Lcom/tencent/open/utils/ThreadManager;->executeOnSubThread(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lcom/tencent/open/utils/h;->a(Ljava/lang/Runnable;)V
 
     .line 808
     return-void
@@ -550,17 +550,17 @@
     if-eqz v1, :cond_3
 
     .line 464
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1, v3}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
+    invoke-static {v1, v3}, Lcom/tencent/open/utils/e;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/e;
 
     move-result-object v1
 
     const-string v3, "Common_CGIReportMaxcount"
 
-    invoke-virtual {v1, v3}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v1, v3}, Lcom/tencent/open/utils/e;->a(Ljava/lang/String;)I
 
     move-result v1
 
@@ -639,17 +639,17 @@
     if-eqz v1, :cond_4
 
     .line 468
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1, v3}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
+    invoke-static {v1, v3}, Lcom/tencent/open/utils/e;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/e;
 
     move-result-object v1
 
     const-string v3, "Agent_ReportBatchCount"
 
-    invoke-virtual {v1, v3}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v1, v3}, Lcom/tencent/open/utils/e;->a(Ljava/lang/String;)I
 
     move-result v1
 
@@ -1003,7 +1003,7 @@
     .line 534
     const-string v0, "releaseversion"
 
-    const-string v4, "OpenSdk_2.9.4.lite"
+    const-string v4, "OpenSdk_3.1.2.lite"
 
     invoke-virtual {v3, v0, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1017,7 +1017,7 @@
     .line 536
     const-string v0, "qua"
 
-    const-string v4, "V1_AND_OpenSDK_2.9.4.lite_1077_RDM_B"
+    const-string v4, "V1_AND_OpenSDK_3.1.2.lite_1077_RDM_B"
 
     invoke-virtual {v3, v0, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -1333,7 +1333,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v5
 

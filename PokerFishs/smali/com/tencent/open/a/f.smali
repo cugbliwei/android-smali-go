@@ -311,7 +311,7 @@
     :cond_1
     new-instance v0, Ljava/io/File;
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getFilesDir()Ljava/io/File;
+    invoke-static {}, Lcom/tencent/open/utils/d;->c()Ljava/io/File;
 
     move-result-object v2
 
@@ -393,7 +393,7 @@
     if-eqz v0, :cond_0
 
     .line 78
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getPackageName()Ljava/lang/String;
+    invoke-static {}, Lcom/tencent/open/utils/d;->b()Ljava/lang/String;
 
     move-result-object v0
 
@@ -465,7 +465,7 @@
 
     move-result-object v0
 
-    const-string v1, "2.9.4.lite"
+    const-string v1, "3.1.2.lite"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

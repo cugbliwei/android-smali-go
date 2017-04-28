@@ -23,12 +23,8 @@
 
 # virtual methods
 .method public a(Lcom/igexin/getuiext/data/a/c;Lcom/igexin/getuiext/data/a/c;)I
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/a/d.smali"
-    const-string v3,  ".method public a(Lcom/igexin/getuiext/data/a/c;Lcom/igexin/getuiext/data/a/c;)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p1, Lcom/igexin/getuiext/data/a/c;->b:Ljava/lang/String;
 
     iget-object v1, p2, Lcom/igexin/getuiext/data/a/c;->b:Ljava/lang/String;

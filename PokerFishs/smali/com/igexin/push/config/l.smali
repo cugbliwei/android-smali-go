@@ -52,11 +52,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/config/l.smali"
-    const-string v5,  ".method static constructor <clinit>()V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     const/4 v3, 0x0
 

@@ -65,7 +65,7 @@
 
     const-string v3, "AA4"
 
-    const-string v4, "3.2.0-20160621"
+    const-string v4, "3.2.2-20160830"
 
     invoke-interface {v2, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

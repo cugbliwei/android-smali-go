@@ -6,9 +6,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lcom/tencent/open/utils/HttpUtils$MyX509TrustManager;,
-        Lcom/tencent/open/utils/HttpUtils$CustomSSLSocketFactory;,
-        Lcom/tencent/open/utils/HttpUtils$NetworkProxy;,
+        Lcom/tencent/open/utils/HttpUtils$b;,
+        Lcom/tencent/open/utils/HttpUtils$a;,
+        Lcom/tencent/open/utils/HttpUtils$c;,
         Lcom/tencent/open/utils/HttpUtils$NetworkUnavailableException;,
         Lcom/tencent/open/utils/HttpUtils$HttpStatusException;
     }
@@ -1251,9 +1251,9 @@
     invoke-virtual {v2, v4, v5}, Ljava/security/KeyStore;->load(Ljava/io/InputStream;[C)V
 
     .line 641
-    new-instance v4, Lcom/tencent/open/utils/HttpUtils$CustomSSLSocketFactory;
+    new-instance v4, Lcom/tencent/open/utils/HttpUtils$a;
 
-    invoke-direct {v4, v2}, Lcom/tencent/open/utils/HttpUtils$CustomSSLSocketFactory;-><init>(Ljava/security/KeyStore;)V
+    invoke-direct {v4, v2}, Lcom/tencent/open/utils/HttpUtils$a;-><init>(Ljava/security/KeyStore;)V
 
     .line 642
     sget-object v2, Lorg/apache/http/conn/ssl/SSLSocketFactory;->STRICT_HOSTNAME_VERIFIER:Lorg/apache/http/conn/ssl/X509HostnameVerifier;
@@ -1283,7 +1283,7 @@
     if-eqz p0, :cond_5
 
     .line 658
-    invoke-static {p0, p1}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
+    invoke-static {p0, p1}, Lcom/tencent/open/utils/e;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/e;
 
     move-result-object v1
 
@@ -1296,14 +1296,14 @@
     .line 663
     const-string v0, "Common_HttpConnectionTimeout"
 
-    invoke-virtual {v2, v0}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v2, v0}, Lcom/tencent/open/utils/e;->a(Ljava/lang/String;)I
 
     move-result v1
 
     .line 664
     const-string v0, "Common_SocketConnectionTimeout"
 
-    invoke-virtual {v2, v0}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v2, v0}, Lcom/tencent/open/utils/e;->a(Ljava/lang/String;)I
 
     move-result v0
 
@@ -1395,7 +1395,7 @@
     invoke-direct {v1, v0, v4}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
 
     .line 687
-    invoke-static {p0}, Lcom/tencent/open/utils/HttpUtils;->getProxy(Landroid/content/Context;)Lcom/tencent/open/utils/HttpUtils$NetworkProxy;
+    invoke-static {p0}, Lcom/tencent/open/utils/HttpUtils;->getProxy(Landroid/content/Context;)Lcom/tencent/open/utils/HttpUtils$c;
 
     move-result-object v0
 
@@ -1405,9 +1405,9 @@
     .line 689
     new-instance v2, Lorg/apache/http/HttpHost;
 
-    iget-object v3, v0, Lcom/tencent/open/utils/HttpUtils$NetworkProxy;->host:Ljava/lang/String;
+    iget-object v3, v0, Lcom/tencent/open/utils/HttpUtils$c;->a:Ljava/lang/String;
 
-    iget v0, v0, Lcom/tencent/open/utils/HttpUtils$NetworkProxy;->port:I
+    iget v0, v0, Lcom/tencent/open/utils/HttpUtils$c;->b:I
 
     invoke-direct {v2, v3, v0}, Lorg/apache/http/HttpHost;-><init>(Ljava/lang/String;I)V
 
@@ -1470,7 +1470,7 @@
     goto/16 :goto_1
 .end method
 
-.method public static getProxy(Landroid/content/Context;)Lcom/tencent/open/utils/HttpUtils$NetworkProxy;
+.method public static getProxy(Landroid/content/Context;)Lcom/tencent/open/utils/HttpUtils$c;
     .locals 4
 
     .prologue
@@ -1546,9 +1546,9 @@
     if-ltz v3, :cond_3
 
     .line 792
-    new-instance v0, Lcom/tencent/open/utils/HttpUtils$NetworkProxy;
+    new-instance v0, Lcom/tencent/open/utils/HttpUtils$c;
 
-    invoke-direct {v0, v2, v3, v1}, Lcom/tencent/open/utils/HttpUtils$NetworkProxy;-><init>(Ljava/lang/String;ILcom/tencent/open/utils/HttpUtils$1;)V
+    invoke-direct {v0, v2, v3, v1}, Lcom/tencent/open/utils/HttpUtils$c;-><init>(Ljava/lang/String;ILcom/tencent/open/utils/HttpUtils$1;)V
 
     goto :goto_0
 
@@ -1559,7 +1559,7 @@
     goto :goto_0
 .end method
 
-.method public static openUrl2(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/tencent/open/utils/Util$Statistic;
+.method public static openUrl2(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/tencent/open/utils/i$a;
     .locals 12
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1818,9 +1818,9 @@
     move-result-object v1
 
     .line 590
-    new-instance v2, Lcom/tencent/open/utils/Util$Statistic;
+    new-instance v2, Lcom/tencent/open/utils/i$a;
 
-    invoke-direct {v2, v1, v0}, Lcom/tencent/open/utils/Util$Statistic;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v2, v1, v0}, Lcom/tencent/open/utils/i$a;-><init>(Ljava/lang/String;I)V
 
     return-object v2
 
@@ -1963,7 +1963,7 @@
     .line 541
     const-string v0, "--3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f\r\n"
 
-    invoke-static {v0}, Lcom/tencent/open/utils/Util;->getBytesUTF8(Ljava/lang/String;)[B
+    invoke-static {v0}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -1976,7 +1976,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/tencent/open/utils/Util;->getBytesUTF8(Ljava/lang/String;)[B
+    invoke-static {v0}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -1997,7 +1997,7 @@
     .line 550
     const-string v0, "\r\n--3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f\r\n"
 
-    invoke-static {v0}, Lcom/tencent/open/utils/Util;->getBytesUTF8(Ljava/lang/String;)[B
+    invoke-static {v0}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -2072,7 +2072,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/tencent/open/utils/Util;->getBytesUTF8(Ljava/lang/String;)[B
+    invoke-static {v3}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v3
 
@@ -2081,7 +2081,7 @@
     .line 557
     const-string v3, "Content-Type: content/unknown\r\n\r\n"
 
-    invoke-static {v3}, Lcom/tencent/open/utils/Util;->getBytesUTF8(Ljava/lang/String;)[B
+    invoke-static {v3}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v3
 
@@ -2107,7 +2107,7 @@
     .line 563
     const-string v0, "\r\n--3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f\r\n"
 
-    invoke-static {v0}, Lcom/tencent/open/utils/Util;->getBytesUTF8(Ljava/lang/String;)[B
+    invoke-static {v0}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -2119,7 +2119,7 @@
     :cond_a
     const-string v0, "\r\n--3i2ndDfv2rTHiSisAbouNdArYfORhtTPEefj3q2f--\r\n"
 
-    invoke-static {v0}, Lcom/tencent/open/utils/Util;->getBytesUTF8(Ljava/lang/String;)[B
+    invoke-static {v0}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -2222,7 +2222,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {}, Lcom/tencent/open/utils/ServerSetting;->getInstance()Lcom/tencent/open/utils/ServerSetting;
+    invoke-static {}, Lcom/tencent/open/utils/f;->a()Lcom/tencent/open/utils/f;
 
     move-result-object v5
 
@@ -2230,7 +2230,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-virtual {v5, v0, v6}, Lcom/tencent/open/utils/ServerSetting;->getEnvUrl(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v5, v0, v6}, Lcom/tencent/open/utils/f;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -2253,7 +2253,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-static {}, Lcom/tencent/open/utils/ServerSetting;->getInstance()Lcom/tencent/open/utils/ServerSetting;
+    invoke-static {}, Lcom/tencent/open/utils/f;->a()Lcom/tencent/open/utils/f;
 
     move-result-object v6
 
@@ -2261,7 +2261,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-virtual {v6, v0, v7}, Lcom/tencent/open/utils/ServerSetting;->getEnvUrl(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v6, v0, v7}, Lcom/tencent/open/utils/f;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -2307,13 +2307,13 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v6}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
+    invoke-static {v0, v6}, Lcom/tencent/open/utils/e;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/e;
 
     move-result-object v6
 
     const-string v11, "Common_HttpRetryCount"
 
-    invoke-virtual {v6, v11}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v6, v11}, Lcom/tencent/open/utils/e;->a(Ljava/lang/String;)I
 
     move-result v6
 
@@ -2439,15 +2439,15 @@
 
     move-object/from16 v2, p3
 
-    invoke-static {v0, v4, v1, v2}, Lcom/tencent/open/utils/HttpUtils;->openUrl2(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/tencent/open/utils/Util$Statistic;
+    invoke-static {v0, v4, v1, v2}, Lcom/tencent/open/utils/HttpUtils;->openUrl2(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/tencent/open/utils/i$a;
 
     move-result-object v10
 
     .line 233
-    iget-object v8, v10, Lcom/tencent/open/utils/Util$Statistic;->response:Ljava/lang/String;
+    iget-object v8, v10, Lcom/tencent/open/utils/i$a;->a:Ljava/lang/String;
 
     .line 234
-    invoke-static {v8}, Lcom/tencent/open/utils/Util;->parseJson(Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-static {v8}, Lcom/tencent/open/utils/i;->d(Ljava/lang/String;)Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_0 .. :try_end_0} :catch_a
     .catch Ljava/net/SocketTimeoutException; {:try_start_0 .. :try_end_0} :catch_9
@@ -2478,10 +2478,10 @@
     .line 241
     :goto_3
     :try_start_2
-    iget-wide v8, v10, Lcom/tencent/open/utils/Util$Statistic;->reqSize:J
+    iget-wide v8, v10, Lcom/tencent/open/utils/i$a;->b:J
 
     .line 242
-    iget-wide v10, v10, Lcom/tencent/open/utils/Util$Statistic;->rspSize:J
+    iget-wide v10, v10, Lcom/tencent/open/utils/i$a;->c:J
     :try_end_2
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/net/SocketTimeoutException; {:try_start_2 .. :try_end_2} :catch_2
@@ -2847,626 +2847,4 @@
 
     .line 377
     return-void
-.end method
-
-.method public static upload(Lcom/tencent/connect/auth/QQToken;Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;)Lorg/json/JSONObject;
-    .locals 20
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;,
-            Lorg/json/JSONException;,
-            Lcom/tencent/open/utils/HttpUtils$NetworkUnavailableException;,
-            Lcom/tencent/open/utils/HttpUtils$HttpStatusException;
-        }
-    .end annotation
-
-    .prologue
-    .line 869
-    .line 871
-    invoke-virtual/range {p2 .. p2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "http"
-
-    invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_4
-
-    .line 875
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lcom/tencent/open/utils/ServerSetting;->getInstance()Lcom/tencent/open/utils/ServerSetting;
-
-    move-result-object v5
-
-    const-string v6, "https://openmobile.qq.com/"
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v5, v0, v6}, Lcom/tencent/open/utils/ServerSetting;->getEnvUrl(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    move-object/from16 v0, p2
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 877
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lcom/tencent/open/utils/ServerSetting;->getInstance()Lcom/tencent/open/utils/ServerSetting;
-
-    move-result-object v6
-
-    const-string v7, "https://openmobile.qq.com/"
-
-    move-object/from16 v0, p1
-
-    invoke-virtual {v6, v0, v7}, Lcom/tencent/open/utils/ServerSetting;->getEnvUrl(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    move-object/from16 v0, p2
-
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 881
-    :goto_0
-    move-object/from16 v0, p1
-
-    move-object/from16 v1, p0
-
-    move-object/from16 v2, p2
-
-    invoke-static {v0, v1, v2}, Lcom/tencent/open/utils/HttpUtils;->a(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;Ljava/lang/String;)V
-
-    .line 882
-    const/4 v10, 0x0
-
-    .line 883
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v8
-
-    .line 888
-    const/4 v7, 0x0
-
-    .line 889
-    invoke-virtual/range {p0 .. p0}, Lcom/tencent/connect/auth/QQToken;->getAppId()Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object/from16 v0, p1
-
-    invoke-static {v0, v6}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
-
-    move-result-object v6
-
-    const-string v11, "Common_HttpRetryCount"
-
-    invoke-virtual {v6, v11}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
-
-    move-result v6
-
-    .line 891
-    const-string v11, "OpenConfig_test"
-
-    new-instance v12, Ljava/lang/StringBuilder;
-
-    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v13, "config 1:Common_HttpRetryCount            config_value:"
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    const-string v13, "   appid:"
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual/range {p0 .. p0}, Lcom/tencent/connect/auth/QQToken;->getAppId()Ljava/lang/String;
-
-    move-result-object v13
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    const-string v13, "     url:"
-
-    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v12
-
-    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-static {v11, v12}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 894
-    if-nez v6, :cond_0
-
-    const/4 v6, 0x3
-
-    move v13, v6
-
-    .line 895
-    :goto_1
-    const-string v6, "OpenConfig_test"
-
-    new-instance v11, Ljava/lang/StringBuilder;
-
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v12, "config 1:Common_HttpRetryCount            result_value:"
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string v12, "   appid:"
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual/range {p0 .. p0}, Lcom/tencent/connect/auth/QQToken;->getAppId()Ljava/lang/String;
-
-    move-result-object v12
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    const-string v12, "     url:"
-
-    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v11
-
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v11
-
-    invoke-static {v6, v11}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
-
-    move/from16 v18, v7
-
-    move-wide v6, v8
-
-    move/from16 v8, v18
-
-    move-object v9, v10
-
-    .line 900
-    :goto_2
-    add-int/lit8 v14, v8, 0x1
-
-    .line 903
-    :try_start_0
-    move-object/from16 v0, p1
-
-    move-object/from16 v1, p3
-
-    invoke-static {v0, v4, v1}, Lcom/tencent/open/utils/Util;->upload(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;)Lcom/tencent/open/utils/Util$Statistic;
-
-    move-result-object v10
-
-    .line 905
-    iget-object v8, v10, Lcom/tencent/open/utils/Util$Statistic;->response:Ljava/lang/String;
-
-    .line 906
-    invoke-static {v8}, Lcom/tencent/open/utils/Util;->parseJson(Ljava/lang/String;)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_0 .. :try_end_0} :catch_a
-    .catch Ljava/net/SocketTimeoutException; {:try_start_0 .. :try_end_0} :catch_9
-    .catch Lcom/tencent/open/utils/HttpUtils$HttpStatusException; {:try_start_0 .. :try_end_0} :catch_3
-    .catch Lcom/tencent/open/utils/HttpUtils$NetworkUnavailableException; {:try_start_0 .. :try_end_0} :catch_5
-    .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_6
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_7
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_8
-
-    move-result-object v15
-
-    .line 908
-    :try_start_1
-    const-string v8, "ret"
-
-    invoke-virtual {v15, v8}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
-    :try_end_1
-    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/net/SocketTimeoutException; {:try_start_1 .. :try_end_1} :catch_2
-    .catch Lcom/tencent/open/utils/HttpUtils$HttpStatusException; {:try_start_1 .. :try_end_1} :catch_3
-    .catch Lcom/tencent/open/utils/HttpUtils$NetworkUnavailableException; {:try_start_1 .. :try_end_1} :catch_5
-    .catch Ljava/net/MalformedURLException; {:try_start_1 .. :try_end_1} :catch_6
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_7
-
-    move-result v12
-
-    .line 913
-    :goto_3
-    :try_start_2
-    iget-wide v8, v10, Lcom/tencent/open/utils/Util$Statistic;->reqSize:J
-
-    .line 914
-    iget-wide v10, v10, Lcom/tencent/open/utils/Util$Statistic;->rspSize:J
-    :try_end_2
-    .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/net/SocketTimeoutException; {:try_start_2 .. :try_end_2} :catch_2
-    .catch Lcom/tencent/open/utils/HttpUtils$HttpStatusException; {:try_start_2 .. :try_end_2} :catch_3
-    .catch Lcom/tencent/open/utils/HttpUtils$NetworkUnavailableException; {:try_start_2 .. :try_end_2} :catch_5
-    .catch Ljava/net/MalformedURLException; {:try_start_2 .. :try_end_2} :catch_6
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_7
-    .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_8
-
-    move-object v13, v15
-
-    .line 988
-    :goto_4
-    invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
-
-    move-result-object v4
-
-    invoke-virtual/range {v4 .. v12}, Lcom/tencent/open/b/g;->a(Ljava/lang/String;JJJI)V
-
-    .line 989
-    return-object v13
-
-    :cond_0
-    move v13, v6
-
-    .line 894
-    goto :goto_1
-
-    .line 909
-    :catch_0
-    move-exception v8
-
-    .line 911
-    const/4 v12, -0x4
-
-    goto :goto_3
-
-    .line 917
-    :catch_1
-    move-exception v8
-
-    move-object/from16 v16, v15
-
-    move-object v15, v8
-
-    .line 918
-    :goto_5
-    invoke-virtual {v15}, Lorg/apache/http/conn/ConnectTimeoutException;->printStackTrace()V
-
-    .line 919
-    const/4 v12, -0x7
-
-    .line 920
-    const-wide/16 v8, 0x0
-
-    .line 921
-    const-wide/16 v10, 0x0
-
-    .line 922
-    if-ge v14, v13, :cond_1
-
-    .line 923
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v6
-
-    move-wide/from16 v18, v8
-
-    move-object/from16 v8, v16
-
-    move-wide/from16 v16, v18
-
-    .line 987
-    :goto_6
-    if-lt v14, v13, :cond_3
-
-    move-object v13, v8
-
-    move-wide/from16 v8, v16
-
-    goto :goto_4
-
-    .line 926
-    :cond_1
-    invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
-
-    move-result-object v4
-
-    invoke-virtual/range {v4 .. v12}, Lcom/tencent/open/b/g;->a(Ljava/lang/String;JJJI)V
-
-    .line 927
-    throw v15
-
-    .line 929
-    :catch_2
-    move-exception v8
-
-    move-object/from16 v16, v15
-
-    move-object v15, v8
-
-    .line 930
-    :goto_7
-    invoke-virtual {v15}, Ljava/net/SocketTimeoutException;->printStackTrace()V
-
-    .line 931
-    const/4 v12, -0x8
-
-    .line 932
-    const-wide/16 v8, 0x0
-
-    .line 933
-    const-wide/16 v10, 0x0
-
-    .line 935
-    if-ge v14, v13, :cond_2
-
-    .line 936
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide v6
-
-    move-wide/from16 v18, v8
-
-    move-object/from16 v8, v16
-
-    move-wide/from16 v16, v18
-
-    .line 937
-    goto :goto_6
-
-    .line 939
-    :cond_2
-    invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
-
-    move-result-object v4
-
-    invoke-virtual/range {v4 .. v12}, Lcom/tencent/open/b/g;->a(Ljava/lang/String;JJJI)V
-
-    .line 940
-    throw v15
-
-    .line 944
-    :catch_3
-    move-exception v4
-
-    move-object v13, v4
-
-    .line 945
-    invoke-virtual {v13}, Lcom/tencent/open/utils/HttpUtils$HttpStatusException;->printStackTrace()V
-
-    .line 946
-    invoke-virtual {v13}, Lcom/tencent/open/utils/HttpUtils$HttpStatusException;->getMessage()Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 949
-    :try_start_3
-    const-string v8, "http status code error:"
-
-    const-string v9, ""
-
-    invoke-virtual {v4, v8, v9}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v4
-
-    .line 951
-    invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-    :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_4
-
-    move-result v12
-
-    .line 957
-    :goto_8
-    const-wide/16 v8, 0x0
-
-    .line 958
-    const-wide/16 v10, 0x0
-
-    .line 959
-    invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
-
-    move-result-object v4
-
-    invoke-virtual/range {v4 .. v12}, Lcom/tencent/open/b/g;->a(Ljava/lang/String;JJJI)V
-
-    .line 960
-    throw v13
-
-    .line 952
-    :catch_4
-    move-exception v4
-
-    .line 953
-    invoke-virtual {v4}, Ljava/lang/Exception;->printStackTrace()V
-
-    .line 955
-    const/16 v12, -0x9
-
-    goto :goto_8
-
-    .line 961
-    :catch_5
-    move-exception v4
-
-    .line 962
-    invoke-virtual {v4}, Lcom/tencent/open/utils/HttpUtils$NetworkUnavailableException;->printStackTrace()V
-
-    .line 963
-    throw v4
-
-    .line 964
-    :catch_6
-    move-exception v4
-
-    move-object v13, v4
-
-    .line 965
-    invoke-virtual {v13}, Ljava/net/MalformedURLException;->printStackTrace()V
-
-    .line 966
-    const/4 v12, -0x3
-
-    .line 967
-    const-wide/16 v8, 0x0
-
-    .line 968
-    const-wide/16 v10, 0x0
-
-    .line 969
-    invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
-
-    move-result-object v4
-
-    invoke-virtual/range {v4 .. v12}, Lcom/tencent/open/b/g;->a(Ljava/lang/String;JJJI)V
-
-    .line 970
-    throw v13
-
-    .line 971
-    :catch_7
-    move-exception v4
-
-    move-object v13, v4
-
-    .line 972
-    invoke-virtual {v13}, Ljava/io/IOException;->printStackTrace()V
-
-    .line 974
-    invoke-static {v13}, Lcom/tencent/open/utils/HttpUtils;->getErrorCodeFromException(Ljava/io/IOException;)I
-
-    move-result v12
-
-    .line 975
-    const-wide/16 v8, 0x0
-
-    .line 976
-    const-wide/16 v10, 0x0
-
-    .line 977
-    invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
-
-    move-result-object v4
-
-    invoke-virtual/range {v4 .. v12}, Lcom/tencent/open/b/g;->a(Ljava/lang/String;JJJI)V
-
-    .line 978
-    throw v13
-
-    .line 979
-    :catch_8
-    move-exception v4
-
-    move-object v13, v4
-
-    .line 980
-    invoke-virtual {v13}, Lorg/json/JSONException;->printStackTrace()V
-
-    .line 981
-    const/4 v12, -0x4
-
-    .line 982
-    const-wide/16 v8, 0x0
-
-    .line 983
-    const-wide/16 v10, 0x0
-
-    .line 984
-    invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
-
-    move-result-object v4
-
-    invoke-virtual/range {v4 .. v12}, Lcom/tencent/open/b/g;->a(Ljava/lang/String;JJJI)V
-
-    .line 985
-    throw v13
-
-    .line 929
-    :catch_9
-    move-exception v8
-
-    move-object v15, v8
-
-    move-object/from16 v16, v9
-
-    goto/16 :goto_7
-
-    .line 917
-    :catch_a
-    move-exception v8
-
-    move-object v15, v8
-
-    move-object/from16 v16, v9
-
-    goto/16 :goto_5
-
-    :cond_3
-    move-object v9, v8
-
-    move v8, v14
-
-    goto/16 :goto_2
-
-    :cond_4
-    move-object/from16 v5, p2
-
-    move-object/from16 v4, p2
-
-    goto/16 :goto_0
 .end method

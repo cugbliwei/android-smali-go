@@ -23,12 +23,8 @@
 
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/sdk/a.smali"
-    const-string v3,  ".method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -63,12 +59,8 @@
 .end method
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/sdk/a.smali"
-    const-string v5,  ".method public onServiceDisconnected(Landroid/content/ComponentName;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     new-instance v0, Ljava/lang/StringBuilder;

@@ -11,11 +11,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/igexin/push/core/a/e;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/a/f.smali"
-    const-string v1,  ".method constructor <init>(Lcom/igexin/push/core/a/e;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/a/f;->a:Lcom/igexin/push/core/a/e;
 
@@ -27,11 +23,7 @@
 
 # virtual methods
 .method public a(Lcom/igexin/push/core/bean/l;Lcom/igexin/push/core/bean/l;)I
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/a/f.smali"
-    const-string v3,  ".method public a(Lcom/igexin/push/core/bean/l;Lcom/igexin/push/core/bean/l;)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     invoke-virtual {p1}, Lcom/igexin/push/core/bean/l;->d()Ljava/lang/String;
 
@@ -65,11 +57,7 @@
 .end method
 
 .method public synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/a/f.smali"
-    const-string v2,  ".method public synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     check-cast p1, Lcom/igexin/push/core/bean/l;
 

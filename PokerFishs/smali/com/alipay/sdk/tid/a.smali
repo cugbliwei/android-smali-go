@@ -141,7 +141,7 @@
 
     goto :goto_0
 
-    .line 154
+    .line 153
     :catch_0
     move-exception v0
 
@@ -152,10 +152,8 @@
     :goto_1
     if-eqz v0, :cond_1
 
-    .line 155
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
-    .line 157
     :cond_1
     if-eqz v1, :cond_2
 
@@ -165,22 +163,19 @@
 
     if-eqz v0, :cond_2
 
-    .line 158
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 161
+    .line 155
     :cond_2
     :goto_2
     return-object v3
 
-    .line 154
+    .line 152
     :cond_3
     if-eqz v1, :cond_4
 
-    .line 155
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 157
     :cond_4
     if-eqz v2, :cond_2
 
@@ -190,7 +185,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 158
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     goto :goto_2
@@ -210,10 +204,8 @@
     :goto_3
     if-eqz v1, :cond_5
 
-    .line 155
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 157
     :cond_5
     if-eqz v2, :cond_6
 
@@ -223,13 +215,11 @@
 
     if-eqz v1, :cond_6
 
-    .line 158
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     :cond_6
     throw v0
 
-    .line 154
     :catchall_1
     move-exception v1
 
@@ -246,6 +236,7 @@
 
     goto :goto_3
 
+    .line 153
     :catch_1
     move-exception v1
 
@@ -445,62 +436,52 @@
 
     move-result v3
 
-    .line 199
+    .line 197
     :goto_0
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_0
 
-    .line 200
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
+    :cond_0
     move v2, v3
 
-    .line 202
+    .line 200
     :goto_1
-    if-lez v2, :cond_1
+    if-lez v2, :cond_3
 
     :goto_2
     return v0
 
-    .line 199
+    .line 198
     :catch_0
     move-exception v3
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_1
 
-    .line 200
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
+    :cond_1
     move v2, v1
 
+    .line 201
     goto :goto_1
 
     .line 199
     :catchall_0
     move-exception v0
 
-    if-eqz v2, :cond_0
+    if-eqz v2, :cond_2
 
-    .line 200
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
-    :cond_0
+    :cond_2
     throw v0
 
-    :cond_1
+    :cond_3
     move v0, v1
 
-    .line 202
+    .line 200
     goto :goto_2
-
-    :cond_2
-    move v2, v1
-
-    goto :goto_1
-
-    :cond_3
-    move v2, v3
-
-    goto :goto_1
 
     :cond_4
     move v3, v1
@@ -697,7 +678,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 76
+    .line 74
     if-eqz v1, :cond_0
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
@@ -706,15 +687,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 77
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 79
+    .line 78
     :cond_0
     :goto_0
     return-void
 
-    .line 76
+    .line 75
     :catch_0
     move-exception v0
 
@@ -726,7 +706,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 77
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     goto :goto_0
@@ -743,7 +722,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 77
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     :cond_1
@@ -826,14 +804,12 @@
 
     move-result-wide v0
 
-    .line 125
+    .line 123
     :cond_0
     if-eqz v2, :cond_1
 
-    .line 126
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
-    .line 127
     :cond_1
     if-eqz v3, :cond_2
 
@@ -843,15 +819,14 @@
 
     if-eqz v2, :cond_2
 
-    .line 128
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 131
+    .line 126
     :cond_2
     :goto_0
     return-wide v0
 
-    .line 125
+    .line 124
     :catch_0
     move-exception v3
 
@@ -860,10 +835,8 @@
     :goto_1
     if-eqz v2, :cond_3
 
-    .line 126
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
-    .line 127
     :cond_3
     if-eqz v3, :cond_2
 
@@ -873,7 +846,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 128
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     goto :goto_0
@@ -887,10 +859,8 @@
     :goto_2
     if-eqz v2, :cond_4
 
-    .line 126
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
-    .line 127
     :cond_4
     if-eqz v3, :cond_5
 
@@ -900,18 +870,17 @@
 
     if-eqz v1, :cond_5
 
-    .line 128
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     :cond_5
     throw v0
 
-    .line 125
     :catchall_1
     move-exception v0
 
     goto :goto_2
 
+    .line 124
     :catch_1
     move-exception v4
 
@@ -978,35 +947,33 @@
 
     move-result-object v0
 
-    .line 95
+    .line 93
     :cond_0
     if-eqz v1, :cond_1
 
-    .line 96
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 97
     :cond_1
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_2
 
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
 
     move-result v1
 
-    if-eqz v1, :cond_7
+    if-eqz v1, :cond_2
 
-    .line 98
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
+    :cond_2
     move-object v1, v0
 
-    .line 101
+    .line 96
     :goto_0
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_3
 
     .line 102
     iget-object v0, p0, Lcom/alipay/sdk/tid/a;->c:Ljava/lang/ref/WeakReference;
@@ -1028,10 +995,10 @@
     move-result-object v1
 
     .line 105
-    :cond_2
+    :cond_3
     return-object v1
 
-    .line 95
+    .line 94
     :catch_0
     move-exception v1
 
@@ -1040,26 +1007,25 @@
     move-object v2, v0
 
     :goto_1
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
-    .line 96
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 97
-    :cond_3
-    if-eqz v2, :cond_6
+    :cond_4
+    if-eqz v2, :cond_5
 
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
 
     move-result v1
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_5
 
-    .line 98
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
+    :cond_5
     move-object v1, v0
 
+    .line 99
     goto :goto_0
 
     .line 95
@@ -1075,28 +1041,24 @@
     move-object v1, v6
 
     :goto_2
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_6
 
-    .line 96
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 97
-    :cond_4
-    if-eqz v2, :cond_5
+    :cond_6
+    if-eqz v2, :cond_7
 
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
 
     move-result v1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_7
 
-    .line 98
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    :cond_5
+    :cond_7
     throw v0
 
-    .line 95
     :catchall_1
     move-exception v1
 
@@ -1113,6 +1075,7 @@
 
     goto :goto_2
 
+    .line 94
     :catch_1
     move-exception v1
 
@@ -1124,16 +1087,6 @@
     move-exception v3
 
     goto :goto_1
-
-    :cond_6
-    move-object v1, v0
-
-    goto :goto_0
-
-    :cond_7
-    move-object v1, v0
-
-    goto :goto_0
 .end method
 
 .method final a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
@@ -1225,7 +1178,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 62
+    .line 59
     :cond_0
     :goto_0
     if-eqz v1, :cond_1
@@ -1236,10 +1189,9 @@
 
     if-eqz v0, :cond_1
 
-    .line 63
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 65
+    .line 64
     :cond_1
     :goto_1
     return-void
@@ -1324,7 +1276,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 63
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     goto :goto_1
@@ -1407,7 +1358,6 @@
 
     if-eqz v2, :cond_7
 
-    .line 63
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     :cond_7
@@ -1472,14 +1422,12 @@
 
     move-result-object v0
 
-    .line 178
+    .line 176
     :cond_0
     if-eqz v1, :cond_1
 
-    .line 179
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 180
     :cond_1
     if-eqz v2, :cond_2
 
@@ -1489,15 +1437,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 181
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 184
+    .line 179
     :cond_2
     :goto_0
     return-object v0
 
-    .line 178
+    .line 177
     :catch_0
     move-exception v1
 
@@ -1508,10 +1455,8 @@
     :goto_1
     if-eqz v1, :cond_3
 
-    .line 179
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 180
     :cond_3
     if-eqz v2, :cond_2
 
@@ -1521,7 +1466,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 181
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     goto :goto_0
@@ -1541,10 +1485,8 @@
     :goto_2
     if-eqz v1, :cond_4
 
-    .line 179
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 180
     :cond_4
     if-eqz v2, :cond_5
 
@@ -1554,13 +1496,11 @@
 
     if-eqz v1, :cond_5
 
-    .line 181
     invoke-virtual {v2}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     :cond_5
     throw v0
 
-    .line 178
     :catchall_1
     move-exception v1
 
@@ -1577,6 +1517,7 @@
 
     goto :goto_2
 
+    .line 177
     :catch_1
     move-exception v1
 

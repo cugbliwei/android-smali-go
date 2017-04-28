@@ -4,11 +4,7 @@
 
 # direct methods
 .method constructor <init>()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v1,  ".method constructor <init>()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Lcom/igexin/sdk/aidl/c;-><init>()V
 
@@ -18,11 +14,7 @@
 
 # virtual methods
 .method public extFunction([B)[B
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v2,  ".method public extFunction([B)[B"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const/4 v0, 0x0
 
@@ -30,11 +22,7 @@
 .end method
 
 .method public isStarted(Ljava/lang/String;)I
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v4,  ".method public isStarted(Ljava/lang/String;)I"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     invoke-static {}, Lcom/igexin/push/core/b/e;->a()Lcom/igexin/push/core/b/e;
 
@@ -67,11 +55,7 @@
 .end method
 
 .method public onASNLConnected(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v2,  ".method public onASNLConnected(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-static {}, Lcom/igexin/push/core/f;->a()Lcom/igexin/push/core/f;
 
@@ -101,11 +85,7 @@
 .end method
 
 .method public onASNLNetworkConnected()I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v2,  ".method public onASNLNetworkConnected()I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-static {}, Lcom/igexin/push/core/f;->a()Lcom/igexin/push/core/f;
 
@@ -143,11 +123,7 @@
 .end method
 
 .method public onASNLNetworkDisconnected()I
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v3,  ".method public onASNLNetworkDisconnected()I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     const/4 v0, 0x0
 
@@ -185,11 +161,7 @@
 .end method
 
 .method public onPSNLConnected(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v2,  ".method public onPSNLConnected(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-static {}, Lcom/igexin/push/core/f;->a()Lcom/igexin/push/core/f;
 
@@ -235,11 +207,7 @@
 .end method
 
 .method public receiveToPSNL(Ljava/lang/String;Ljava/lang/String;[B)I
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v3,  ".method public receiveToPSNL(Ljava/lang/String;Ljava/lang/String;[B)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     const/4 v0, -0x1
 
@@ -282,11 +250,7 @@
 .end method
 
 .method public sendByASNL(Ljava/lang/String;Ljava/lang/String;[B)I
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v3,  ".method public sendByASNL(Ljava/lang/String;Ljava/lang/String;[B)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     const/4 v0, -0x1
 
@@ -329,11 +293,7 @@
 .end method
 
 .method public setSilentTime(IILjava/lang/String;)I
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v4,  ".method public setSilentTime(IILjava/lang/String;)I"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     invoke-static {}, Lcom/igexin/push/core/b/e;->a()Lcom/igexin/push/core/b/e;
 
@@ -370,11 +330,7 @@
 .end method
 
 .method public startService(Ljava/lang/String;)I
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v5,  ".method public startService(Ljava/lang/String;)I"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     invoke-static {}, Lcom/igexin/push/core/b/e;->a()Lcom/igexin/push/core/b/e;
 
@@ -411,11 +367,7 @@
 .end method
 
 .method public stopService(Ljava/lang/String;)I
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/core/p.smali"
-    const-string v4,  ".method public stopService(Ljava/lang/String;)I"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     invoke-static {}, Lcom/igexin/push/core/b/e;->a()Lcom/igexin/push/core/b/e;
 

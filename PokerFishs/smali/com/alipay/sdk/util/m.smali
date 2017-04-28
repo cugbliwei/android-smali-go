@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic a:Landroid/app/Activity;
+.field final synthetic a:Landroid/content/Context;
 
 
 # direct methods
-.method constructor <init>(Landroid/app/Activity;)V
+.method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
     .prologue
-    .line 370
-    iput-object p1, p0, Lcom/alipay/sdk/util/m;->a:Landroid/app/Activity;
+    .line 384
+    iput-object p1, p0, Lcom/alipay/sdk/util/m;->a:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,27 +29,32 @@
     .locals 3
 
     .prologue
-    .line 376
+    .line 390
     :try_start_0
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 377
+    .line 391
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.VIEW"
 
     invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 378
-    iget-object v0, p0, Lcom/alipay/sdk/util/m;->a:Landroid/app/Activity;
+    .line 392
+    const/high16 v0, 0x10000000
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 393
+    iget-object v0, p0, Lcom/alipay/sdk/util/m;->a:Landroid/content/Context;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 382
+    .line 397
     :goto_0
     return-void
 

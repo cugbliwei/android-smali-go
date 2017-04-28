@@ -44,12 +44,8 @@
 
 # virtual methods
 .method protected a()V
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/getuiext/util/a.smali"
-    const-string v8,  ".method protected a()V"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v1, 0x3d
 
     const/4 v6, 0x0
@@ -194,12 +190,8 @@
 .end method
 
 .method public write(I)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/util/a.smali"
-    const-string v3,  ".method public write(I)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     and-int/lit16 v0, p1, 0xff
 
     iget v1, p0, Lcom/igexin/getuiext/util/a;->c:I

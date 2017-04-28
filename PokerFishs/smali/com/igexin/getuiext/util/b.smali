@@ -4,12 +4,8 @@
 
 # direct methods
 .method public static a(Ljava/util/HashMap;)Ljava/lang/String;
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/util/b.smali"
-    const-string v7,  ".method public static a(Ljava/util/HashMap;)Ljava/lang/String;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x1
 
     new-instance v3, Ljava/lang/StringBuffer;
@@ -96,12 +92,8 @@
 .end method
 
 .method public static b(Ljava/util/HashMap;)Ljava/util/ArrayList;
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/getuiext/util/b.smali"
-    const-string v6,  ".method public static b(Ljava/util/HashMap;)Ljava/util/ArrayList;"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V

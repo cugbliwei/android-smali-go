@@ -118,7 +118,7 @@
 
     .line 642
     :try_start_1
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v12
 
@@ -126,14 +126,14 @@
 
     const-string v15, "POST"
 
-    invoke-static {v12, v13, v15, v14}, Lcom/tencent/open/utils/HttpUtils;->openUrl2(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/tencent/open/utils/Util$Statistic;
+    invoke-static {v12, v13, v15, v14}, Lcom/tencent/open/utils/HttpUtils;->openUrl2(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lcom/tencent/open/utils/i$a;
 
     move-result-object v15
 
     .line 644
-    iget-object v12, v15, Lcom/tencent/open/utils/Util$Statistic;->response:Ljava/lang/String;
+    iget-object v12, v15, Lcom/tencent/open/utils/i$a;->a:Ljava/lang/String;
 
-    invoke-static {v12}, Lcom/tencent/open/utils/Util;->parseJson(Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-static {v12}, Lcom/tencent/open/utils/i;->d(Ljava/lang/String;)Lorg/json/JSONObject;
     :try_end_1
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/net/SocketTimeoutException; {:try_start_1 .. :try_end_1} :catch_3
@@ -166,7 +166,7 @@
     if-eqz v12, :cond_2
 
     :try_start_3
-    iget-object v12, v15, Lcom/tencent/open/utils/Util$Statistic;->response:Ljava/lang/String;
+    iget-object v12, v15, Lcom/tencent/open/utils/i$a;->a:Ljava/lang/String;
 
     invoke-static {v12}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -182,7 +182,7 @@
 
     .line 659
     :cond_3
-    iget-wide v12, v15, Lcom/tencent/open/utils/Util$Statistic;->reqSize:J
+    iget-wide v12, v15, Lcom/tencent/open/utils/i$a;->b:J
     :try_end_3
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_3 .. :try_end_3} :catch_2
     .catch Ljava/net/SocketTimeoutException; {:try_start_3 .. :try_end_3} :catch_3
@@ -194,7 +194,7 @@
 
     .line 660
     :try_start_4
-    iget-wide v4, v15, Lcom/tencent/open/utils/Util$Statistic;->rspSize:J
+    iget-wide v4, v15, Lcom/tencent/open/utils/i$a;->c:J
     :try_end_4
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_4 .. :try_end_4} :catch_2
     .catch Ljava/net/SocketTimeoutException; {:try_start_4 .. :try_end_4} :catch_3

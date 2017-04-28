@@ -40,12 +40,8 @@
 
 # virtual methods
 .method public a()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/a/d.smali"
-    const-string v3,  ".method public a()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     const/4 v0, 0x0
@@ -77,12 +73,8 @@
 .end method
 
 .method public final a(Z)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/b/a/a/d.smali"
-    const-string v4,  ".method public final a(Z)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     if-eqz p1, :cond_0
@@ -176,12 +168,8 @@
 .end method
 
 .method public final a(Ljava/lang/String;)Z
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/a/a/b/a/a/d.smali"
-    const-string v8,  ".method public final a(Ljava/lang/String;)Z"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v6, 0x1
 
     iget-boolean v0, p0, Lcom/igexin/a/a/b/a/a/d;->b:Z
@@ -327,12 +315,8 @@
 .end method
 
 .method final b(Z)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/a/d.smali"
-    const-string v3,  ".method final b(Z)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/a/a/b/a/a/d;->e:Ljava/nio/channels/SelectionKey;
 
     if-eqz v0, :cond_0
@@ -374,12 +358,8 @@
 .end method
 
 .method public final b()Z
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/a/d.smali"
-    const-string v3,  ".method public final b()Z"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     iget-object v1, p0, Lcom/igexin/a/a/b/a/a/d;->a:Ljava/nio/channels/SocketChannel;
@@ -426,12 +406,8 @@
 .end method
 
 .method c()Ljava/nio/channels/SocketChannel;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/a/a/b/a/a/d.smali"
-    const-string v5,  ".method c()Ljava/nio/channels/SocketChannel;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v3, 0x1
 
     const/4 v2, 0x0

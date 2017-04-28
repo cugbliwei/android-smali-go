@@ -13,11 +13,7 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/ConnectivityManager;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/c/a.smali"
-    const-string v1,  ".method public constructor <init>(Landroid/content/Context;Landroid/net/ConnectivityManager;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,11 +27,7 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;Ljava/lang/Integer;Lcom/igexin/a/a/b/c;)Lcom/igexin/a/a/b/f;
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/c/a.smali"
-    const-string v3,  ".method public a(Ljava/lang/String;Ljava/lang/Integer;Lcom/igexin/a/a/b/c;)Lcom/igexin/a/a/b/f;"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     const/4 v0, 0x0
 
@@ -93,11 +85,7 @@
 .end method
 
 .method public bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/igexin/a/a/d/d;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/c/a.smali"
-    const-string v2,  ".method public bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/igexin/a/a/d/d;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     check-cast p1, Ljava/lang/String;
 

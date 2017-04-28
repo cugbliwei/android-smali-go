@@ -4,11 +4,7 @@
 
 # direct methods
 .method public static a([B)[B
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/f/d.smali"
-    const-string v2,  ".method public static a([B)[B"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     sget-object v0, Lcom/igexin/push/core/g;->B:Ljava/lang/String;
 

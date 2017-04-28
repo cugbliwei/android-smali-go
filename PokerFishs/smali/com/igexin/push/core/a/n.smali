@@ -8,11 +8,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/a/n.smali"
-    const-string v3,  ".method static constructor <clinit>()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -40,11 +36,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/a/n.smali"
-    const-string v1,  ".method public constructor <init>()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Lcom/igexin/push/core/a/b;-><init>()V
 
@@ -52,11 +44,7 @@
 .end method
 
 .method private a()V
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/core/a/n.smali"
-    const-string v5,  ".method private a()V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     :try_start_0
     invoke-static {}, Lcom/igexin/push/config/SDKUrlConfig;->getIdcConfigUrl()[Ljava/lang/String;
@@ -179,11 +167,7 @@
 .end method
 
 .method private a(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 5
-
-    const-string v3, "======================== PokerFishs/smali/com/igexin/push/core/a/n.smali"
-    const-string v4,  ".method private a(Ljava/lang/String;Ljava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 3
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -268,11 +252,7 @@
 
 # virtual methods
 .method public a(Ljava/lang/Object;Lorg/json/JSONObject;)Z
-    .locals 14
-
-    const-string v12, "======================== PokerFishs/smali/com/igexin/push/core/a/n.smali"
-    const-string v13,  ".method public a(Ljava/lang/Object;Lorg/json/JSONObject;)Z"
-    invoke-static {v12,v13} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 12
 
     new-instance v0, Ljava/lang/StringBuilder;
 

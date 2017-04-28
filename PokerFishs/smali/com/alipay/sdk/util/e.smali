@@ -51,7 +51,7 @@
 
     iput-object v0, p0, Lcom/alipay/sdk/util/e;->g:Landroid/content/ServiceConnection;
 
-    .line 175
+    .line 178
     new-instance v0, Lcom/alipay/sdk/util/g;
 
     invoke-direct {v0, p0}, Lcom/alipay/sdk/util/g;-><init>(Lcom/alipay/sdk/util/e;)V
@@ -92,12 +92,12 @@
     .locals 1
 
     .prologue
-    .line 172
+    .line 175
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
-    .line 173
+    .line 176
     return-void
 .end method
 
@@ -119,30 +119,33 @@
 
     if-gt v0, v1, :cond_1
 
-    .line 90
+    .line 91
     :cond_0
     :goto_0
     return-void
 
     .line 86
     :cond_1
-    new-instance v0, Landroid/content/Intent;
+    invoke-static {}, Lcom/alipay/sdk/util/l;->a()Ljava/lang/String;
 
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+    move-result-object v0
 
     .line 87
-    const-string v1, "com.eg.android.AlipayGphone"
+    new-instance v1, Landroid/content/Intent;
 
-    const-string v2, "com.alipay.android.app.TransProcessPayActivity"
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
     .line 88
-    iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
+    const-string v2, "com.alipay.android.app.TransProcessPayActivity"
 
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 89
+    iget-object v0, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+
+    .line 90
     const-wide/16 v0, 0xc8
 
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
@@ -168,29 +171,32 @@
 
     const/4 v6, 0x0
 
-    .line 93
+    .line 94
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 94
-    const-string v1, "com.eg.android.AlipayGphone"
+    .line 95
+    invoke-static {}, Lcom/alipay/sdk/util/l;->a()Ljava/lang/String;
 
+    move-result-object v1
+
+    .line 96
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 95
+    .line 97
     const-string v1, "com.eg.android.AlipayGphone.IAlixPay"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 97
+    .line 99
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
-    invoke-static {v1}, Lcom/alipay/sdk/util/l;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/alipay/sdk/util/l;->h(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 101
+    .line 103
     :try_start_0
     iget-object v2, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
@@ -206,12 +212,12 @@
     :try_end_0
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 107
+    .line 109
     iget-object v2, p0, Lcom/alipay/sdk/util/e;->d:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 108
+    .line 110
     :try_start_1
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
     :try_end_1
@@ -219,7 +225,7 @@
 
     if-nez v0, :cond_0
 
-    .line 110
+    .line 112
     :try_start_2
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->d:Ljava/lang/Object;
 
@@ -238,7 +244,7 @@
     .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 115
+    .line 117
     :cond_0
     :goto_0
     :try_start_3
@@ -246,27 +252,27 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 118
+    .line 120
     :try_start_4
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
     if-nez v0, :cond_2
 
-    .line 122
+    .line 124
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
-    invoke-static {v0}, Lcom/alipay/sdk/util/l;->g(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/alipay/sdk/util/l;->h(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 123
+    .line 125
     iget-object v2, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
-    invoke-static {v2}, Lcom/alipay/sdk/util/l;->h(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/alipay/sdk/util/l;->i(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 124
+    .line 126
     const-string v3, "biz"
 
     const-string v4, "ClientBindFailed"
@@ -305,13 +311,12 @@
 
     invoke-static {v3, v4, v0}, Lcom/alipay/sdk/app/statistic/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 128
+    .line 130
     const-string v0, "failed"
     :try_end_4
     .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_2
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 148
     :try_start_5
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
@@ -321,66 +326,69 @@
     :try_end_5
     .catch Ljava/lang/Throwable; {:try_start_5 .. :try_end_5} :catch_a
 
-    .line 150
     :goto_1
     :try_start_6
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
+    invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
     iget-object v2, p0, Lcom/alipay/sdk/util/e;->g:Landroid/content/ServiceConnection;
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->unbindService(Landroid/content/ServiceConnection;)V
+    invoke-virtual {v1, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
     :try_end_6
     .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_9
 
-    .line 156
     :goto_2
+    iput-object v6, p0, Lcom/alipay/sdk/util/e;->f:Lcom/alipay/sdk/util/e$a;
+
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->h:Lcom/alipay/android/app/IRemoteServiceCallback;
 
-    .line 160
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->g:Landroid/content/ServiceConnection;
 
-    .line 161
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
-    .line 162
     iget-boolean v1, p0, Lcom/alipay/sdk/util/e;->e:Z
 
     if-eqz v1, :cond_1
 
-    .line 163
+    iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
+
+    if-eqz v1, :cond_1
+
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
     invoke-virtual {v1, v7}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
-    .line 164
     iput-boolean v7, p0, Lcom/alipay/sdk/util/e;->e:Z
 
-    .line 168
+    .line 150
     :cond_1
     :goto_3
     return-object v0
 
-    .line 102
+    .line 104
     :catch_0
     move-exception v0
 
-    .line 103
+    .line 105
     const-string v1, "biz"
 
     const-string v2, "ClientBindServiceFailed"
 
     invoke-static {v1, v2, v0}, Lcom/alipay/sdk/app/statistic/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 104
+    .line 106
     const-string v0, "failed"
 
     goto :goto_3
 
-    .line 111
+    .line 113
     :catch_1
     move-exception v0
 
-    .line 112
+    .line 114
     :try_start_7
     const-string v3, "biz"
 
@@ -392,7 +400,7 @@
 
     goto :goto_0
 
-    .line 115
+    .line 117
     :catchall_0
     move-exception v0
 
@@ -400,19 +408,19 @@
 
     throw v0
 
-    .line 131
+    .line 133
     :cond_2
     :try_start_8
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->f:Lcom/alipay/sdk/util/e$a;
 
     if-eqz v0, :cond_3
 
-    .line 132
+    .line 134
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->f:Lcom/alipay/sdk/util/e$a;
 
     invoke-interface {v0}, Lcom/alipay/sdk/util/e$a;->a()V
 
-    .line 135
+    .line 137
     :cond_3
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
@@ -422,19 +430,19 @@
 
     if-nez v0, :cond_4
 
-    .line 136
+    .line 138
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
-    .line 137
+    .line 139
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/alipay/sdk/util/e;->e:Z
 
-    .line 140
+    .line 142
     :cond_4
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
@@ -442,7 +450,7 @@
 
     invoke-interface {v0, v1}, Lcom/alipay/android/app/IAlixPay;->registerCallback(Lcom/alipay/android/app/IRemoteServiceCallback;)V
 
-    .line 141
+    .line 143
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
     invoke-interface {v0, p1}, Lcom/alipay/android/app/IAlixPay;->Pay(Ljava/lang/String;)Ljava/lang/String;
@@ -452,7 +460,7 @@
 
     move-result-object v0
 
-    .line 148
+    .line 144
     :try_start_9
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
@@ -462,47 +470,49 @@
     :try_end_9
     .catch Ljava/lang/Throwable; {:try_start_9 .. :try_end_9} :catch_8
 
-    .line 150
     :goto_4
     :try_start_a
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
+    invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
     iget-object v2, p0, Lcom/alipay/sdk/util/e;->g:Landroid/content/ServiceConnection;
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->unbindService(Landroid/content/ServiceConnection;)V
+    invoke-virtual {v1, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
     :try_end_a
     .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_7
 
-    .line 156
     :goto_5
+    iput-object v6, p0, Lcom/alipay/sdk/util/e;->f:Lcom/alipay/sdk/util/e$a;
+
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->h:Lcom/alipay/android/app/IRemoteServiceCallback;
 
-    .line 160
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->g:Landroid/content/ServiceConnection;
 
-    .line 161
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
-    .line 162
     iget-boolean v1, p0, Lcom/alipay/sdk/util/e;->e:Z
 
     if-eqz v1, :cond_1
 
-    .line 163
+    iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
+
+    if-eqz v1, :cond_1
+
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
     invoke-virtual {v1, v7}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
-    .line 164
     iput-boolean v7, p0, Lcom/alipay/sdk/util/e;->e:Z
 
     goto :goto_3
 
-    .line 142
     :catch_2
     move-exception v0
 
-    .line 144
+    .line 146
     :try_start_b
     const-string v1, "biz"
 
@@ -510,7 +520,7 @@
 
     invoke-static {v1, v2, v0}, Lcom/alipay/sdk/app/statistic/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 145
+    .line 147
     invoke-static {}, Lcom/alipay/sdk/app/h;->a()Ljava/lang/String;
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_1
@@ -527,47 +537,49 @@
     :try_end_c
     .catch Ljava/lang/Throwable; {:try_start_c .. :try_end_c} :catch_6
 
-    .line 150
     :goto_6
     :try_start_d
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
+    invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
     iget-object v2, p0, Lcom/alipay/sdk/util/e;->g:Landroid/content/ServiceConnection;
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->unbindService(Landroid/content/ServiceConnection;)V
+    invoke-virtual {v1, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
     :try_end_d
     .catch Ljava/lang/Throwable; {:try_start_d .. :try_end_d} :catch_5
 
-    .line 156
     :goto_7
+    iput-object v6, p0, Lcom/alipay/sdk/util/e;->f:Lcom/alipay/sdk/util/e$a;
+
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->h:Lcom/alipay/android/app/IRemoteServiceCallback;
 
-    .line 160
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->g:Landroid/content/ServiceConnection;
 
-    .line 161
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
-    .line 162
     iget-boolean v1, p0, Lcom/alipay/sdk/util/e;->e:Z
 
     if-eqz v1, :cond_1
 
-    .line 163
+    iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
+
+    if-eqz v1, :cond_1
+
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
     invoke-virtual {v1, v7}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
-    .line 164
     iput-boolean v7, p0, Lcom/alipay/sdk/util/e;->e:Z
 
     goto/16 :goto_3
 
-    .line 147
+    .line 149
     :catchall_1
     move-exception v0
 
-    .line 148
     :try_start_e
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
@@ -577,38 +589,41 @@
     :try_end_e
     .catch Ljava/lang/Throwable; {:try_start_e .. :try_end_e} :catch_4
 
-    .line 150
     :goto_8
     :try_start_f
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
+    invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v1
+
     iget-object v2, p0, Lcom/alipay/sdk/util/e;->g:Landroid/content/ServiceConnection;
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->unbindService(Landroid/content/ServiceConnection;)V
+    invoke-virtual {v1, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
     :try_end_f
     .catch Ljava/lang/Throwable; {:try_start_f .. :try_end_f} :catch_3
 
-    .line 156
     :goto_9
+    iput-object v6, p0, Lcom/alipay/sdk/util/e;->f:Lcom/alipay/sdk/util/e$a;
+
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->h:Lcom/alipay/android/app/IRemoteServiceCallback;
 
-    .line 160
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->g:Landroid/content/ServiceConnection;
 
-    .line 161
     iput-object v6, p0, Lcom/alipay/sdk/util/e;->c:Lcom/alipay/android/app/IAlixPay;
 
-    .line 162
     iget-boolean v1, p0, Lcom/alipay/sdk/util/e;->e:Z
 
     if-eqz v1, :cond_5
 
-    .line 163
+    iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
+
+    if-eqz v1, :cond_5
+
     iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
     invoke-virtual {v1, v7}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
-    .line 164
     iput-boolean v7, p0, Lcom/alipay/sdk/util/e;->e:Z
 
     :cond_5
@@ -637,12 +652,12 @@
     :catch_7
     move-exception v1
 
-    goto :goto_5
+    goto/16 :goto_5
 
     :catch_8
     move-exception v1
 
-    goto :goto_4
+    goto/16 :goto_4
 
     :catch_9
     move-exception v1
@@ -665,9 +680,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
-    const-string v1, "com.eg.android.AlipayGphone"
-
-    invoke-static {v0, v1}, Lcom/alipay/sdk/util/l;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/alipay/sdk/util/l$a;
+    invoke-static {v0}, Lcom/alipay/sdk/util/l;->a(Landroid/content/Context;)Lcom/alipay/sdk/util/l$a;
 
     move-result-object v0
 
@@ -709,19 +722,21 @@
     .line 74
     :cond_2
     :try_start_1
-    new-instance v0, Landroid/content/Intent;
+    invoke-static {}, Lcom/alipay/sdk/util/l;->a()Ljava/lang/String;
 
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+    move-result-object v0
 
-    const-string v1, "com.eg.android.AlipayGphone"
+    new-instance v1, Landroid/content/Intent;
+
+    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
     const-string v2, "com.alipay.android.app.TransProcessPayActivity"
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/alipay/sdk/util/e;->a:Landroid/app/Activity;
 
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
     const-wide/16 v0, 0xc8
 

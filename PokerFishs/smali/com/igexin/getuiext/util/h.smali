@@ -12,12 +12,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;)I
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/util/h.smali"
-    const-string v3,  ".method public static a(Landroid/content/Context;Ljava/lang/String;)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -45,12 +41,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/getuiext/util/h.smali"
-    const-string v6,  ".method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     new-instance v1, Ljava/util/ArrayList;
@@ -124,12 +116,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;)Ljava/lang/String;
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/util/h.smali"
-    const-string v5,  ".method public static a(Landroid/content/Context;)Ljava/lang/String;"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -176,12 +164,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)Lorg/json/JSONObject;
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/getuiext/util/h.smali"
-    const-string v6,  ".method public static a xxxxxxxx"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v4, -0x1
 
     invoke-static {p0, p1, p2}, Lcom/igexin/getuiext/util/h;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
@@ -243,12 +227,8 @@
 .end method
 
 .method public static b(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/util/h.smali"
-    const-string v2,  ".method public static b(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {p0, p1}, Lcom/igexin/getuiext/util/e;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -269,12 +249,8 @@
 .end method
 
 .method public static b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/getuiext/util/h.smali"
-    const-string v10,  ".method public static b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-string v0, "0"
 
     new-instance v1, Ljava/io/File;
@@ -368,12 +344,8 @@
 .end method
 
 .method public static b(Landroid/content/Context;)Z
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/util/h.smali"
-    const-string v3,  ".method public static b(Landroid/content/Context;)Z"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-eqz p0, :cond_0
 
     const-string v0, "connectivity"
@@ -406,12 +378,8 @@
 .end method
 
 .method public static c()I
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/util/h.smali"
-    const-string v5,  ".method public static c()I"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Ljava/util/Random;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -430,12 +398,8 @@
 .end method
 
 .method public static c(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/util/h.smali"
-    const-string v4,  ".method public static c(Landroid/content/Context;Ljava/lang/String;)Z"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x1
 
     :try_start_0
@@ -468,12 +432,8 @@
 
 # virtual methods
 .method public a()V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/util/h.smali"
-    const-string v5,  ".method public a()V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v0
@@ -594,12 +554,8 @@
 .end method
 
 .method public b()J
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/getuiext/util/h.smali"
-    const-string v9,  ".method public b()J"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     const-wide/16 v0, 0x0

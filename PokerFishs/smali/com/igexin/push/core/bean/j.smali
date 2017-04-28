@@ -14,11 +14,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/j.smali"
-    const-string v2,  ".method public constructor <init>()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-direct {p0}, Lcom/igexin/push/core/bean/BaseAction;-><init>()V
 
@@ -44,11 +40,7 @@
 
 # virtual methods
 .method public a()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/j.smali"
-    const-string v2,  ".method public a()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/j;->a:Ljava/lang/String;
 
@@ -56,11 +48,7 @@
 .end method
 
 .method public a(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/j.smali"
-    const-string v1,  ".method public a(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/j;->a:Ljava/lang/String;
 
@@ -68,11 +56,7 @@
 .end method
 
 .method public b()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/j.smali"
-    const-string v2,  ".method public b()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/j;->b:Ljava/lang/String;
 
@@ -80,11 +64,7 @@
 .end method
 
 .method public b(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/j.smali"
-    const-string v1,  ".method public b(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/j;->b:Ljava/lang/String;
 
@@ -92,11 +72,7 @@
 .end method
 
 .method public c()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/j.smali"
-    const-string v2,  ".method public c()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/j;->c:Ljava/lang/String;
 
@@ -104,11 +80,7 @@
 .end method
 
 .method public c(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/j.smali"
-    const-string v1,  ".method public c(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/j;->c:Ljava/lang/String;
 
@@ -116,11 +88,7 @@
 .end method
 
 .method public d()Ljava/lang/String;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/bean/j.smali"
-    const-string v2,  ".method public d()Ljava/lang/String;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-object v0, p0, Lcom/igexin/push/core/bean/j;->d:Ljava/lang/String;
 
@@ -128,11 +96,7 @@
 .end method
 
 .method public d(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/bean/j.smali"
-    const-string v1,  ".method public d(Ljava/lang/String;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/core/bean/j;->d:Ljava/lang/String;
 

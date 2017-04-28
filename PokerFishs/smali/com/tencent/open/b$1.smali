@@ -90,7 +90,7 @@
     .line 57
     iget-object v0, p0, Lcom/tencent/open/b$1;->a:Lcom/tencent/open/b;
 
-    invoke-virtual {v0, p1}, Lcom/tencent/open/b;->onConsoleMessage(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/tencent/open/b;->a(Ljava/lang/String;)V
 
     .line 59
     :cond_0
@@ -182,7 +182,7 @@
     const-string v0, ""
 
     :goto_1
-    invoke-virtual {v1, v0}, Lcom/tencent/open/b;->onConsoleMessage(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/tencent/open/b;->a(Ljava/lang/String;)V
 
     .line 48
     :cond_1

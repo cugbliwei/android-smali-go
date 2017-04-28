@@ -20,12 +20,8 @@
 
 # virtual methods
 .method protected varargs a([Ljava/lang/String;)Ljava/lang/Void;
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/getuiext/service/e.smali"
-    const-string v6,  ".method protected varargs a([Ljava/lang/String;)Ljava/lang/Void;"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v4, 0x0
 
     const/4 v0, 0x0

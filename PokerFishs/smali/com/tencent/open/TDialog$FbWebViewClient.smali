@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/tencent/open/TDialog;
+.field final synthetic a:Lcom/tencent/open/TDialog;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     .prologue
     .line 383
-    iput-object p1, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iput-object p1, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V
 
@@ -47,11 +47,11 @@
     .locals 2
 
     .prologue
-    .line 447
+    .line 451
     invoke-super {p0, p1, p2}, Landroid/webkit/WebViewClient;->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
 
-    .line 449
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    .line 453
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->d(Lcom/tencent/open/TDialog;)Lcom/tencent/open/c/b;
 
@@ -61,7 +61,7 @@
 
     invoke-virtual {v0, v1}, Lcom/tencent/open/c/b;->setVisibility(I)V
 
-    .line 450
+    .line 454
     return-void
 .end method
 
@@ -69,7 +69,7 @@
     .locals 3
 
     .prologue
-    .line 440
+    .line 444
     const-string v0, "openSDK_LOG.TDialog"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -92,10 +92,10 @@
 
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 441
+    .line 445
     invoke-super {p0, p1, p2, p3}, Landroid/webkit/WebViewClient;->onPageStarted(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 443
+    .line 447
     return-void
 .end method
 
@@ -103,11 +103,11 @@
     .locals 3
 
     .prologue
-    .line 425
+    .line 429
     invoke-super {p0, p1, p2, p3, p4}, Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 426
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    .line 430
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->c(Lcom/tencent/open/TDialog;)Lcom/tencent/open/TDialog$OnTimeListener;
 
@@ -119,8 +119,8 @@
 
     invoke-virtual {v0, v1}, Lcom/tencent/open/TDialog$OnTimeListener;->onError(Lcom/tencent/tauth/UiError;)V
 
-    .line 431
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    .line 435
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -128,7 +128,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -140,8 +140,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 432
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    .line 436
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -163,13 +163,13 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 435
+    .line 439
     :cond_0
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog;->dismiss()V
 
-    .line 436
+    .line 440
     return-void
 .end method
 
@@ -203,11 +203,11 @@
     invoke-static {v0, v2}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 388
-    invoke-static {}, Lcom/tencent/open/utils/ServerSetting;->getInstance()Lcom/tencent/open/utils/ServerSetting;
+    invoke-static {}, Lcom/tencent/open/utils/f;->a()Lcom/tencent/open/utils/f;
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -221,7 +221,7 @@
 
     const-string v3, "auth://tauth.qq.com/"
 
-    invoke-virtual {v2, v0, v3}, Lcom/tencent/open/utils/ServerSetting;->getEnvUrl(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v0, v3}, Lcom/tencent/open/utils/f;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -232,20 +232,20 @@
     if-eqz v0, :cond_1
 
     .line 390
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->c(Lcom/tencent/open/TDialog;)Lcom/tencent/open/TDialog$OnTimeListener;
 
     move-result-object v0
 
-    invoke-static {p2}, Lcom/tencent/open/utils/Util;->parseUrlToJson(Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-static {p2}, Lcom/tencent/open/utils/i;->c(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
 
     invoke-virtual {v0, v2}, Lcom/tencent/open/TDialog$OnTimeListener;->onComplete(Ljava/lang/Object;)V
 
     .line 391
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog;->isShowing()Z
 
@@ -254,14 +254,14 @@
     if-eqz v0, :cond_0
 
     .line 392
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog;->dismiss()V
 
     :cond_0
     move v0, v1
 
-    .line 419
+    .line 423
     :goto_0
     return v0
 
@@ -276,7 +276,7 @@
     if-eqz v0, :cond_3
 
     .line 396
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->c(Lcom/tencent/open/TDialog;)Lcom/tencent/open/TDialog$OnTimeListener;
 
@@ -285,7 +285,7 @@
     invoke-virtual {v0}, Lcom/tencent/open/TDialog$OnTimeListener;->onCancel()V
 
     .line 397
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog;->isShowing()Z
 
@@ -294,7 +294,7 @@
     if-eqz v0, :cond_2
 
     .line 398
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog;->dismiss()V
 
@@ -315,7 +315,7 @@
     if-eqz v0, :cond_5
 
     .line 403
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog;->isShowing()Z
 
@@ -324,7 +324,7 @@
     if-eqz v0, :cond_4
 
     .line 404
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog;->dismiss()V
 
@@ -344,7 +344,8 @@
 
     if-eqz v0, :cond_7
 
-    .line 409
+    .line 410
+    :try_start_0
     const-string v0, "download://"
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -363,20 +364,20 @@
 
     move-result-object v0
 
-    .line 410
+    .line 411
     new-instance v2, Landroid/content/Intent;
 
     const-string v3, "android.intent.action.VIEW"
 
     invoke-direct {v2, v3, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 411
+    .line 412
     const/high16 v0, 0x10000000
 
     invoke-virtual {v2, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 412
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    .line 413
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -384,7 +385,7 @@
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -396,8 +397,8 @@
 
     if-eqz v0, :cond_6
 
-    .line 413
-    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->this$0:Lcom/tencent/open/TDialog;
+    .line 414
+    iget-object v0, p0, Lcom/tencent/open/TDialog$FbWebViewClient;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->a(Lcom/tencent/open/TDialog;)Ljava/lang/ref/WeakReference;
 
@@ -410,14 +411,26 @@
     check-cast v0, Landroid/content/Context;
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     :cond_6
+    :goto_1
     move v0, v1
 
-    .line 415
+    .line 419
     goto/16 :goto_0
 
     .line 416
+    :catch_0
+    move-exception v0
+
+    .line 417
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_1
+
+    .line 420
     :cond_7
     const-string v0, "auth://progress"
 
@@ -429,10 +442,10 @@
 
     move v0, v1
 
-    .line 417
+    .line 421
     goto/16 :goto_0
 
-    .line 419
+    .line 423
     :cond_8
     const/4 v0, 0x0
 

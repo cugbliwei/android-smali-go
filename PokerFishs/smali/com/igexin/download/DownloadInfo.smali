@@ -248,12 +248,8 @@
 
 # virtual methods
 .method public canUseNetwork(ZZ)Z
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/download/DownloadInfo.smali"
-    const-string v5,  "canUseNetwork"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x1
 
     const/4 v1, 0x0
@@ -281,12 +277,8 @@
 .end method
 
 .method public clone()Lcom/igexin/download/DownloadInfo;
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/download/DownloadInfo.smali"
-    const-string v3,  "clone"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     :try_start_0
@@ -320,12 +312,8 @@
 .end method
 
 .method public copyFrom(Lcom/igexin/download/DownloadInfo;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadInfo.smali"
-    const-string v2,  "copyFrom"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget v0, p1, Lcom/igexin/download/DownloadInfo;->mControl:I
 
     iput v0, p0, Lcom/igexin/download/DownloadInfo;->mControl:I
@@ -363,12 +351,8 @@
 .end method
 
 .method public hasCompletionNotification()Z
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/DownloadInfo.smali"
-    const-string v4,  "hasCompletionNotification"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x1
 
     const/4 v0, 0x0
@@ -396,12 +380,8 @@
 .end method
 
 .method public isReadyToRestart(J)Z
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/download/DownloadInfo.smali"
-    const-string v6,  "isReadyToRestart"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     const/4 v1, 0x1
@@ -473,12 +453,8 @@
 .end method
 
 .method public isReadyToStart(J)Z
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/download/DownloadInfo.smali"
-    const-string v6,  "isReadyToStart"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     const/4 v1, 0x1
@@ -552,12 +528,8 @@
 .end method
 
 .method public refreshSpeed()V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/download/DownloadInfo.smali"
-    const-string v7,  "refreshSpeed"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-wide/16 v4, 0x0
 
     iget v0, p0, Lcom/igexin/download/DownloadInfo;->mStatus:I
@@ -670,12 +642,8 @@
 .end method
 
 .method public restartTime()J
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/download/DownloadInfo.smali"
-    const-string v6,  "restartTime"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget v0, p0, Lcom/igexin/download/DownloadInfo;->mRetryAfter:I
 
     if-lez v0, :cond_0

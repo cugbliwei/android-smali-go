@@ -22,11 +22,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/c/c/d.smali"
-    const-string v2,  ".method public constructor <init>()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-direct {p0}, Lcom/igexin/push/c/c/e;-><init>()V
 
@@ -52,11 +48,7 @@
 
 # virtual methods
 .method public final a()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/c/c/d.smali"
-    const-string v2,  ".method public final a()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const/16 v0, 0x80
 
@@ -66,11 +58,7 @@
 .end method
 
 .method public a([B)V
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/c/c/d.smali"
-    const-string v6,  ".method public a([B)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     const/4 v1, 0x0
 
@@ -269,11 +257,7 @@
 .end method
 
 .method public d()[B
-    .locals 16
-
-    const-string v14, "======================== PokerFishs/smali/com/igexin/push/c/c/d.smali"
-    const-string v15,  ".method public d()[B"
-    invoke-static {v14,v15} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 14
 
     const/4 v1, 0x0
 

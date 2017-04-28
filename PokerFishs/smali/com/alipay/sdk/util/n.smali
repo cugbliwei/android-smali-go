@@ -15,7 +15,7 @@
     .locals 0
 
     .prologue
-    .line 679
+    .line 694
     iput-object p1, p0, Lcom/alipay/sdk/util/n;->a:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,11 +29,11 @@
     .locals 1
 
     .prologue
-    .line 682
+    .line 697
     iget-object v0, p0, Lcom/alipay/sdk/util/n;->a:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 683
+    .line 698
     return-void
 .end method

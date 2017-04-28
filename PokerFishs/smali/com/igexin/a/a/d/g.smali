@@ -63,12 +63,8 @@
 
 # virtual methods
 .method public final a()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/d/g.smali"
-    const-string v3,  ".method public final a()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     iget-object v0, p0, Lcom/igexin/a/a/d/g;->a:Ljava/util/concurrent/BlockingQueue;
@@ -83,12 +79,8 @@
 .end method
 
 .method public final a(Lcom/igexin/a/a/d/d;)V
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/a/a/d/g.smali"
-    const-string v6,  ".method public final a(Lcom/igexin/a/a/d/d;)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v3, 0x0
 
     const/4 v0, 0x1
@@ -253,12 +245,8 @@
 .end method
 
 .method final b()Lcom/igexin/a/a/d/d;
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/a/a/d/g.smali"
-    const-string v6,  ".method final b()Lcom/igexin/a/a/d/d;"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     :cond_0
@@ -374,12 +362,8 @@
 .end method
 
 .method public final run()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/d/g.smali"
-    const-string v4,  ".method public final run()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     const/4 v0, 0x1

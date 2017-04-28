@@ -105,12 +105,8 @@
 
 # virtual methods
 .method public final a(JLjava/util/concurrent/TimeUnit;)I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/a/a/d/d.smali"
-    const-string v6,  ".method public final a(JLjava/util/concurrent/TimeUnit;)I"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     const-wide/16 v2, 0x0
@@ -173,12 +169,8 @@
 .end method
 
 .method public a(Ljava/util/concurrent/TimeUnit;)J
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/d/d.smali"
-    const-string v4,  ".method public a(Ljava/util/concurrent/TimeUnit;)J"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p0}, Lcom/igexin/a/a/d/d;->n()J
 
     move-result-wide v0
@@ -193,12 +185,8 @@
 .end method
 
 .method public final a(I)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/d/d.smali"
-    const-string v3,  ".method public final a(I)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-byte v0, p0, Lcom/igexin/a/a/d/d;->a:B
 
     and-int/lit8 v0, v0, 0xf
@@ -223,12 +211,8 @@
 .end method
 
 .method public final a(ILcom/igexin/a/a/d/a/g;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/d/d.smali"
-    const-string v3,  ".method public final a(ILcom/igexin/a/a/d/a/g;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     if-gez p1, :cond_0
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -272,12 +256,8 @@
 .end method
 
 .method public a_()V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/d/d.smali"
-    const-string v2,  ".method public a_()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -292,12 +272,8 @@
 .end method
 
 .method public c()V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/d/d.smali"
-    const-string v2,  ".method public c()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-boolean v0, p0, Lcom/igexin/a/a/d/d;->w:Z
 
     if-nez v0, :cond_0
@@ -433,12 +409,8 @@
 .end method
 
 .method protected u()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/d/d.smali"
-    const-string v3,  ".method protected u()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     iget-boolean v0, p0, Lcom/igexin/a/a/d/d;->z:Z
@@ -495,12 +467,8 @@
 .end method
 
 .method protected v()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/d/d.smali"
-    const-string v3,  ".method protected v()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/a/a/d/d;->W:Lcom/igexin/a/a/d/a/d;
 
     if-eqz v0, :cond_0

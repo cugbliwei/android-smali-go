@@ -14,11 +14,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/c/c/b.smali"
-    const-string v1,  ".method public constructor <init>()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,11 +24,7 @@
 
 # virtual methods
 .method public a([B)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/c/c/b.smali"
-    const-string v2,  ".method public a([B)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     if-nez p1, :cond_0
 
@@ -54,11 +46,7 @@
 .end method
 
 .method public a()[B
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/c/c/b.smali"
-    const-string v6,  ".method public a()[B"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     const/4 v4, 0x0
 

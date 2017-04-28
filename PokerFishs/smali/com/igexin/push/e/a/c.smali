@@ -12,11 +12,7 @@
 
 # direct methods
 .method public constructor <init>(Lcom/igexin/push/e/a/b;)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/e/a/c.smali"
-    const-string v2,  ".method public constructor <init>(Lcom/igexin/push/e/a/b;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const/4 v0, 0x0
 
@@ -30,11 +26,7 @@
 
 # virtual methods
 .method public final a_()V
-    .locals 9
-
-    const-string v7, "======================== PokerFishs/smali/com/igexin/push/e/a/c.smali"
-    const-string v8,  ".method public final a_()V"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 7
 
     const/4 v6, 0x2
 
@@ -313,11 +305,7 @@
 .end method
 
 .method public final b()I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/e/a/c.smali"
-    const-string v2,  ".method public final b()I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const v0, -0x7ffffff6
 
@@ -325,11 +313,7 @@
 .end method
 
 .method public d()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/e/a/c.smali"
-    const-string v2,  ".method public d()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const/4 v0, 0x1
 
@@ -339,21 +323,13 @@
 .end method
 
 .method protected e()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/e/a/c.smali"
-    const-string v1,  ".method protected e()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     return-void
 .end method
 
 .method public f()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/e/a/c.smali"
-    const-string v2,  ".method public f()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     invoke-super {p0}, Lcom/igexin/a/a/d/d;->f()V
 

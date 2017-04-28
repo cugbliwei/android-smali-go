@@ -38,65 +38,44 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 5
 
     .prologue
     .line 83
-    iget-object v2, p0, Lcom/p/NativeTools$3;->val$infos:Ljava/lang/String;
+    iget-object v1, p0, Lcom/p/NativeTools$3;->val$infos:Ljava/lang/String;
 
-    const-string v3, ":"
+    const-string v2, ":"
 
-    invoke-virtual {v2, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
     .line 84
-    .local v1, "ss":[Ljava/lang/String;
-    new-instance v0, Landroid/content/Intent;
+    .local v0, "ss":[Ljava/lang/String;
+    sget-object v1, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
 
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+    const/4 v2, 0x0
 
-    .line 85
-    .local v0, "intent":Landroid/content/Intent;
-    const-string v2, "w"
+    aget-object v2, v0, v2
 
-    const/4 v3, 0x0
+    invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
-    aget-object v3, v1, v3
-
-    invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v3
-
-    invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    .line 86
-    const-string v2, "h"
+    move-result v2
 
     const/4 v3, 0x1
 
-    aget-object v3, v1, v3
+    aget-object v3, v0, v3
 
     invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v3
 
-    invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+    new-instance v4, Lcom/p/NativeTools$3$1;
 
-    .line 87
-    sget-object v2, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
+    invoke-direct {v4, p0}, Lcom/p/NativeTools$3$1;-><init>(Lcom/p/NativeTools$3;)V
 
-    .line 88
-    const-class v3, Lcom/p/ImageActivity;
+    invoke-static {v1, v2, v3, v4}, Lcom/p/AlbumUtil;->getImage(Landroid/app/Activity;IILcom/p/Listen;)V
 
-    .line 87
-    invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
-
-    .line 89
-    sget-object v2, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
-
-    invoke-virtual {v2, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
-
-    .line 90
+    .line 98
     return-void
 .end method

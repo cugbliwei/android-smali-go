@@ -184,12 +184,8 @@
 .end method
 
 .method private a(Landroid/database/sqlite/SQLiteDatabase;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadProvider.smali"
-    const-string v2,  ".method private a(Landroid/database/sqlite/SQLiteDatabase;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     const-string v0, "CREATE TABLE downloads(_id INTEGER PRIMARY KEY AUTOINCREMENT,uri TEXT, method INTEGER, entity TEXT, no_integrity BOOLEAN, hint TEXT, otaupdate BOOLEAN, _data TEXT, mimetype TEXT, destination INTEGER, no_system BOOLEAN, visibility INTEGER, control INTEGER default 0, status INTEGER, numfailed INTEGER, lastmod BIGINT, createmod BIGINT, extras TEXT, cookiedata TEXT, useragent TEXT, referer TEXT, total_bytes INTEGER, current_bytes INTEGER, etag TEXT, uid INTEGER, otheruid INTEGER, title TEXT, description TEXT, scanned BOOLEAN,data_1 TEXT, data_2 TEXT, data_3 TEXT, data_4 TEXT, data_5 TEXT, data_6 TEXT, data_7 TEXT, data_8 TEXT, data_9 TEXT, data_10 BIGINT, iswebicon INTEGER);"
 
@@ -229,12 +225,8 @@
 .end method
 
 .method private b(Landroid/database/sqlite/SQLiteDatabase;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadProvider.smali"
-    const-string v2,  ".method private b(Landroid/database/sqlite/SQLiteDatabase;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     const-string v0, "DROP TABLE IF EXISTS downloads"
 
@@ -259,12 +251,8 @@
 .end method
 
 .method private static final b(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadProvider.smali"
-    const-string v2,  ".method private static final b(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p1, p0}, Landroid/content/ContentValues;->getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v0
@@ -278,12 +266,8 @@
 .end method
 
 .method private static final c(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadProvider.smali"
-    const-string v2,  ".method private static final c"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p1, p0}, Landroid/content/ContentValues;->getAsBoolean(Ljava/lang/String;)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -297,12 +281,8 @@
 .end method
 
 .method private static final d(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/DownloadProvider.smali"
-    const-string v2,  ".method private static final d"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p1, p0}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -318,12 +298,8 @@
 
 # virtual methods
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/download/DownloadProvider.smali"
-    const-string v7,  ".method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v4, 0x1
 
     sget-object v0, Lcom/igexin/download/DownloadProvider;->d:Ljava/util/HashSet;
@@ -585,12 +561,8 @@
 .end method
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/DownloadProvider.smali"
-    const-string v4,  ".method public getType(Landroid/net/Uri;)Ljava/lang/String;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     sget-object v0, Lcom/igexin/download/DownloadProvider;->b:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
@@ -650,12 +622,8 @@
 .end method
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/download/DownloadProvider.smali"
-    const-string v9,  "insert"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v3, 0x1
 
     const/4 v0, 0x0
@@ -1014,12 +982,8 @@
 .end method
 
 .method public onCreate()Z
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/download/DownloadProvider.smali"
-    const-string v6,  "onCreate"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v4, 0x1
 
     new-instance v0, Lcom/igexin/download/b;
@@ -1086,12 +1050,8 @@
 .end method
 
 .method public openFile(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
-    .locals 11
+    .locals 9
 
-    const-string v9, "======================== igexin/download/DownloadProvider.smali"
-    const-string v10,  "openFile"
-    invoke-static {v9,v10} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v8, 0x1
 
     const/4 v7, 0x0
@@ -1724,12 +1684,8 @@
 .end method
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/download/DownloadProvider.smali"
-    const-string v8,  "update"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v2, 0x0
 
     const/4 v1, 0x1

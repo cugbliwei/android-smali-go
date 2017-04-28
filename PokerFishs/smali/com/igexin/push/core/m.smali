@@ -8,11 +8,7 @@
 
 # direct methods
 .method private constructor <init>()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/m.smali"
-    const-string v1,  ".method private constructor <init>()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -20,11 +16,7 @@
 .end method
 
 .method public static a()Lcom/igexin/push/core/m;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/m.smali"
-    const-string v2,  ".method public static a()Lcom/igexin/push/core/m;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     sget-object v0, Lcom/igexin/push/core/m;->a:Lcom/igexin/push/core/m;
 
@@ -45,11 +37,7 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/core/m.smali"
-    const-string v3,  ".method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     invoke-static {}, Lcom/igexin/push/core/f;->a()Lcom/igexin/push/core/f;
 

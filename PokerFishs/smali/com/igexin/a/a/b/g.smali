@@ -4,12 +4,8 @@
 
 # direct methods
 .method public static final a(I[BI)I
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/g.smali"
-    const-string v3,  ".method public static final a(I[BI)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     shr-int/lit8 v0, p0, 0x18
 
     and-int/lit16 v0, v0, 0xff
@@ -52,12 +48,8 @@
 .end method
 
 .method public static final a(J[BI)I
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/a/a/b/a/g.smali"
-    const-string v9,  ".method public static final a(J[BI)I"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v6, 0x8
 
     const-wide/16 v4, 0xff
@@ -188,12 +180,8 @@
 .end method
 
 .method public static final a([Ljava/lang/String;)Ljava/lang/String;
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/a/a/b/a/g.smali"
-    const-string v9,  ".method public static final a([Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v7, 0x4
 
     const/4 v6, 0x2
@@ -342,12 +330,8 @@
 .end method
 
 .method private static a(Ljava/io/InputStream;Ljava/io/OutputStream;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/b/a/g.smali"
-    const-string v4,  ".method private static a(Ljava/io/InputStream;Ljava/io/OutputStream;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v0, 0x400
 
     new-array v0, v0, [B
@@ -372,12 +356,8 @@
 .end method
 
 .method public static a(Ljava/io/InputStream;Ljava/io/OutputStream;I)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/b/a/g.smali"
-    const-string v2,  ".method public static a(Ljava/io/InputStream;Ljava/io/OutputStream;I)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lcom/igexin/a/a/b/a;
 
     invoke-direct {v0, p1, p2}, Lcom/igexin/a/a/b/a;-><init>(Ljava/io/OutputStream;I)V
@@ -390,12 +370,8 @@
 .end method
 
 .method public static final a(I)[B
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/a/a/b/a/g.smali"
-    const-string v7,  ".method public static final a(I)[B"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     move v2, v1
@@ -455,12 +431,8 @@
 .end method
 
 .method public static a([B)[B
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/a/a/b/a/g.smali"
-    const-string v6,  ".method public static a([B)[B"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     new-instance v2, Ljava/io/ByteArrayOutputStream;
@@ -582,12 +554,8 @@
 .end method
 
 .method public static final a(Ljava/lang/String;)[Ljava/lang/String;
-    .locals 13
+    .locals 11
 
-    const-string v11, "======================== igexin/a/a/b/a/g.smali"
-    const-string v12,  ".method public static final a(Ljava/lang/String;)[Ljava/lang/String;"
-    invoke-static {v11,v12} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v10, 0x1
 
     const/4 v9, 0x3
@@ -863,12 +831,8 @@
 .end method
 
 .method public static final b(I[BI)I
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/g.smali"
-    const-string v3,  ".method public static final b(I[BI)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     shr-int/lit8 v0, p0, 0x8
 
     and-int/lit16 v0, v0, 0xff
@@ -891,12 +855,8 @@
 .end method
 
 .method public static final b([BI)I
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/g.smali"
-    const-string v3,  ".method public static final b([BI)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     aget-byte v0, p0, p1
 
     and-int/lit16 v0, v0, 0xff
@@ -915,12 +875,8 @@
 .end method
 
 .method public static b([B)[B
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/a/a/b/a/g.smali"
-    const-string v8,  ".method public static b([B)[B"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     new-instance v3, Ljava/io/ByteArrayInputStream;
@@ -1095,12 +1051,8 @@
 .end method
 
 .method public static final c(I[BI)I
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/b/a/g.smali"
-    const-string v2,  ".method public static final c(I[BI)I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     int-to-byte v0, p0
 
     aput-byte v0, p1, p2
@@ -1111,12 +1063,8 @@
 .end method
 
 .method public static final c([BI)I
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/b/a/g.smali"
-    const-string v3,  ".method public static final c([BI)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     aget-byte v0, p0, p1
 
     and-int/lit16 v0, v0, 0xff
@@ -1155,12 +1103,8 @@
 .end method
 
 .method public static final d([BI)J
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/a/a/b/a/g.smali"
-    const-string v9,  ".method public static final d([BI)J"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-wide/16 v6, 0xff
 
     aget-byte v0, p0, p1
@@ -1271,12 +1215,8 @@
 .end method
 
 .method public static e([BI)[B
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/a/a/b/a/g.smali"
-    const-string v6,  ".method public static e([BI)[B"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v1, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v1, p0}, Ljava/io/ByteArrayInputStream;-><init>([B)V

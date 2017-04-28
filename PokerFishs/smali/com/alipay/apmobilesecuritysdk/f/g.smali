@@ -29,7 +29,7 @@
 
     const-string v3, ""
 
-    invoke-static {p0, v0, v2, v3}, Lcom/alipay/b/a/a/d/c;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0, v2, v3}, Lcom/alipay/b/a/a/d/d;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

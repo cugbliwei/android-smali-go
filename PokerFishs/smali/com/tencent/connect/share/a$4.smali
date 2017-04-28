@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/tencent/connect/share/a;->a(Landroid/content/Context;Ljava/util/ArrayList;Lcom/tencent/open/utils/AsynLoadImgBack;)V
+    value = Lcom/tencent/connect/share/a;->a(Landroid/content/Context;Ljava/util/ArrayList;Lcom/tencent/open/utils/c;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -70,13 +70,13 @@
     check-cast v0, Ljava/lang/String;
 
     .line 149
-    invoke-static {v0}, Lcom/tencent/open/utils/Util;->isValidUrl(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/tencent/open/utils/i;->g(Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    invoke-static {v0}, Lcom/tencent/open/utils/Util;->fileExists(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/tencent/open/utils/i;->h(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -114,7 +114,7 @@
     move-result-object v3
 
     .line 157
-    invoke-static {v0}, Lcom/tencent/open/utils/Util;->encrypt(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/tencent/open/utils/i;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 

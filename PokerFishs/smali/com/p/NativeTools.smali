@@ -55,14 +55,14 @@
     .locals 1
 
     .prologue
-    .line 148
+    .line 156
     new-instance v0, Lcom/p/NativeTools$6;
 
     invoke-direct {v0}, Lcom/p/NativeTools$6;-><init>()V
 
     invoke-static {v0}, Lcom/p/NativeTools;->safeRun(Ljava/lang/Runnable;)V
 
-    .line 156
+    .line 164
     return-void
 .end method
 
@@ -143,14 +143,14 @@
     .param p0, "path"    # Ljava/lang/String;
 
     .prologue
-    .line 95
+    .line 103
     const-string v0, "NativeTools"
 
     const-string v1, "GetPictureCallBack"
 
     invoke-static {v0, v1, p0}, Lcom/unity3d/player/UnityPlayer;->UnitySendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 96
+    .line 104
     return-void
 .end method
 
@@ -238,7 +238,7 @@
 
     invoke-static {v0}, Lcom/p/NativeTools;->safeRun(Ljava/lang/Runnable;)V
 
-    .line 92
+    .line 100
     return-void
 .end method
 
@@ -246,22 +246,22 @@
     .locals 1
 
     .prologue
-    .line 99
+    .line 107
     sget-boolean v0, Lcom/p/NativeTools;->isLisPowser:Z
 
     if-eqz v0, :cond_0
 
-    .line 113
+    .line 121
     :goto_0
     return-void
 
-    .line 101
+    .line 109
     :cond_0
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/p/NativeTools;->isLisPowser:Z
 
-    .line 102
+    .line 110
     new-instance v0, Lcom/p/NativeTools$4;
 
     invoke-direct {v0}, Lcom/p/NativeTools$4;-><init>()V
@@ -275,22 +275,22 @@
     .locals 1
 
     .prologue
-    .line 121
+    .line 129
     sget-boolean v0, Lcom/p/NativeTools;->isLisSemaphore:Z
 
     if-eqz v0, :cond_0
 
-    .line 140
+    .line 148
     :goto_0
     return-void
 
-    .line 123
+    .line 131
     :cond_0
     const/4 v0, 0x1
 
     sput-boolean v0, Lcom/p/NativeTools;->isLisSemaphore:Z
 
-    .line 124
+    .line 132
     new-instance v0, Lcom/p/NativeTools$5;
 
     invoke-direct {v0}, Lcom/p/NativeTools$5;-><init>()V
@@ -306,7 +306,7 @@
     .param p1, "status"    # I
 
     .prologue
-    .line 116
+    .line 124
     const-string v0, "NativeTools"
 
     const-string v1, "RefreshPowerInfo"
@@ -319,7 +319,7 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 117
+    .line 125
     const-string v3, ":"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -334,10 +334,10 @@
 
     move-result-object v2
 
-    .line 116
+    .line 124
     invoke-static {v0, v1, v2}, Lcom/unity3d/player/UnityPlayer;->UnitySendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 118
+    .line 126
     return-void
 .end method
 
@@ -347,12 +347,12 @@
     .param p1, "signalLevel"    # I
 
     .prologue
-    .line 143
+    .line 151
     const-string v0, "NativeTools"
 
     const-string v1, "RefreshSemaphoreInfo"
 
-    .line 144
+    .line 152
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -379,10 +379,10 @@
 
     move-result-object v2
 
-    .line 143
+    .line 151
     invoke-static {v0, v1, v2}, Lcom/unity3d/player/UnityPlayer;->UnitySendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 145
+    .line 153
     return-void
 .end method
 
@@ -391,12 +391,12 @@
     .param p0, "r"    # Ljava/lang/Runnable;
 
     .prologue
-    .line 159
+    .line 167
     sget-object v0, Lcom/unity3d/player/UnityPlayer;->currentActivity:Landroid/app/Activity;
 
     invoke-virtual {v0, p0}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 160
+    .line 168
     return-void
 .end method
 

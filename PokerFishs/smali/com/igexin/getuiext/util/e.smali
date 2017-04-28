@@ -42,12 +42,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/getuiext/util/e.smali"
-    const-string v7,  ".method public static a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     const/4 v0, 0x0
@@ -109,12 +105,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/util/e.smali"
-    const-string v3,  ".method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -148,12 +140,8 @@
 .end method
 
 .method public static b(Landroid/content/Context;Ljava/lang/String;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/util/e.smali"
-    const-string v4,  ".method public static b(Landroid/content/Context;Ljava/lang/String;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.intent.action.VIEW"

@@ -61,12 +61,8 @@
 .end method
 
 .method public a(Landroid/content/Context;)Z
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/sdk/a/a.smali"
-    const-string v3,  ".method public a(Landroid/content/Context;)Z"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const-string v0, "com.igexin.push.core.stub.PushCore"
 
     :try_start_0

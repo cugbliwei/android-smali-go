@@ -20,12 +20,8 @@
 
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/download/j.smali"
-    const-string v6,  ".method public handleMessage(Landroid/os/Message;)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0

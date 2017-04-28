@@ -36,12 +36,8 @@
 .end method
 
 .method private a()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/service/GetuiExtService.smali"
-    const-string v3,  ".method private a()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "GetuiExt-GetuiExtService"
@@ -90,12 +86,8 @@
 .end method
 
 .method private b()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/service/GetuiExtService.smali"
-    const-string v4,  ".method private b()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {p0}, Lcom/igexin/download/SdkDownLoader;->getInstantiate(Landroid/content/Context;)Lcom/igexin/download/SdkDownLoader;
 
     move-result-object v1
@@ -123,12 +115,8 @@
 .end method
 
 .method private c()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/service/GetuiExtService.smali"
-    const-string v3,  ".method private c()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lcom/igexin/getuiext/service/j;
 
     invoke-direct {v0, p0}, Lcom/igexin/getuiext/service/j;-><init>(Lcom/igexin/getuiext/service/GetuiExtService;)V
@@ -155,12 +143,8 @@
 .end method
 
 .method private d()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/service/GetuiExtService.smali"
-    const-string v3,  ".method private d()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lcom/igexin/getuiext/service/GetuiExtReceiver;
 
     invoke-direct {v0}, Lcom/igexin/getuiext/service/GetuiExtReceiver;-><init>()V
@@ -201,12 +185,8 @@
 .end method
 
 .method public onCreate()V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/getuiext/service/GetuiExtService.smali"
-    const-string v5,  ".method public onCreate()V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
     iput-object p0, p0, Lcom/igexin/getuiext/service/GetuiExtService;->c:Landroid/content/Context;
@@ -313,12 +293,8 @@
 .end method
 
 .method public onStart(Landroid/content/Intent;I)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/service/GetuiExtService.smali"
-    const-string v4,  ".method public onStart(Landroid/content/Intent;I)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v2, 0x2afa
 
     if-eqz p1, :cond_0

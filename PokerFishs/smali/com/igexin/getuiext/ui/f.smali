@@ -26,12 +26,8 @@
 .end method
 
 .method public static a(Landroid/content/Context;)Lcom/igexin/getuiext/ui/f;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/ui/f.smali"
-    const-string v2,  ".method public static a(Landroid/content/Context;)Lcom/igexin/getuiext/ui/f;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     sget-object v0, Lcom/igexin/getuiext/ui/f;->b:Lcom/igexin/getuiext/ui/f;
 
     if-nez v0, :cond_0
@@ -49,12 +45,8 @@
 .end method
 
 .method private a()V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/ui/f.smali"
-    const-string v2,  ".method private a()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/ui/f;->a:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
@@ -69,12 +61,8 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;Ljava/lang/String;)I
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/getuiext/ui/f.smali"
-    const-string v3,  ".method public a(Ljava/lang/String;Ljava/lang/String;)I"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/ui/f;->a:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
@@ -97,12 +85,8 @@
 .end method
 
 .method public a(Ljava/lang/String;)Landroid/graphics/drawable/NinePatchDrawable;
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/getuiext/ui/f.smali"
-    const-string v8,  ".method public a(Ljava/lang/String;)Landroid/graphics/drawable/NinePatchDrawable;"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v6, 0x0
 
     :try_start_0
@@ -161,12 +145,8 @@
 .end method
 
 .method public b(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/ui/f.smali"
-    const-string v4,  ".method public b(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x0
 
     :try_start_0
@@ -196,12 +176,8 @@
 .end method
 
 .method public c(Ljava/lang/String;)Landroid/graphics/Bitmap;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/ui/f.smali"
-    const-string v2,  ".method public c(Ljava/lang/String;)Landroid/graphics/Bitmap;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     iget-object v0, p0, Lcom/igexin/getuiext/ui/f;->c:Landroid/content/res/AssetManager;
 

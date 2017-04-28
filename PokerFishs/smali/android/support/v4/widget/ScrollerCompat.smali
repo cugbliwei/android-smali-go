@@ -1,65 +1,89 @@
-.class Landroid/support/v4/widget/ScrollerCompat;
+.class public final Landroid/support/v4/widget/ScrollerCompat;
 .super Ljava/lang/Object;
 .source "ScrollerCompat.java"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplIcs;
-    }
-.end annotation
-
-
 # instance fields
-.field mScroller:Landroid/widget/Scroller;
+.field private final mIsIcsOrNewer:Z
+
+.field mScroller:Landroid/widget/OverScroller;
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;)V
+.method constructor <init>(ZLandroid/content/Context;Landroid/view/animation/Interpolator;)V
     .locals 1
-    .param p1, "context"    # Landroid/content/Context;
+    .param p1, "isIcsOrNewer"    # Z
+    .param p2, "context"    # Landroid/content/Context;
+    .param p3, "interpolator"    # Landroid/view/animation/Interpolator;
 
     .prologue
-    .line 50
+    .line 49
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 50
+    iput-boolean p1, p0, Landroid/support/v4/widget/ScrollerCompat;->mIsIcsOrNewer:Z
+
     .line 51
-    new-instance v0, Landroid/widget/Scroller;
+    if-eqz p3, :cond_0
 
-    invoke-direct {v0, p1}, Landroid/widget/Scroller;-><init>(Landroid/content/Context;)V
+    new-instance v0, Landroid/widget/OverScroller;
 
-    iput-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    invoke-direct {v0, p2, p3}, Landroid/widget/OverScroller;-><init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
 
-    .line 52
+    :goto_0
+    iput-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
+
+    .line 53
     return-void
+
+    .line 51
+    :cond_0
+    new-instance v0, Landroid/widget/OverScroller;
+
+    invoke-direct {v0, p2}, Landroid/widget/OverScroller;-><init>(Landroid/content/Context;)V
+
+    goto :goto_0
 .end method
 
-.method public static from(Landroid/content/Context;)Landroid/support/v4/widget/ScrollerCompat;
-    .locals 2
+.method public static create(Landroid/content/Context;)Landroid/support/v4/widget/ScrollerCompat;
+    .locals 1
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 44
+    .line 38
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Landroid/support/v4/widget/ScrollerCompat;->create(Landroid/content/Context;Landroid/view/animation/Interpolator;)Landroid/support/v4/widget/ScrollerCompat;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static create(Landroid/content/Context;Landroid/view/animation/Interpolator;)Landroid/support/v4/widget/ScrollerCompat;
+    .locals 3
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "interpolator"    # Landroid/view/animation/Interpolator;
+
+    .prologue
+    .line 42
+    new-instance v1, Landroid/support/v4/widget/ScrollerCompat;
+
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0xe
+    const/16 v2, 0xe
 
-    if-lt v0, v1, :cond_0
+    if-lt v0, v2, :cond_0
 
-    .line 45
-    new-instance v0, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplIcs;
+    const/4 v0, 0x1
 
-    invoke-direct {v0, p0}, Landroid/support/v4/widget/ScrollerCompat$ScrollerCompatImplIcs;-><init>(Landroid/content/Context;)V
-
-    .line 47
     :goto_0
-    return-object v0
+    invoke-direct {v1, v0, p0, p1}, Landroid/support/v4/widget/ScrollerCompat;-><init>(ZLandroid/content/Context;Landroid/view/animation/Interpolator;)V
+
+    return-object v1
 
     :cond_0
-    new-instance v0, Landroid/support/v4/widget/ScrollerCompat;
-
-    invoke-direct {v0, p0}, Landroid/support/v4/widget/ScrollerCompat;-><init>(Landroid/content/Context;)V
+    const/4 v0, 0x0
 
     goto :goto_0
 .end method
@@ -70,12 +94,12 @@
     .locals 1
 
     .prologue
-    .line 179
-    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    .line 228
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
-    invoke-virtual {v0}, Landroid/widget/Scroller;->abortAnimation()V
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->abortAnimation()V
 
-    .line 180
+    .line 229
     return-void
 .end method
 
@@ -83,10 +107,10 @@
     .locals 1
 
     .prologue
-    .line 111
-    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    .line 116
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
-    invoke-virtual {v0}, Landroid/widget/Scroller;->computeScrollOffset()Z
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->computeScrollOffset()Z
 
     move-result v0
 
@@ -105,8 +129,8 @@
     .param p8, "maxY"    # I
 
     .prologue
-    .line 170
-    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    .line 175
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
     move v1, p1
 
@@ -124,9 +148,52 @@
 
     move/from16 v8, p8
 
-    invoke-virtual/range {v0 .. v8}, Landroid/widget/Scroller;->fling(IIIIIIII)V
+    invoke-virtual/range {v0 .. v8}, Landroid/widget/OverScroller;->fling(IIIIIIII)V
 
-    .line 171
+    .line 176
+    return-void
+.end method
+
+.method public fling(IIIIIIIIII)V
+    .locals 11
+    .param p1, "startX"    # I
+    .param p2, "startY"    # I
+    .param p3, "velocityX"    # I
+    .param p4, "velocityY"    # I
+    .param p5, "minX"    # I
+    .param p6, "maxX"    # I
+    .param p7, "minY"    # I
+    .param p8, "maxY"    # I
+    .param p9, "overX"    # I
+    .param p10, "overY"    # I
+
+    .prologue
+    .line 203
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
+
+    move v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move/from16 v5, p5
+
+    move/from16 v6, p6
+
+    move/from16 v7, p7
+
+    move/from16 v8, p8
+
+    move/from16 v9, p9
+
+    move/from16 v10, p10
+
+    invoke-virtual/range {v0 .. v10}, Landroid/widget/OverScroller;->fling(IIIIIIIIII)V
+
+    .line 205
     return-void
 .end method
 
@@ -134,20 +201,34 @@
     .locals 1
 
     .prologue
-    .line 102
+    .line 107
+    iget-boolean v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mIsIcsOrNewer:Z
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
+
+    invoke-static {v0}, Landroid/support/v4/widget/ScrollerCompatIcs;->getCurrVelocity(Ljava/lang/Object;)F
+
+    move-result v0
+
+    :goto_0
+    return v0
+
+    :cond_0
     const/4 v0, 0x0
 
-    return v0
+    goto :goto_0
 .end method
 
 .method public getCurrX()I
     .locals 1
 
     .prologue
-    .line 78
-    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    .line 70
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
-    invoke-virtual {v0}, Landroid/widget/Scroller;->getCurrX()I
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->getCurrX()I
 
     move-result v0
 
@@ -158,24 +239,38 @@
     .locals 1
 
     .prologue
-    .line 87
-    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    .line 79
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
-    invoke-virtual {v0}, Landroid/widget/Scroller;->getCurrY()I
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->getCurrY()I
 
     move-result v0
 
     return v0
 .end method
 
-.method public getDuration()I
+.method public getFinalX()I
     .locals 1
 
     .prologue
-    .line 69
-    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    .line 86
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
-    invoke-virtual {v0}, Landroid/widget/Scroller;->getDuration()I
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->getFinalX()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getFinalY()I
+    .locals 1
+
+    .prologue
+    .line 93
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
+
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->getFinalY()I
 
     move-result v0
 
@@ -186,10 +281,88 @@
     .locals 1
 
     .prologue
-    .line 60
-    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    .line 61
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
-    invoke-virtual {v0}, Landroid/widget/Scroller;->isFinished()Z
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->isFinished()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public isOverScrolled()Z
+    .locals 1
+
+    .prologue
+    .line 280
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
+
+    invoke-virtual {v0}, Landroid/widget/OverScroller;->isOverScrolled()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public notifyHorizontalEdgeReached(III)V
+    .locals 1
+    .param p1, "startX"    # I
+    .param p2, "finalX"    # I
+    .param p3, "overX"    # I
+
+    .prologue
+    .line 246
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
+
+    invoke-virtual {v0, p1, p2, p3}, Landroid/widget/OverScroller;->notifyHorizontalEdgeReached(III)V
+
+    .line 247
+    return-void
+.end method
+
+.method public notifyVerticalEdgeReached(III)V
+    .locals 1
+    .param p1, "startY"    # I
+    .param p2, "finalY"    # I
+    .param p3, "overY"    # I
+
+    .prologue
+    .line 263
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
+
+    invoke-virtual {v0, p1, p2, p3}, Landroid/widget/OverScroller;->notifyVerticalEdgeReached(III)V
+
+    .line 264
+    return-void
+.end method
+
+.method public springBack(IIIIII)Z
+    .locals 7
+    .param p1, "startX"    # I
+    .param p2, "startY"    # I
+    .param p3, "minX"    # I
+    .param p4, "maxX"    # I
+    .param p5, "minY"    # I
+    .param p6, "maxY"    # I
+
+    .prologue
+    .line 220
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
+
+    move v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    move v6, p6
+
+    invoke-virtual/range {v0 .. v6}, Landroid/widget/OverScroller;->springBack(IIIIII)Z
 
     move-result v0
 
@@ -204,12 +377,12 @@
     .param p4, "dy"    # I
 
     .prologue
-    .line 129
-    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    .line 134
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
-    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/widget/Scroller;->startScroll(IIII)V
+    invoke-virtual {v0, p1, p2, p3, p4}, Landroid/widget/OverScroller;->startScroll(IIII)V
 
-    .line 130
+    .line 135
     return-void
 .end method
 
@@ -222,8 +395,8 @@
     .param p5, "duration"    # I
 
     .prologue
-    .line 146
-    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/Scroller;
+    .line 151
+    iget-object v0, p0, Landroid/support/v4/widget/ScrollerCompat;->mScroller:Landroid/widget/OverScroller;
 
     move v1, p1
 
@@ -235,8 +408,8 @@
 
     move v5, p5
 
-    invoke-virtual/range {v0 .. v5}, Landroid/widget/Scroller;->startScroll(IIIII)V
+    invoke-virtual/range {v0 .. v5}, Landroid/widget/OverScroller;->startScroll(IIIII)V
 
-    .line 147
+    .line 152
     return-void
 .end method

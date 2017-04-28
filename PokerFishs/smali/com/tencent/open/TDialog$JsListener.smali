@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/tencent/open/TDialog;
+.field final synthetic a:Lcom/tencent/open/TDialog;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     .prologue
     .line 320
-    iput-object p1, p0, Lcom/tencent/open/TDialog$JsListener;->this$0:Lcom/tencent/open/TDialog;
+    iput-object p1, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-direct {p0}, Lcom/tencent/open/a$b;-><init>()V
 
@@ -89,7 +89,7 @@
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 363
-    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->b(Lcom/tencent/open/TDialog;)Landroid/os/Handler;
 
@@ -104,7 +104,7 @@
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
     .line 364
-    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog;->dismiss()V
 
@@ -186,7 +186,7 @@
 
     .prologue
     .line 356
-    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->b(Lcom/tencent/open/TDialog;)Landroid/os/Handler;
 
@@ -224,7 +224,7 @@
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 358
-    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {v0}, Lcom/tencent/open/TDialog;->dismiss()V
 
@@ -248,7 +248,7 @@
 
     .prologue
     .line 379
-    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->b(Lcom/tencent/open/TDialog;)Landroid/os/Handler;
 
@@ -271,7 +271,7 @@
 
     .prologue
     .line 369
-    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->this$0:Lcom/tencent/open/TDialog;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->b(Lcom/tencent/open/TDialog;)Landroid/os/Handler;
 

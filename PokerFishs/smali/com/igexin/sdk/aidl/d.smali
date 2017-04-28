@@ -31,12 +31,8 @@
 .end method
 
 .method public extFunction([B)[B
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/aldl/d.smali"
-    const-string v6,  ".method public extFunction([B)[B"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -85,12 +81,8 @@
 .end method
 
 .method public isStarted(Ljava/lang/String;)I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/aldl/d.smali"
-    const-string v6,  ".method public isStarted(Ljava/lang/String;)I"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -139,12 +131,8 @@
 .end method
 
 .method public onASNLConnected(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)I
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/sdk/aldl/d.smali"
-    const-string v7,  ".method public onASNLConnected(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)I"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -199,12 +187,8 @@
 .end method
 
 .method public onASNLNetworkConnected()I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/aldl/d.smali"
-    const-string v6,  ".method public onASNLNetworkConnected()I"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -251,12 +235,8 @@
 .end method
 
 .method public onASNLNetworkDisconnected()I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/aldl/d.smali"
-    const-string v6,  ".method public onASNLNetworkDisconnected()I"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -303,12 +283,8 @@
 .end method
 
 .method public onPSNLConnected(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)I
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/sdk/aldl/d.smali"
-    const-string v7,  ".method public onPSNLConnected(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)I"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -363,12 +339,8 @@
 .end method
 
 .method public receiveToPSNL(Ljava/lang/String;Ljava/lang/String;[B)I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/aldl/d.smali"
-    const-string v6,  ".method public receiveToPSNL(Ljava/lang/String;Ljava/lang/String;[B)I"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -421,12 +393,8 @@
 .end method
 
 .method public sendByASNL(Ljava/lang/String;Ljava/lang/String;[B)I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/aldl/d.smali"
-    const-string v6,  ".method public sendByASNL(Ljava/lang/String;Ljava/lang/String;[B)I"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -479,12 +447,8 @@
 .end method
 
 .method public setSilentTime(IILjava/lang/String;)I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/aldl/d.smali"
-    const-string v6,  ".method public setSilentTime(IILjava/lang/String;)I"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -537,12 +501,8 @@
 .end method
 
 .method public startService(Ljava/lang/String;)I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/aldl/d.smali"
-    const-string v6,  ".method public startService(Ljava/lang/String;)II"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
@@ -591,12 +551,8 @@
 .end method
 
 .method public stopService(Ljava/lang/String;)I
-    .locals 7
+    .locals 5
 
-    const-string v5, "======================== igexin/sdk/aldl/d.smali"
-    const-string v6,  ".method public stopService(Ljava/lang/String;)I"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1

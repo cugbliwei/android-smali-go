@@ -130,13 +130,13 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
+    invoke-static {p0, v0}, Lcom/tencent/open/utils/e;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/e;
 
     move-result-object v0
 
     const-string v1, "Common_ta_enable"
 
-    invoke-virtual {v0, v1}, Lcom/tencent/open/utils/OpenConfig;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lcom/tencent/open/utils/e;->b(Ljava/lang/String;)Z
 
     move-result v0
 

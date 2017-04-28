@@ -28,12 +28,8 @@
 
 # virtual methods
 .method public run()V
-    .locals 10
+    .locals 8
 
-    const-string v8, "======================== igexin/getuiext/service/g.smali"
-    const-string v9,  ".method public run()V"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/getuiext/service/g;->a:Lcom/igexin/getuiext/service/d;
 
     invoke-static {v0}, Lcom/igexin/getuiext/service/d;->a(Lcom/igexin/getuiext/service/d;)Landroid/util/SparseArray;

@@ -36,12 +36,8 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/util/BsPatchUtil.smali"
-    const-string v2,  ".method public a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     invoke-direct {p0, p1, p2, p3}, Lcom/igexin/getuiext/util/BsPatchUtil;->bsPatch(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0

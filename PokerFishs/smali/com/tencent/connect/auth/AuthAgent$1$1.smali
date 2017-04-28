@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 287
+    .line 291
     iput-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$1$1;->b:Lcom/tencent/connect/auth/AuthAgent$1;
 
     iput-object p2, p0, Lcom/tencent/connect/auth/AuthAgent$1$1;->a:Landroid/app/Activity;
@@ -44,8 +44,8 @@
     .locals 6
 
     .prologue
-    .line 291
-    new-instance v0, Lcom/tencent/connect/auth/AuthDialog;
+    .line 295
+    new-instance v0, Lcom/tencent/connect/auth/a;
 
     iget-object v1, p0, Lcom/tencent/connect/auth/AuthAgent$1$1;->a:Landroid/app/Activity;
 
@@ -67,9 +67,9 @@
 
     move-result-object v5
 
-    invoke-direct/range {v0 .. v5}, Lcom/tencent/connect/auth/AuthDialog;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;Lcom/tencent/connect/auth/QQToken;)V
+    invoke-direct/range {v0 .. v5}, Lcom/tencent/connect/auth/a;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;Lcom/tencent/connect/auth/QQToken;)V
 
-    .line 292
+    .line 296
     iget-object v1, p0, Lcom/tencent/connect/auth/AuthAgent$1$1;->a:Landroid/app/Activity;
 
     if-eqz v1, :cond_0
@@ -82,10 +82,10 @@
 
     if-nez v1, :cond_0
 
-    .line 293
-    invoke-virtual {v0}, Lcom/tencent/connect/auth/AuthDialog;->show()V
+    .line 297
+    invoke-virtual {v0}, Lcom/tencent/connect/auth/a;->show()V
 
-    .line 295
+    .line 299
     :cond_0
     return-void
 .end method

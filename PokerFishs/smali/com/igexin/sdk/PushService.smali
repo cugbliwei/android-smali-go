@@ -84,12 +84,8 @@
 .end method
 
 .method private b()V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/sdk/PushService.smali"
-    const-string v3,  ".method private b()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -149,12 +145,8 @@
 .end method
 
 .method private c()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/sdk/PushService.smali"
-    const-string v4,  ".method private c()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -226,12 +218,8 @@
 .end method
 
 .method private d()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/sdk/PushService.smali"
-    const-string v4,  ".method private d()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -301,12 +289,8 @@
 
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/sdk/PushService.smali"
-    const-string v2,  ".method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/sdk/PushService;->b:Lcom/igexin/sdk/IPushCore;
 
     if-eqz v0, :cond_0
@@ -388,12 +372,8 @@
 .end method
 
 .method public onStartCommand(Landroid/content/Intent;II)I
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/sdk/PushService.smali"
-    const-string v5,  ".method public onStartCommand(Landroid/content/Intent;II)I"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v0, 0x1
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I

@@ -18,13 +18,11 @@
 
 
 # instance fields
-.field private mAction:Ljava/lang/String;
+.field a:Ljava/lang/String;
 
-.field mAppid:Ljava/lang/String;
+.field b:Ljava/lang/String;
 
-.field mUrl:Ljava/lang/String;
-
-.field private mWeakCtx:Ljava/lang/ref/WeakReference;
+.field private c:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference",
@@ -35,7 +33,9 @@
     .end annotation
 .end field
 
-.field private mWeakL:Lcom/tencent/tauth/IUiListener;
+.field private d:Ljava/lang/String;
+
+.field private e:Lcom/tencent/tauth/IUiListener;
 
 
 # direct methods
@@ -51,41 +51,41 @@
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakCtx:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->c:Ljava/lang/ref/WeakReference;
 
     .line 141
-    iput-object p2, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mAction:Ljava/lang/String;
+    iput-object p2, p0, Lcom/tencent/open/TDialog$OnTimeListener;->d:Ljava/lang/String;
 
     .line 142
-    iput-object p3, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mUrl:Ljava/lang/String;
+    iput-object p3, p0, Lcom/tencent/open/TDialog$OnTimeListener;->a:Ljava/lang/String;
 
     .line 143
-    iput-object p4, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mAppid:Ljava/lang/String;
+    iput-object p4, p0, Lcom/tencent/open/TDialog$OnTimeListener;->b:Ljava/lang/String;
 
     .line 144
-    iput-object p5, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iput-object p5, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     .line 145
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/tencent/open/TDialog$OnTimeListener;Ljava/lang/String;)V
+.method static synthetic a(Lcom/tencent/open/TDialog$OnTimeListener;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 131
-    invoke-direct {p0, p1}, Lcom/tencent/open/TDialog$OnTimeListener;->onComplete(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/tencent/open/TDialog$OnTimeListener;->a(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method private onComplete(Ljava/lang/String;)V
+.method private a(Ljava/lang/String;)V
     .locals 3
 
     .prologue
     .line 149
     :try_start_0
-    invoke-static {p1}, Lcom/tencent/open/utils/Util;->parseJson(Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/tencent/open/utils/i;->d(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
@@ -126,19 +126,19 @@
 
     .prologue
     .line 181
-    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     if-eqz v0, :cond_0
 
     .line 182
-    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     invoke-interface {v0}, Lcom/tencent/tauth/IUiListener;->onCancel()V
 
     .line 183
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iput-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     .line 185
     :cond_0
@@ -163,7 +163,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mAction:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/open/TDialog$OnTimeListener;->d:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -191,7 +191,7 @@
 
     move-result v8
 
-    iget-object v9, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mUrl:Ljava/lang/String;
+    iget-object v9, p0, Lcom/tencent/open/TDialog$OnTimeListener;->a:Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -200,19 +200,19 @@
     invoke-virtual/range {v0 .. v10}, Lcom/tencent/open/b/g;->a(Ljava/lang/String;JJJILjava/lang/String;Z)V
 
     .line 162
-    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     if-eqz v0, :cond_0
 
     .line 163
-    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     invoke-interface {v0, p1}, Lcom/tencent/tauth/IUiListener;->onComplete(Ljava/lang/Object;)V
 
     .line 164
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iput-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     .line 166
     :cond_0
@@ -240,7 +240,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mUrl:Ljava/lang/String;
+    iget-object v1, p0, Lcom/tencent/open/TDialog$OnTimeListener;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -260,7 +260,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mAction:Ljava/lang/String;
+    iget-object v2, p0, Lcom/tencent/open/TDialog$OnTimeListener;->d:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -289,19 +289,19 @@
     invoke-virtual/range {v0 .. v10}, Lcom/tencent/open/b/g;->a(Ljava/lang/String;JJJILjava/lang/String;Z)V
 
     .line 173
-    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     if-eqz v0, :cond_0
 
     .line 174
-    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iget-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     invoke-interface {v0, p1}, Lcom/tencent/tauth/IUiListener;->onError(Lcom/tencent/tauth/UiError;)V
 
     .line 175
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mWeakL:Lcom/tencent/tauth/IUiListener;
+    iput-object v0, p0, Lcom/tencent/open/TDialog$OnTimeListener;->e:Lcom/tencent/tauth/IUiListener;
 
     .line 177
     :cond_0
@@ -309,7 +309,7 @@
 
     .line 170
     :cond_1
-    iget-object v9, p0, Lcom/tencent/open/TDialog$OnTimeListener;->mUrl:Ljava/lang/String;
+    iget-object v9, p0, Lcom/tencent/open/TDialog$OnTimeListener;->a:Ljava/lang/String;
 
     goto :goto_0
 .end method

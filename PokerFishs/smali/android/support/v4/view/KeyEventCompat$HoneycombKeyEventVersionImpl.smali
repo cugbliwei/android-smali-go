@@ -1,9 +1,6 @@
 .class Landroid/support/v4/view/KeyEventCompat$HoneycombKeyEventVersionImpl;
-.super Ljava/lang/Object;
+.super Landroid/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl;
 .source "KeyEventCompat.java"
-
-# interfaces
-.implements Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
 
 # annotations
@@ -22,21 +19,34 @@
     .locals 0
 
     .prologue
-    .line 95
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 102
+    invoke-direct {p0}, Landroid/support/v4/view/KeyEventCompat$BaseKeyEventVersionImpl;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
+.method public isCtrlPressed(Landroid/view/KeyEvent;)Z
+    .locals 1
+    .param p1, "event"    # Landroid/view/KeyEvent;
+
+    .prologue
+    .line 120
+    invoke-static {p1}, Landroid/support/v4/view/KeyEventCompatHoneycomb;->isCtrlPressed(Landroid/view/KeyEvent;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public metaStateHasModifiers(II)Z
     .locals 1
     .param p1, "metaState"    # I
     .param p2, "modifiers"    # I
 
     .prologue
-    .line 103
+    .line 110
     invoke-static {p1, p2}, Landroid/support/v4/view/KeyEventCompatHoneycomb;->metaStateHasModifiers(II)Z
 
     move-result v0
@@ -49,7 +59,7 @@
     .param p1, "metaState"    # I
 
     .prologue
-    .line 108
+    .line 115
     invoke-static {p1}, Landroid/support/v4/view/KeyEventCompatHoneycomb;->metaStateHasNoModifiers(I)Z
 
     move-result v0
@@ -62,7 +72,7 @@
     .param p1, "metaState"    # I
 
     .prologue
-    .line 98
+    .line 105
     invoke-static {p1}, Landroid/support/v4/view/KeyEventCompatHoneycomb;->normalizeMetaState(I)I
 
     move-result v0

@@ -8,11 +8,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/igexin/push/config/a;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/config/e.smali"
-    const-string v1,  ".method constructor <init>(Lcom/igexin/push/config/a;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/config/e;->a:Lcom/igexin/push/config/a;
 
@@ -24,11 +20,7 @@
 
 # virtual methods
 .method public a()V
-    .locals 8
-
-    const-string v6, "======================== PokerFishs/smali/com/igexin/push/config/e.smali"
-    const-string v7,  ".method public a()V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 6
 
     iget-object v0, p0, Lcom/igexin/push/config/e;->a:Lcom/igexin/push/config/a;
 

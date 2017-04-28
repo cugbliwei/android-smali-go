@@ -23,10 +23,10 @@
     .locals 0
 
     .prologue
-    .line 669
+    .line 1978
     invoke-direct {p0}, Landroid/support/v4/app/NotificationCompat$Style;-><init>()V
 
-    .line 670
+    .line 1979
     return-void
 .end method
 
@@ -35,39 +35,47 @@
     .param p1, "builder"    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     .prologue
-    .line 672
+    .line 1981
     invoke-direct {p0}, Landroid/support/v4/app/NotificationCompat$Style;-><init>()V
 
-    .line 673
+    .line 1982
     invoke-virtual {p0, p1}, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->setBuilder(Landroid/support/v4/app/NotificationCompat$Builder;)V
 
-    .line 674
+    .line 1983
     return-void
 .end method
 
 
 # virtual methods
 .method public bigText(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$BigTextStyle;
-    .locals 0
+    .locals 1
     .param p1, "cs"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 699
-    iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mBigText:Ljava/lang/CharSequence;
+    .line 2008
+    invoke-static {p1}, Landroid/support/v4/app/NotificationCompat$Builder;->limitCharSequenceLength(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
-    .line 700
+    move-result-object v0
+
+    iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mBigText:Ljava/lang/CharSequence;
+
+    .line 2009
     return-object p0
 .end method
 
 .method public setBigContentTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/NotificationCompat$BigTextStyle;
-    .locals 0
+    .locals 1
     .param p1, "title"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 681
-    iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mBigContentTitle:Ljava/lang/CharSequence;
+    .line 1990
+    invoke-static {p1}, Landroid/support/v4/app/NotificationCompat$Builder;->limitCharSequenceLength(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
-    .line 682
+    move-result-object v0
+
+    iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mBigContentTitle:Ljava/lang/CharSequence;
+
+    .line 1991
     return-object p0
 .end method
 
@@ -76,14 +84,18 @@
     .param p1, "cs"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 689
-    iput-object p1, p0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mSummaryText:Ljava/lang/CharSequence;
+    .line 1998
+    invoke-static {p1}, Landroid/support/v4/app/NotificationCompat$Builder;->limitCharSequenceLength(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
-    .line 690
+    move-result-object v0
+
+    iput-object v0, p0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mSummaryText:Ljava/lang/CharSequence;
+
+    .line 1999
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mSummaryTextSet:Z
 
-    .line 691
+    .line 2000
     return-object p0
 .end method

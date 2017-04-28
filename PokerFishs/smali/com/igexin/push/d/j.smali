@@ -24,11 +24,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v2,  ".method static constructor <clinit>()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const-string v0, "SNL"
 
@@ -38,11 +34,7 @@
 .end method
 
 .method public constructor <init>()V
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v5,  ".method public constructor <init>()V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     const-wide/16 v2, 0x0
 
@@ -62,11 +54,7 @@
 .end method
 
 .method private a(J)J
-    .locals 9
-
-    const-string v7, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v8,  ".method private a(J)J"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 7
 
     const-wide/16 v0, 0xa
 
@@ -96,11 +84,7 @@
 .end method
 
 .method private b(Lcom/igexin/push/c/c/e;)Ljava/lang/String;
-    .locals 8
-
-    const-string v6, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v7,  ".method private b(Lcom/igexin/push/c/c/e;)Ljava/lang/String;"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 6
 
     const-string v1, ""
 
@@ -431,11 +415,7 @@
 .end method
 
 .method private d()Z
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v5,  ".method private d()Z"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     sget-boolean v0, Lcom/igexin/push/config/l;->o:Z
 
@@ -480,11 +460,7 @@
 .end method
 
 .method private e()V
-    .locals 12
-
-    const-string v10, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v11,  ".method private e()V"
-    invoke-static {v10,v11} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 10
 
     const/4 v6, 0x0
 
@@ -825,11 +801,7 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;Lcom/igexin/push/c/c/e;)I
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v2,  ".method public a(Ljava/lang/String;Lcom/igexin/push/c/c/e;)I"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const/4 v0, 0x0
 
@@ -841,11 +813,7 @@
 .end method
 
 .method public a(Ljava/lang/String;Lcom/igexin/push/c/c/e;Z)I
-    .locals 14
-
-    const-string v12, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v13,  ".method public a(Ljava/lang/String;Lcom/igexin/push/c/c/e;Z)I"
-    invoke-static {v12,v13} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 12
 
     const-wide/16 v10, 0x8
 
@@ -1035,11 +1003,7 @@
 .end method
 
 .method public a(Landroid/content/Context;Lcom/igexin/a/a/b/d;Lcom/igexin/push/d/k;)V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v1,  ".method public a(Landroid/content/Context;Lcom/igexin/a/a/b/d;Lcom/igexin/push/d/k;)V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     iput-object p1, p0, Lcom/igexin/push/d/j;->b:Landroid/content/Context;
 
@@ -1051,11 +1015,7 @@
 .end method
 
 .method public a(Lcom/igexin/push/c/c/e;)V
-    .locals 8
-
-    const-string v6, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v7,  ".method public a(Lcom/igexin/push/c/c/e;)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 6
 
     const-wide/16 v4, 0x8
 
@@ -1251,11 +1211,7 @@
 .end method
 
 .method public a(Z)V
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v6,  ".method public a(Z)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     const/4 v4, 0x0
 
@@ -1314,11 +1270,7 @@
 .end method
 
 .method public a()Z
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v2,  ".method public a()Z"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iget-boolean v0, p0, Lcom/igexin/push/d/j;->e:Z
 
@@ -1326,11 +1278,7 @@
 .end method
 
 .method public b()V
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v3,  ".method public b()V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     const-wide/16 v0, 0x0
 
@@ -1357,11 +1305,7 @@
 .end method
 
 .method public b(Z)V
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v5,  ".method public b(Z)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     const/4 v3, 0x1
 
@@ -1460,11 +1404,7 @@
 .end method
 
 .method public c()J
-    .locals 4
-
-    const-string v2, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v3,  ".method public c()J"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 2
 
     sget-wide v0, Lcom/igexin/push/core/g;->D:J
 
@@ -1472,11 +1412,7 @@
 .end method
 
 .method public c(Z)V
-    .locals 10
-
-    const-string v8, "======================== PokerFishs/smali/com/igexin/push/d/j.smali"
-    const-string v9,  ".method public c(Z)V"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 8
 
     const-wide/16 v6, 0x0
 

@@ -8,11 +8,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
-
-    const-string v0, "======================== PokerFishs/smali/com/igexin/push/core/b/c.smali"
-    const-string v1,  ".method public constructor <init>()V"
-    invoke-static {v0,v1} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -20,11 +16,7 @@
 .end method
 
 .method public static a()Lcom/igexin/push/core/b/c;
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/b/c.smali"
-    const-string v2,  ".method public static a()Lcom/igexin/push/core/b/c;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     sget-object v0, Lcom/igexin/push/core/b/c;->a:Lcom/igexin/push/core/b/c;
 
@@ -45,11 +37,7 @@
 
 # virtual methods
 .method public a(Ljava/lang/String;Lcom/igexin/push/core/b/i;)I
-    .locals 10
-
-    const-string v8, "======================== PokerFishs/smali/com/igexin/push/core/b/c.smali"
-    const-string v9,  ".method public a(Ljava/lang/String;Lcom/igexin/push/core/b/i;)I"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 8
 
     const/4 v1, 0x0
 
@@ -127,11 +115,7 @@
 .end method
 
 .method public a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/core/b/c.smali"
-    const-string v6,  ".method public a(Ljava/lang/String;)Ljava/lang/String;"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     const/4 v2, 0x0
 
@@ -201,11 +185,7 @@
 .end method
 
 .method public a(Landroid/content/Intent;)V
-    .locals 12
-
-    const-string v10, "======================== PokerFishs/smali/com/igexin/push/core/b/c.smali"
-    const-string v11,  ".method public a(Landroid/content/Intent;)V"
-    invoke-static {v10,v11} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 10
 
     if-eqz p1, :cond_2
 
@@ -411,11 +391,7 @@
 .end method
 
 .method public b(Landroid/content/Intent;)V
-    .locals 7
-
-    const-string v5, "======================== PokerFishs/smali/com/igexin/push/core/b/c.smali"
-    const-string v6,  ".method public b(Landroid/content/Intent;)V"
-    invoke-static {v5,v6} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 5
 
     const-string v0, "action"
 

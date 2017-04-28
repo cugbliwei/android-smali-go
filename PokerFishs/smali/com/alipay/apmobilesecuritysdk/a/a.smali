@@ -44,7 +44,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-static {p0}, Lcom/alipay/apmobilesecuritysdk/f/h;->c(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/alipay/apmobilesecuritysdk/f/h;->f(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -260,8 +260,242 @@
     goto :goto_1
 .end method
 
-.method private b(Ljava/util/Map;)Lcom/alipay/b/a/a/c/a/b;
-    .locals 10
+.method private a(Ljava/util/Map;Ljava/lang/String;)Z
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/lang/String;",
+            ")Z"
+        }
+    .end annotation
+
+    const-wide/16 v0, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x1
+
+    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/a/a;->a()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    invoke-static {v0, p2}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    :goto_0
+    return v6
+
+    :cond_1
+    iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/a/a;->b(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    move v6, v5
+
+    goto :goto_0
+
+    :cond_2
+    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/d/e;->a()V
+
+    iget-object v2, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    invoke-static {v2, p1}, Lcom/alipay/apmobilesecuritysdk/d/e;->b(Landroid/content/Context;Ljava/util/Map;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->c()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_5
+
+    move v2, v6
+
+    :goto_1
+    if-nez v2, :cond_0
+
+    iget-object v2, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    invoke-static {v2}, Lcom/alipay/apmobilesecuritysdk/f/h;->b(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v2
+
+    :try_start_0
+    invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-wide v2
+
+    :try_start_1
+    invoke-static {}, Lcom/alipay/b/a/a/b/b;->a()Lcom/alipay/b/a/a/b/b;
+
+    invoke-static {}, Lcom/alipay/b/a/a/b/b;->o()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+    :try_end_1
+    .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
+
+    move-result-wide v0
+
+    move v4, v5
+
+    :goto_2
+    sub-long/2addr v0, v2
+
+    invoke-static {v0, v1}, Ljava/lang/Math;->abs(J)J
+
+    move-result-wide v0
+
+    const-wide/16 v2, 0xbb8
+
+    cmp-long v0, v0, v2
+
+    if-gtz v0, :cond_0
+
+    if-nez v4, :cond_0
+
+    const-string v0, "tid"
+
+    const-string v1, ""
+
+    invoke-static {p1, v0, v1}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "utdid"
+
+    const-string v2, ""
+
+    invoke-static {p1, v1, v2}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0}, Lcom/alipay/b/a/a/a/a;->b(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->d()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    :cond_3
+    invoke-static {v1}, Lcom/alipay/b/a/a/a/a;->b(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->e()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v1, v0}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    :cond_4
+    iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    invoke-static {v0, p2}, Lcom/alipay/apmobilesecuritysdk/f/i;->a(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    invoke-static {v0, p2}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/a/a;->b(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    move v6, v5
+
+    goto/16 :goto_0
+
+    :cond_5
+    move v2, v5
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v2
+
+    move-wide v2, v0
+
+    :goto_3
+    move v4, v6
+
+    goto :goto_2
+
+    :catch_1
+    move-exception v4
+
+    goto :goto_3
+.end method
+
+.method private b(Ljava/util/Map;)Lcom/alipay/b/a/a/c/a/c;
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -270,132 +504,147 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;)",
-            "Lcom/alipay/b/a/a/c/a/b;"
+            "Lcom/alipay/b/a/a/c/a/c;"
         }
     .end annotation
 
     :try_start_0
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    new-instance v4, Lcom/alipay/b/a/a/c/a/c;
+    new-instance v5, Lcom/alipay/b/a/a/c/a/d;
 
-    invoke-direct {v4}, Lcom/alipay/b/a/a/c/a/c;-><init>()V
+    invoke-direct {v5}, Lcom/alipay/b/a/a/c/a/d;-><init>()V
+
+    const-string v0, "appName"
+
+    const-string v1, ""
+
+    invoke-static {p1, v0, v1}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v4, v0}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/e/a;->a()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v4}, Lcom/alipay/apmobilesecuritysdk/f/h;->e(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v5, v0}, Lcom/alipay/b/a/a/c/a/d;->c(Ljava/lang/String;)V
+
+    invoke-virtual {v5, v1}, Lcom/alipay/b/a/a/c/a/d;->d(Ljava/lang/String;)V
+
+    invoke-virtual {v5, v2}, Lcom/alipay/b/a/a/c/a/d;->e(Ljava/lang/String;)V
+
+    const-string v0, "android"
+
+    invoke-virtual {v5, v0}, Lcom/alipay/b/a/a/c/a/d;->a(Ljava/lang/String;)V
+
+    const-string v1, ""
+
+    const-string v3, ""
 
     const-string v2, ""
 
     const-string v0, ""
 
-    const-string v1, ""
-
-    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/e/a;->a()Ljava/lang/String;
-
-    move-result-object v5
-
-    const-string v6, "rpcVersion"
-
-    const-string v7, ""
-
-    invoke-static {p1, v6, v7}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/alipay/apmobilesecuritysdk/f/d;->c(Landroid/content/Context;)Lcom/alipay/apmobilesecuritysdk/f/c;
 
     move-result-object v6
 
-    const-string v7, "appName"
+    if-eqz v6, :cond_0
 
-    const-string v8, ""
+    invoke-virtual {v6}, Lcom/alipay/apmobilesecuritysdk/f/c;->a()Ljava/lang/String;
 
-    invoke-static {p1, v7, v8}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v3
 
-    move-result-object v7
-
-    invoke-static {v3, v7}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-static {v3}, Lcom/alipay/apmobilesecuritysdk/f/d;->c(Landroid/content/Context;)Lcom/alipay/apmobilesecuritysdk/f/c;
-
-    move-result-object v8
-
-    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/d;->b()Lcom/alipay/apmobilesecuritysdk/f/c;
-
-    move-result-object v9
-
-    if-eqz v8, :cond_0
-
-    invoke-virtual {v8}, Lcom/alipay/apmobilesecuritysdk/f/c;->a()Ljava/lang/String;
+    invoke-virtual {v6}, Lcom/alipay/apmobilesecuritysdk/f/c;->c()Ljava/lang/String;
 
     move-result-object v2
-
-    invoke-virtual {v8}, Lcom/alipay/apmobilesecuritysdk/f/c;->c()Ljava/lang/String;
-
-    move-result-object v1
 
     :cond_0
-    invoke-static {v2}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
+    invoke-static {v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
 
-    move-result v8
+    move-result v6
 
-    if-eqz v8, :cond_1
+    if-eqz v6, :cond_1
 
-    invoke-static {v3}, Lcom/alipay/apmobilesecuritysdk/f/a;->c(Landroid/content/Context;)Lcom/alipay/apmobilesecuritysdk/f/b;
+    invoke-static {v4}, Lcom/alipay/apmobilesecuritysdk/f/a;->c(Landroid/content/Context;)Lcom/alipay/apmobilesecuritysdk/f/b;
 
-    move-result-object v8
+    move-result-object v6
 
-    if-eqz v8, :cond_1
+    if-eqz v6, :cond_1
 
-    invoke-virtual {v8}, Lcom/alipay/apmobilesecuritysdk/f/b;->a()Ljava/lang/String;
+    invoke-virtual {v6}, Lcom/alipay/apmobilesecuritysdk/f/b;->a()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v6}, Lcom/alipay/apmobilesecuritysdk/f/b;->c()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v8}, Lcom/alipay/apmobilesecuritysdk/f/b;->c()Ljava/lang/String;
+    :cond_1
+    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/d;->b()Lcom/alipay/apmobilesecuritysdk/f/c;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_2
+
+    invoke-virtual {v6}, Lcom/alipay/apmobilesecuritysdk/f/c;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    :cond_1
-    if-eqz v9, :cond_2
-
-    invoke-virtual {v9}, Lcom/alipay/apmobilesecuritysdk/f/c;->a()Ljava/lang/String;
+    invoke-virtual {v6}, Lcom/alipay/apmobilesecuritysdk/f/c;->c()Ljava/lang/String;
 
     move-result-object v0
 
     :cond_2
-    invoke-static {v0}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
+    invoke-static {v1}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
 
-    move-result v8
+    move-result v6
 
-    if-eqz v8, :cond_3
+    if-eqz v6, :cond_3
 
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/a;->b()Lcom/alipay/apmobilesecuritysdk/f/b;
 
-    move-result-object v8
+    move-result-object v6
 
-    if-eqz v8, :cond_3
+    if-eqz v6, :cond_3
 
-    invoke-virtual {v8}, Lcom/alipay/apmobilesecuritysdk/f/b;->a()Ljava/lang/String;
+    invoke-virtual {v6}, Lcom/alipay/apmobilesecuritysdk/f/b;->a()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v6}, Lcom/alipay/apmobilesecuritysdk/f/b;->c()Ljava/lang/String;
 
     move-result-object v0
 
     :cond_3
-    const-string v8, "android"
+    invoke-virtual {v5, v3}, Lcom/alipay/b/a/a/c/a/d;->g(Ljava/lang/String;)V
 
-    invoke-virtual {v4, v8}, Lcom/alipay/b/a/a/c/a/c;->a(Ljava/lang/String;)V
+    invoke-virtual {v5, v1}, Lcom/alipay/b/a/a/c/a/d;->f(Ljava/lang/String;)V
 
-    invoke-virtual {v4, v2}, Lcom/alipay/b/a/a/c/a/c;->c(Ljava/lang/String;)V
+    invoke-static {v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
 
-    invoke-virtual {v4, v0}, Lcom/alipay/b/a/a/c/a/c;->b(Ljava/lang/String;)V
+    move-result v6
 
-    invoke-virtual {v4, v7}, Lcom/alipay/b/a/a/c/a/c;->d(Ljava/lang/String;)V
+    if-eqz v6, :cond_4
 
-    invoke-virtual {v4, v5}, Lcom/alipay/b/a/a/c/a/c;->e(Ljava/lang/String;)V
+    invoke-virtual {v5, v1}, Lcom/alipay/b/a/a/c/a/d;->b(Ljava/lang/String;)V
 
-    invoke-virtual {v4, v1}, Lcom/alipay/b/a/a/c/a/c;->g(Ljava/lang/String;)V
+    invoke-virtual {v5, v0}, Lcom/alipay/b/a/a/c/a/d;->h(Ljava/lang/String;)V
 
-    invoke-virtual {v4, v6}, Lcom/alipay/b/a/a/c/a/c;->f(Ljava/lang/String;)V
-
-    invoke-static {v3, p1}, Lcom/alipay/apmobilesecuritysdk/d/e;->a(Landroid/content/Context;Ljava/util/Map;)Ljava/util/Map;
+    :goto_0
+    invoke-static {v4, p1}, Lcom/alipay/apmobilesecuritysdk/d/e;->a(Landroid/content/Context;Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
 
-    invoke-virtual {v4, v0}, Lcom/alipay/b/a/a/c/a/c;->a(Ljava/util/Map;)V
+    invoke-virtual {v5, v0}, Lcom/alipay/b/a/a/c/a/d;->a(Ljava/util/Map;)V
 
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
@@ -409,14 +658,21 @@
 
     move-result-object v0
 
-    invoke-interface {v0, v4}, Lcom/alipay/b/a/a/c/b/a;->a(Lcom/alipay/b/a/a/c/a/c;)Lcom/alipay/b/a/a/c/a/b;
-    :try_end_0
-    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-interface {v0, v5}, Lcom/alipay/b/a/a/c/b/a;->a(Lcom/alipay/b/a/a/c/a/d;)Lcom/alipay/b/a/a/c/a/c;
 
     move-result-object v0
 
-    :goto_0
+    :goto_1
     return-object v0
+
+    :cond_4
+    invoke-virtual {v5, v3}, Lcom/alipay/b/a/a/c/a/d;->b(Ljava/lang/String;)V
+
+    invoke-virtual {v5, v2}, Lcom/alipay/b/a/a/c/a/d;->h(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
 
     :catch_0
     move-exception v0
@@ -425,7 +681,7 @@
 
     const/4 v0, 0x0
 
-    goto :goto_0
+    goto :goto_1
 .end method
 
 .method private static b(Landroid/content/Context;)Ljava/lang/String;
@@ -552,44 +808,41 @@
 
     invoke-static {p1, v3, v4}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v3
 
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/alipay/apmobilesecuritysdk/a/a;->b(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/alipay/apmobilesecuritysdk/a/a;->b(Landroid/content/Context;)Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    invoke-static {v3, v4}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v3}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->a()V
 
-    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/a/a;->a()Z
+    invoke-direct {p0, p1, v3}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Ljava/util/Map;Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_3
+    iget-object v5, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+    invoke-static {}, Lcom/alipay/b/a/a/b/b;->a()Lcom/alipay/b/a/a/b/b;
 
-    invoke-static {v3, v4}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {}, Lcom/alipay/b/a/a/b/b;->o()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v6
 
-    invoke-static {v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
+    invoke-static {v6}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    move-result v3
+    move-result-object v6
 
-    if-eqz v3, :cond_1
+    invoke-static {v5, v6}, Lcom/alipay/apmobilesecuritysdk/f/h;->b(Landroid/content/Context;Ljava/lang/String;)V
 
-    move v3, v1
-
-    :goto_0
-    if-nez v3, :cond_b
+    if-nez v4, :cond_1
 
     move v0, v2
 
-    :goto_1
+    :goto_0
     iput v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->c:I
 
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
@@ -616,31 +869,33 @@
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    if-eqz v0, :cond_14
+    if-eqz v0, :cond_a
 
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v0
 
-    :goto_2
-    if-eqz v0, :cond_13
+    :goto_1
+    if-eqz v0, :cond_9
 
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v3
 
-    if-eqz v3, :cond_13
+    if-eqz v3, :cond_9
 
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->getType()I
 
     move-result v0
 
-    if-ne v0, v1, :cond_13
+    if-ne v0, v1, :cond_9
 
-    :goto_3
-    if-eqz v1, :cond_0
+    move v0, v1
 
-    invoke-static {v5}, Lcom/alipay/apmobilesecuritysdk/f/h;->b(Landroid/content/Context;)Z
+    :goto_2
+    if-eqz v0, :cond_0
+
+    invoke-static {v5}, Lcom/alipay/apmobilesecuritysdk/f/h;->d(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -679,217 +934,57 @@
     invoke-virtual {v1}, Lcom/alipay/b/a/a/e/b;->a()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_0
-    :goto_4
+    :goto_3
     iget v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->c:I
 
     return v0
 
     :cond_1
     :try_start_1
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    invoke-static {v3}, Lcom/alipay/apmobilesecuritysdk/a/a;->b(Landroid/content/Context;)Ljava/lang/String;
+    new-instance v4, Lcom/alipay/apmobilesecuritysdk/c/b;
 
-    move-result-object v3
+    invoke-direct {v4}, Lcom/alipay/apmobilesecuritysdk/c/b;-><init>()V
 
-    invoke-static {v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    move v3, v1
-
-    goto :goto_0
-
-    :cond_2
-    move v3, v2
-
-    goto :goto_0
-
-    :cond_3
-    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/d/e;->a()V
-
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
-
-    invoke-static {v3, p1}, Lcom/alipay/apmobilesecuritysdk/d/e;->b(Landroid/content/Context;Ljava/util/Map;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->c()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v3, v5}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_4
-
-    move v3, v1
-
-    :goto_5
-    if-eqz v3, :cond_5
-
-    move v3, v1
-
-    goto/16 :goto_0
-
-    :cond_4
-    move v3, v2
-
-    goto :goto_5
-
-    :cond_5
-    const-string v3, "tid"
-
-    const-string v5, ""
-
-    invoke-static {p1, v3, v5}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v5, "utdid"
-
-    const-string v6, ""
-
-    invoke-static {p1, v5, v6}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v3}, Lcom/alipay/b/a/a/a/a;->b(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_6
-
-    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->d()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-static {v3, v6}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_6
-
-    move v3, v1
-
-    goto/16 :goto_0
-
-    :cond_6
-    invoke-static {v5}, Lcom/alipay/b/a/a/a/a;->b(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_7
-
-    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->e()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v5, v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_7
-
-    move v3, v1
-
-    goto/16 :goto_0
-
-    :cond_7
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
-
-    invoke-static {v3, v4}, Lcom/alipay/apmobilesecuritysdk/f/i;->a(Landroid/content/Context;Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_8
-
-    move v3, v1
-
-    goto/16 :goto_0
-
-    :cond_8
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
-
-    invoke-static {v3, v4}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_9
-
-    move v3, v1
-
-    goto/16 :goto_0
-
-    :cond_9
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
-
-    invoke-static {v3}, Lcom/alipay/apmobilesecuritysdk/a/a;->b(Landroid/content/Context;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_a
-
-    move v3, v1
-
-    goto/16 :goto_0
-
-    :cond_a
-    move v3, v2
-
-    goto/16 :goto_0
-
-    :cond_b
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/b/a;->a()Lcom/alipay/apmobilesecuritysdk/b/a;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-virtual {v3}, Lcom/alipay/apmobilesecuritysdk/b/a;->b()I
+    invoke-virtual {v4}, Lcom/alipay/apmobilesecuritysdk/b/a;->b()I
 
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/e/a;->b()Ljava/lang/String;
 
-    invoke-direct {p0, p1}, Lcom/alipay/apmobilesecuritysdk/a/a;->b(Ljava/util/Map;)Lcom/alipay/b/a/a/c/a/b;
+    invoke-direct {p0, p1}, Lcom/alipay/apmobilesecuritysdk/a/a;->b(Ljava/util/Map;)Lcom/alipay/b/a/a/c/a/c;
 
-    move-result-object v3
+    move-result-object v4
 
-    if-eqz v3, :cond_c
+    if-eqz v4, :cond_2
 
-    iget-boolean v5, v3, Lcom/alipay/b/a/a/c/a/b;->a:Z
+    iget-boolean v5, v4, Lcom/alipay/b/a/a/c/a/c;->a:Z
 
-    if-eqz v5, :cond_d
+    if-eqz v5, :cond_3
 
-    iget-object v5, v3, Lcom/alipay/b/a/a/c/a/b;->c:Ljava/lang/String;
+    iget-object v5, v4, Lcom/alipay/b/a/a/c/a/c;->c:Ljava/lang/String;
 
     invoke-static {v5}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;)Z
 
     move-result v5
 
-    if-nez v5, :cond_c
+    if-nez v5, :cond_2
 
     move v0, v1
 
-    :cond_c
-    :goto_6
+    :cond_2
+    :goto_4
     packed-switch v0, :pswitch_data_0
 
     :pswitch_0
-    if-eqz v3, :cond_12
+    if-eqz v4, :cond_8
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -897,9 +992,9 @@
 
     invoke-direct {v0, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v3, v3, Lcom/alipay/b/a/a/c/a/a;->b:Ljava/lang/String;
+    iget-object v4, v4, Lcom/alipay/b/a/a/c/a/a;->b:Ljava/lang/String;
 
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -909,10 +1004,10 @@
 
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/c/a;->a(Ljava/lang/String;)V
 
-    :goto_7
+    :goto_5
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    invoke-static {v0, v4}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v3}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -920,33 +1015,54 @@
 
     move-result v0
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_4
 
     const/4 v0, 0x4
 
-    goto/16 :goto_1
+    :goto_6
+    iget-object v4, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    :cond_d
+    iget-object v4, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    invoke-static {v4, v3}, Lcom/alipay/apmobilesecuritysdk/a/a;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+
+    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    invoke-static {v3}, Lcom/alipay/apmobilesecuritysdk/f/h;->f(Landroid/content/Context;)Ljava/lang/String;
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto/16 :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/c/a;->a(Ljava/lang/Throwable;)V
+
+    goto :goto_3
+
+    :cond_3
+    :try_start_2
     const-string v5, "APPKEY_ERROR"
 
-    iget-object v6, v3, Lcom/alipay/b/a/a/c/a/b;->b:Ljava/lang/String;
+    iget-object v6, v4, Lcom/alipay/b/a/a/c/a/c;->b:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
 
-    if-eqz v5, :cond_c
+    if-eqz v5, :cond_2
 
     const/4 v0, 0x3
 
-    goto :goto_6
+    goto :goto_4
 
     :pswitch_1
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
     const-string v5, "1"
 
-    iget-object v6, v3, Lcom/alipay/b/a/a/c/a/b;->h:Ljava/lang/String;
+    iget-object v6, v4, Lcom/alipay/b/a/a/c/a/c;->e:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -956,14 +1072,32 @@
 
     iget-object v5, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    iget-object v0, v3, Lcom/alipay/b/a/a/c/a/b;->j:Ljava/lang/String;
+    iget-object v0, v4, Lcom/alipay/b/a/a/c/a/c;->f:Ljava/lang/String;
 
-    if-nez v0, :cond_f
+    if-nez v0, :cond_5
 
     const-string v0, "0"
 
-    :goto_8
-    invoke-static {v5, v0}, Lcom/alipay/apmobilesecuritysdk/f/h;->b(Landroid/content/Context;Ljava/lang/String;)V
+    :goto_7
+    invoke-static {v5, v0}, Lcom/alipay/apmobilesecuritysdk/f/h;->d(Landroid/content/Context;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    iget-object v5, v4, Lcom/alipay/b/a/a/c/a/c;->g:Ljava/lang/String;
+
+    invoke-static {v0, v5}, Lcom/alipay/apmobilesecuritysdk/f/h;->e(Landroid/content/Context;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    iget-object v5, v4, Lcom/alipay/b/a/a/c/a/c;->h:Ljava/lang/String;
+
+    invoke-static {v0, v5}, Lcom/alipay/apmobilesecuritysdk/f/h;->a(Landroid/content/Context;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+
+    iget-object v5, v4, Lcom/alipay/b/a/a/c/a/c;->i:Ljava/lang/String;
+
+    invoke-static {v0, v5}, Lcom/alipay/apmobilesecuritysdk/f/h;->f(Landroid/content/Context;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
@@ -973,74 +1107,74 @@
 
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/f/i;->c(Ljava/lang/String;)V
 
-    iget-object v0, v3, Lcom/alipay/b/a/a/c/a/b;->d:Ljava/lang/String;
+    iget-object v0, v4, Lcom/alipay/b/a/a/c/a/c;->d:Ljava/lang/String;
 
-    invoke-static {v4, v0}, Lcom/alipay/apmobilesecuritysdk/f/i;->a(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v0}, Lcom/alipay/apmobilesecuritysdk/f/i;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v0, v3, Lcom/alipay/b/a/a/c/a/b;->c:Ljava/lang/String;
+    iget-object v0, v4, Lcom/alipay/b/a/a/c/a/c;->c:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/f/i;->b(Ljava/lang/String;)V
 
-    iget-object v0, v3, Lcom/alipay/b/a/a/c/a/b;->e:Ljava/lang/String;
+    iget-object v0, v4, Lcom/alipay/b/a/a/c/a/c;->j:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/f/i;->d(Ljava/lang/String;)V
 
     const-string v0, "tid"
 
-    const-string v3, ""
+    const-string v4, ""
 
-    invoke-static {p1, v0, v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0, v4}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/alipay/b/a/a/a/a;->b(Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_10
+    if-eqz v4, :cond_6
 
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->d()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-static {v0, v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v4}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v4
 
-    if-nez v3, :cond_10
+    if-nez v4, :cond_6
 
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/f/i;->e(Ljava/lang/String;)V
 
-    :goto_9
+    :goto_8
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/f/i;->e(Ljava/lang/String;)V
 
     const-string v0, "utdid"
 
-    const-string v3, ""
+    const-string v4, ""
 
-    invoke-static {p1, v0, v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0, v4}, Lcom/alipay/b/a/a/a/a;->a(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/alipay/b/a/a/a/a;->b(Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v4
 
-    if-eqz v3, :cond_11
+    if-eqz v4, :cond_7
 
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->e()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-static {v0, v3}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v4}, Lcom/alipay/b/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
-    move-result v3
+    move-result v4
 
-    if-nez v3, :cond_11
+    if-nez v4, :cond_7
 
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/f/i;->f(Ljava/lang/String;)V
 
-    :goto_a
+    :goto_9
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/f/i;->f(Ljava/lang/String;)V
 
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->a()V
@@ -1049,9 +1183,9 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    invoke-static {v3, v0}, Lcom/alipay/apmobilesecuritysdk/f/d;->a(Landroid/content/Context;Lcom/alipay/apmobilesecuritysdk/f/c;)V
+    invoke-static {v4, v0}, Lcom/alipay/apmobilesecuritysdk/f/d;->a(Landroid/content/Context;Lcom/alipay/apmobilesecuritysdk/f/c;)V
 
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
@@ -1059,7 +1193,7 @@
 
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    new-instance v3, Lcom/alipay/apmobilesecuritysdk/f/b;
+    new-instance v4, Lcom/alipay/apmobilesecuritysdk/f/b;
 
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->b()Ljava/lang/String;
 
@@ -1073,21 +1207,21 @@
 
     move-result-object v7
 
-    invoke-direct {v3, v5, v6, v7}, Lcom/alipay/apmobilesecuritysdk/f/b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v4, v5, v6, v7}, Lcom/alipay/apmobilesecuritysdk/f/b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v0, v3}, Lcom/alipay/apmobilesecuritysdk/f/a;->a(Landroid/content/Context;Lcom/alipay/apmobilesecuritysdk/f/b;)V
+    invoke-static {v0, v4}, Lcom/alipay/apmobilesecuritysdk/f/a;->a(Landroid/content/Context;Lcom/alipay/apmobilesecuritysdk/f/b;)V
 
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/a;->a()V
 
-    invoke-static {v4}, Lcom/alipay/apmobilesecuritysdk/f/i;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/alipay/apmobilesecuritysdk/f/i;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
+    iget-object v4, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
-    invoke-static {v3, v4, v0}, Lcom/alipay/apmobilesecuritysdk/f/g;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v3, v0}, Lcom/alipay/apmobilesecuritysdk/f/g;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/alipay/apmobilesecuritysdk/a/a;->a:Landroid/content/Context;
 
@@ -1097,73 +1231,57 @@
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    move-result-wide v6
+    move-result-wide v4
 
-    invoke-static {v0, v4, v6, v7}, Lcom/alipay/apmobilesecuritysdk/f/h;->a(Landroid/content/Context;Ljava/lang/String;J)V
+    invoke-static {v0, v3, v4, v5}, Lcom/alipay/apmobilesecuritysdk/f/h;->a(Landroid/content/Context;Ljava/lang/String;J)V
 
-    :cond_e
+    :cond_4
     move v0, v2
 
-    goto/16 :goto_1
+    goto/16 :goto_6
 
-    :cond_f
-    iget-object v0, v3, Lcom/alipay/b/a/a/c/a/b;->j:Ljava/lang/String;
+    :cond_5
+    iget-object v0, v4, Lcom/alipay/b/a/a/c/a/c;->f:Ljava/lang/String;
 
-    goto/16 :goto_8
+    goto/16 :goto_7
 
-    :cond_10
+    :cond_6
     invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->d()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_8
+
+    :cond_7
+    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->e()Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_9
 
-    :cond_11
-    invoke-static {}, Lcom/alipay/apmobilesecuritysdk/f/i;->e()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_a
-
     :pswitch_2
     move v0, v1
 
-    goto/16 :goto_1
+    goto/16 :goto_6
 
-    :cond_12
+    :cond_8
     const-string v0, "Server error, returned null"
 
     invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/c/a;->a(Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto/16 :goto_7
-
-    :catch_0
-    move-exception v0
-
-    :try_start_2
-    invoke-static {v0}, Lcom/alipay/apmobilesecuritysdk/c/a;->a(Ljava/lang/Throwable;)V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
-    :catchall_0
-    move-exception v0
-
-    throw v0
-
-    :cond_13
-    move v1, v2
-
-    goto/16 :goto_3
-
-    :cond_14
-    move-object v0, v3
+    :cond_9
+    move v0, v2
 
     goto/16 :goto_2
+
+    :cond_a
+    move-object v0, v3
+
+    goto/16 :goto_1
 
     :pswitch_data_0
     .packed-switch 0x1

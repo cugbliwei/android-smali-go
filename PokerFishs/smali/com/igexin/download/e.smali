@@ -23,12 +23,8 @@
 
 # virtual methods
 .method public a()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/e.smali"
-    const-string v4,  ".method public a()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v1, p0, Lcom/igexin/download/e;->a:Lcom/igexin/download/DownloadService;
 
     monitor-enter v1
@@ -81,12 +77,8 @@
 .end method
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/download/e.smali"
-    const-string v7,  ".method public onServiceConnected"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     iget-object v0, p0, Lcom/igexin/download/e;->a:Lcom/igexin/download/DownloadService;
@@ -189,12 +181,8 @@
 .end method
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/download/e.smali"
-    const-string v4,  ".method public onServiceDisconnected(Landroid/content/ComponentName;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v1, p0, Lcom/igexin/download/e;->a:Lcom/igexin/download/DownloadService;
 
     monitor-enter v1

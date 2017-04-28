@@ -8,11 +8,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/config/m.smali"
-    const-string v2,  ".method static constructor <clinit>()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     const-string v0, "FileConfig"
 
@@ -22,11 +18,7 @@
 .end method
 
 .method public static a()V
-    .locals 8
-
-    const-string v6, "======================== PokerFishs/smali/com/igexin/push/config/m.smali"
-    const-string v7,  ".method public static a()V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 6
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -323,11 +315,7 @@
 .end method
 
 .method public static a(Landroid/content/Context;)V
-    .locals 8
-
-    const-string v6, "======================== PokerFishs/smali/com/igexin/push/config/m.smali"
-    const-string v7,  ".method public static a(Landroid/content/Context;)V"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 6
 
     const/4 v1, 0x0
 
@@ -519,11 +507,7 @@
 .end method
 
 .method public static a(Ljava/io/InputStream;)V
-    .locals 6
-
-    const-string v4, "======================== PokerFishs/smali/com/igexin/push/config/m.smali"
-    const-string v5,  ".method public static a(Ljava/io/InputStream;)V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 4
 
     :try_start_0
     new-instance v0, Ljava/io/BufferedReader;

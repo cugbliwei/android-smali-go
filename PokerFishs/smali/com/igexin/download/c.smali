@@ -29,12 +29,8 @@
 
 # virtual methods
 .method public fillWindow(ILandroid/database/CursorWindow;)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/c.smali"
-    const-string v2,  "fillWindow"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/c;->b:Landroid/database/CrossProcessCursor;
 
     invoke-interface {v0, p1, p2}, Landroid/database/CrossProcessCursor;->fillWindow(ILandroid/database/CursorWindow;)V
@@ -43,12 +39,8 @@
 .end method
 
 .method public getWindow()Landroid/database/CursorWindow;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/c.smali"
-    const-string v2,  "getWindow"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/c;->b:Landroid/database/CrossProcessCursor;
 
     invoke-interface {v0}, Landroid/database/CrossProcessCursor;->getWindow()Landroid/database/CursorWindow;
@@ -59,12 +51,8 @@
 .end method
 
 .method public onMove(II)Z
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/download/c.smali"
-    const-string v2,  "onMove"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     iget-object v0, p0, Lcom/igexin/download/c;->b:Landroid/database/CrossProcessCursor;
 
     invoke-interface {v0, p1, p2}, Landroid/database/CrossProcessCursor;->onMove(II)Z

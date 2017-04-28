@@ -375,7 +375,7 @@
     goto :goto_1
 .end method
 
-.method public static final a(Landroid/content/Context;Ljava/lang/String;Lcom/tencent/open/utils/AsynLoadImgBack;)V
+.method public static final a(Landroid/content/Context;Ljava/lang/String;Lcom/tencent/open/utils/c;)V
     .locals 3
 
     .prologue
@@ -398,7 +398,7 @@
     .line 50
     const/4 v0, 0x1
 
-    invoke-interface {p2, v0, v2}, Lcom/tencent/open/utils/AsynLoadImgBack;->saved(ILjava/lang/String;)V
+    invoke-interface {p2, v0, v2}, Lcom/tencent/open/utils/c;->a(ILjava/lang/String;)V
 
     .line 111
     :goto_0
@@ -406,7 +406,7 @@
 
     .line 53
     :cond_0
-    invoke-static {}, Lcom/tencent/open/utils/Util;->hasSDCard()Z
+    invoke-static {}, Lcom/tencent/open/utils/i;->b()Z
 
     move-result v0
 
@@ -415,7 +415,7 @@
     .line 55
     const/4 v0, 0x2
 
-    invoke-interface {p2, v0, v2}, Lcom/tencent/open/utils/AsynLoadImgBack;->saved(ILjava/lang/String;)V
+    invoke-interface {p2, v0, v2}, Lcom/tencent/open/utils/c;->a(ILjava/lang/String;)V
 
     goto :goto_0
 
@@ -427,7 +427,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p2}, Lcom/tencent/connect/share/a$1;-><init>(Landroid/os/Looper;Lcom/tencent/open/utils/AsynLoadImgBack;)V
+    invoke-direct {v0, v1, p2}, Lcom/tencent/connect/share/a$1;-><init>(Landroid/os/Looper;Lcom/tencent/open/utils/c;)V
 
     .line 76
     new-instance v1, Ljava/lang/Thread;
@@ -443,7 +443,7 @@
     goto :goto_0
 .end method
 
-.method public static final a(Landroid/content/Context;Ljava/util/ArrayList;Lcom/tencent/open/utils/AsynLoadImgBack;)V
+.method public static final a(Landroid/content/Context;Ljava/util/ArrayList;Lcom/tencent/open/utils/c;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -453,7 +453,7 @@
             "<",
             "Ljava/lang/String;",
             ">;",
-            "Lcom/tencent/open/utils/AsynLoadImgBack;",
+            "Lcom/tencent/open/utils/c;",
             ")V"
         }
     .end annotation
@@ -474,7 +474,7 @@
 
     const/4 v1, 0x0
 
-    invoke-interface {p2, v0, v1}, Lcom/tencent/open/utils/AsynLoadImgBack;->saved(ILjava/lang/String;)V
+    invoke-interface {p2, v0, v1}, Lcom/tencent/open/utils/c;->a(ILjava/lang/String;)V
 
     .line 184
     :goto_0
@@ -488,7 +488,7 @@
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p2}, Lcom/tencent/connect/share/a$3;-><init>(Landroid/os/Looper;Lcom/tencent/open/utils/AsynLoadImgBack;)V
+    invoke-direct {v0, v1, p2}, Lcom/tencent/connect/share/a$3;-><init>(Landroid/os/Looper;Lcom/tencent/open/utils/c;)V
 
     .line 144
     new-instance v1, Ljava/lang/Thread;

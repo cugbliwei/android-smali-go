@@ -24,12 +24,8 @@
 
 # virtual methods
 .method public a_()V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/a/a/b/a/a/e.smali"
-    const-string v4,  ".method public a_()V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-super {p0}, Lcom/igexin/a/a/b/f;->a_()V
 
     iget-object v0, p0, Lcom/igexin/a/a/b/a/a/g;->e:Lcom/igexin/a/a/b/a/a/e;

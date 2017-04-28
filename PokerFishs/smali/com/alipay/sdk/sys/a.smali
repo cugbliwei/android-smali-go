@@ -306,7 +306,7 @@
     .line 251
     const-string v0, "sv"
 
-    const-string v2, "h.a.3.2.2"
+    const-string v2, "h.a.3.2.7"
 
     invoke-virtual {v1, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -333,7 +333,7 @@
 
     iget-object v0, p0, Lcom/alipay/sdk/sys/a;->p:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/alipay/sdk/util/l;->c(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/alipay/sdk/util/l;->d(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -798,7 +798,7 @@
     .line 191
     const-string v1, "sv"
 
-    const-string v2, "h.a.3.2.2"
+    const-string v2, "h.a.3.2.7"
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -815,7 +815,7 @@
 
     iget-object v1, p0, Lcom/alipay/sdk/sys/a;->p:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/alipay/sdk/util/l;->c(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/alipay/sdk/util/l;->d(Landroid/content/Context;)Z
 
     move-result v1
 

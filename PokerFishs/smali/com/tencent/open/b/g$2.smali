@@ -64,7 +64,7 @@
     .line 168
     const-string v1, "imei"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
@@ -77,7 +77,7 @@
     .line 169
     const-string v1, "imsi"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
@@ -90,7 +90,7 @@
     .line 170
     const-string v1, "android_id"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
@@ -126,11 +126,11 @@
     .line 175
     const-string v1, "position"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/tencent/open/utils/Util;->getLocation(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/tencent/open/utils/i;->d(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -139,7 +139,7 @@
     .line 176
     const-string v1, "network"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
@@ -161,7 +161,7 @@
     .line 178
     const-string v1, "resolution"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
@@ -174,7 +174,7 @@
     .line 179
     const-string v1, "apn"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
@@ -207,20 +207,20 @@
     .line 182
     const-string v1, "sdk_ver"
 
-    const-string v2, "2.9.4.lite"
+    const-string v2, "3.1.2.lite"
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 183
     const-string v1, "qz_ver"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
     const-string v3, "com.qzone"
 
-    invoke-static {v2, v3}, Lcom/tencent/open/utils/Util;->getAppVersionName(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/tencent/open/utils/i;->d(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -229,13 +229,13 @@
     .line 184
     const-string v1, "qq_ver"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
     const-string v3, "com.tencent.mobileqq"
 
-    invoke-static {v2, v3}, Lcom/tencent/open/utils/Util;->getVersionName(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/tencent/open/utils/i;->c(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -244,15 +244,15 @@
     .line 185
     const-string v1, "qua"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getPackageName()Ljava/lang/String;
+    invoke-static {}, Lcom/tencent/open/utils/d;->b()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/tencent/open/utils/Util;->getQUA3(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/tencent/open/utils/i;->e(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -261,7 +261,7 @@
     .line 186
     const-string v1, "packagename"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getPackageName()Ljava/lang/String;
+    invoke-static {}, Lcom/tencent/open/utils/d;->b()Ljava/lang/String;
 
     move-result-object v2
 
@@ -270,15 +270,15 @@
     .line 187
     const-string v1, "app_ver"
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getPackageName()Ljava/lang/String;
+    invoke-static {}, Lcom/tencent/open/utils/d;->b()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lcom/tencent/open/utils/Util;->getAppVersionName(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/tencent/open/utils/i;->d(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -317,19 +317,19 @@
     move-result v1
 
     .line 203
-    invoke-static {}, Lcom/tencent/open/utils/Global;->getContext()Landroid/content/Context;
+    invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v0
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v2}, Lcom/tencent/open/utils/OpenConfig;->getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/OpenConfig;
+    invoke-static {v0, v2}, Lcom/tencent/open/utils/e;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/open/utils/e;
 
     move-result-object v0
 
     const-string v2, "Agent_ReportTimeInterval"
 
-    invoke-virtual {v0, v2}, Lcom/tencent/open/utils/OpenConfig;->getInt(Ljava/lang/String;)I
+    invoke-virtual {v0, v2}, Lcom/tencent/open/utils/e;->a(Ljava/lang/String;)I
 
     move-result v0
 

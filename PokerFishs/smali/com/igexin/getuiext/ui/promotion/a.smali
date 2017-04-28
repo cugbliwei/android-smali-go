@@ -88,12 +88,8 @@
 .end method
 
 .method public static a(Ljava/lang/String;)Lcom/igexin/getuiext/ui/promotion/a;
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/ui/promotion/a.smali"
-    const-string v2,  ".method public static a(Ljava/lang/String;)Lcom/igexin/getuiext/ui/promotion/a;"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     sget-object v0, Lcom/igexin/getuiext/ui/promotion/a;->a:Lcom/igexin/getuiext/ui/promotion/a;
 
     invoke-virtual {v0}, Lcom/igexin/getuiext/ui/promotion/a;->b()Ljava/lang/String;

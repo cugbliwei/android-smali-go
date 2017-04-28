@@ -36,12 +36,8 @@
 
 # virtual methods
 .method public a_()V
-    .locals 6
+    .locals 4
 
-    const-string v4, "======================== igexin/a/a/b/a/a/c.smali"
-    const-string v5,  ".method public a_()V"
-    invoke-static {v4,v5} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     invoke-super {p0}, Lcom/igexin/a/a/b/f;->a_()V
@@ -182,12 +178,8 @@
 .end method
 
 .method public d()V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/b/a/a/c.smali"
-    const-string v2,  ".method public d()V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-super {p0}, Lcom/igexin/a/a/b/f;->d()V
 
     invoke-static {}, Lcom/igexin/a/a/b/a/a/e;->h()Lcom/igexin/a/a/b/a/a/e;

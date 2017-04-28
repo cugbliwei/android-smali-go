@@ -10,11 +10,7 @@
 
 # direct methods
 .method constructor <init>(Lcom/igexin/push/core/c/c;Landroid/content/ContentValues;J)V
-    .locals 3
-
-    const-string v1, "======================== PokerFishs/smali/com/igexin/push/core/c/e.smali"
-    const-string v2,  ".method constructor <init>(Lcom/igexin/push/core/c/c;Landroid/content/ContentValues;J)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 1
 
     iput-object p1, p0, Lcom/igexin/push/core/c/e;->b:Lcom/igexin/push/core/c/c;
 
@@ -28,11 +24,7 @@
 
 # virtual methods
 .method public a()V
-    .locals 10
-
-    const-string v8, "======================== PokerFishs/smali/com/igexin/push/core/c/e.smali"
-    const-string v9,  ".method public a()V"
-    invoke-static {v8,v9} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .locals 8
 
     iget-object v0, p0, Lcom/igexin/push/core/c/e;->c:Landroid/database/sqlite/SQLiteDatabase;
 

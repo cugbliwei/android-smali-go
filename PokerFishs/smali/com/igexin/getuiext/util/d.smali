@@ -4,12 +4,8 @@
 
 # direct methods
 .method private static a(Ljava/io/InputStream;Ljava/io/OutputStream;)V
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/util/d.smali"
-    const-string v4,  ".method private static a(Ljava/io/InputStream;Ljava/io/OutputStream;)V"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/16 v0, 0x400
 
     new-array v0, v0, [B
@@ -34,12 +30,8 @@
 .end method
 
 .method public static a(Ljava/io/InputStream;Ljava/io/OutputStream;I)V
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/getuiext/util/d.smali"
-    const-string v2,  ".method public static a(Ljava/io/InputStream;Ljava/io/OutputStream;I)V"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v0, Lcom/igexin/getuiext/util/a;
 
     invoke-direct {v0, p1, p2}, Lcom/igexin/getuiext/util/a;-><init>(Ljava/io/OutputStream;I)V
@@ -52,12 +44,8 @@
 .end method
 
 .method public static a([B)[B
-    .locals 5
+    .locals 3
 
-    const-string v3, "======================== igexin/getuiext/util/d.smali"
-    const-string v4,  ".method public static a([B)[B"
-    invoke-static {v3,v4} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v1}, Ljava/io/ByteArrayOutputStream;-><init>()V

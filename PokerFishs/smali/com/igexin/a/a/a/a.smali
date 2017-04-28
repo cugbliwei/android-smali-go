@@ -4,12 +4,8 @@
 
 # direct methods
 .method public static a([III)V
-    .locals 4
+    .locals 2
 
-    const-string v2, "======================== igexin/a/a/a/a.smali"
-    const-string v3,  ".method public static a([III)V"
-    invoke-static {v2,v3} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     aget v0, p0, p1
 
     aget v1, p0, p2
@@ -22,12 +18,8 @@
 .end method
 
 .method public static a([B)Z
-    .locals 8
+    .locals 6
 
-    const-string v6, "======================== igexin/a/a/a/a.smali"
-    const-string v7,  ".method public static a([B)Z"
-    invoke-static {v6,v7} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     array-length v3, p0
@@ -81,12 +73,8 @@
 .end method
 
 .method public static a([BLjava/lang/String;)[B
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/a/a.smali"
-    const-string v2,  ".method public static a([BLjava/lang/String;)[B"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v0
@@ -99,12 +87,8 @@
 .end method
 
 .method public static a([B[B)[B
-    .locals 9
+    .locals 7
 
-    const-string v7, "======================== igexin/a/a/a/a.smali"
-    const-string v8,  ".method public static a([B[B)[B"
-    invoke-static {v7,v8} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     const/4 v1, 0x0
 
     invoke-static {p1}, Lcom/igexin/a/a/a/a;->a([B)Z
@@ -239,12 +223,8 @@
 .end method
 
 .method public static b([BLjava/lang/String;)[B
-    .locals 3
+    .locals 1
 
-    const-string v1, "======================== igexin/a/a/a/a.smali"
-    const-string v2,  ".method public static b([BLjava/lang/String;)[B"
-    invoke-static {v1,v2} ,Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v0

@@ -21,7 +21,7 @@
     iput-boolean p1, p0, Lcom/alipay/sdk/packet/e;->a:Z
 
     .line 42
-    invoke-static {}, Lcom/alipay/sdk/util/l;->c()Ljava/lang/String;
+    invoke-static {}, Lcom/alipay/sdk/util/l;->d()Ljava/lang/String;
 
     move-result-object v0
 
@@ -110,7 +110,7 @@
 
     if-nez v1, :cond_1
 
-    .line 192
+    .line 180
     :cond_0
     :goto_0
     return-object v0
@@ -197,13 +197,12 @@
 
     move-result-object v0
 
-    .line 178
+    .line 175
     :try_start_3
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
 
-    .line 184
     :goto_2
     :try_start_4
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
@@ -212,7 +211,7 @@
 
     goto :goto_0
 
-    .line 188
+    .line 190
     :catch_0
     move-exception v1
 
@@ -229,18 +228,15 @@
     :goto_3
     if-eqz v2, :cond_3
 
-    .line 180
     :try_start_5
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_4
 
-    .line 184
     :cond_3
     :goto_4
     if-eqz v1, :cond_0
 
-    .line 186
     :try_start_6
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
     :try_end_6
@@ -248,7 +244,6 @@
 
     goto :goto_0
 
-    .line 188
     :catch_2
     move-exception v1
 
@@ -269,24 +264,20 @@
     :goto_5
     if-eqz v2, :cond_4
 
-    .line 180
     :try_start_7
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_5
 
-    .line 184
     :cond_4
     :goto_6
     if-eqz v1, :cond_5
 
-    .line 186
     :try_start_8
     invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
     :try_end_8
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_6
 
-    .line 188
     :cond_5
     :goto_7
     throw v0
@@ -311,7 +302,6 @@
 
     goto :goto_7
 
-    .line 178
     :catchall_1
     move-exception v1
 
@@ -467,7 +457,7 @@
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_5
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 127
+    .line 124
     :goto_1
     :try_start_3
     invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
@@ -476,17 +466,17 @@
 
     move-object v1, v3
 
-    .line 135
+    .line 129
     :goto_2
-    if-nez v2, :cond_2
+    if-nez v2, :cond_3
 
-    if-nez v1, :cond_2
+    if-nez v1, :cond_3
 
     .line 138
     :goto_3
     return-object v0
 
-    .line 131
+    .line 133
     :catch_0
     move-exception v1
 
@@ -503,9 +493,8 @@
     move-object v2, v0
 
     :goto_4
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_1
 
-    .line 129
     :try_start_4
     invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_4
@@ -513,14 +502,15 @@
 
     move-object v1, v0
 
-    .line 131
     goto :goto_2
 
     :catch_2
     move-exception v1
 
+    :cond_1
     move-object v1, v0
 
+    .line 133
     goto :goto_2
 
     .line 127
@@ -534,21 +524,19 @@
     move-object v0, v5
 
     :goto_5
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_2
 
-    .line 129
     :try_start_5
     invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_3
 
-    .line 131
-    :cond_1
+    :cond_2
     :goto_6
     throw v0
 
     .line 138
-    :cond_2
+    :cond_3
     new-instance v0, Lcom/alipay/sdk/packet/b;
 
     invoke-direct {v0, v2, v1}, Lcom/alipay/sdk/packet/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -578,11 +566,6 @@
     move-exception v3
 
     goto :goto_4
-
-    :cond_3
-    move-object v1, v0
-
-    goto :goto_2
 
     :cond_4
     move-object v4, v3
@@ -640,7 +623,7 @@
     .line 75
     iget-object v3, p0, Lcom/alipay/sdk/packet/e;->b:Ljava/lang/String;
 
-    sget-object v4, Lcom/alipay/sdk/cons/a;->b:Ljava/lang/String;
+    sget-object v4, Lcom/alipay/sdk/cons/a;->c:Ljava/lang/String;
 
     invoke-static {v3, v4}, Lcom/alipay/sdk/encrypt/d;->a(Ljava/lang/String;Ljava/lang/String;)[B
 

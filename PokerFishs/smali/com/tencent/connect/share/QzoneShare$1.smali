@@ -3,7 +3,7 @@
 .source "ProGuard"
 
 # interfaces
-.implements Lcom/tencent/open/utils/AsynLoadImgBack;
+.implements Lcom/tencent/open/utils/c;
 
 
 # annotations
@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 284
+    .line 285
     iput-object p1, p0, Lcom/tencent/connect/share/QzoneShare$1;->d:Lcom/tencent/connect/share/QzoneShare;
 
     iput-object p2, p0, Lcom/tencent/connect/share/QzoneShare$1;->a:Landroid/os/Bundle;
@@ -48,7 +48,15 @@
 
 
 # virtual methods
-.method public batchSaved(ILjava/util/ArrayList;)V
+.method public a(ILjava/lang/String;)V
+    .locals 0
+
+    .prologue
+    .line 289
+    return-void
+.end method
+
+.method public a(ILjava/util/ArrayList;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -61,17 +69,17 @@
     .end annotation
 
     .prologue
-    .line 292
+    .line 293
     if-nez p1, :cond_0
 
-    .line 293
+    .line 294
     iget-object v0, p0, Lcom/tencent/connect/share/QzoneShare$1;->a:Landroid/os/Bundle;
 
     const-string v1, "imageUrl"
 
     invoke-virtual {v0, v1, p2}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 295
+    .line 296
     :cond_0
     iget-object v0, p0, Lcom/tencent/connect/share/QzoneShare$1;->d:Lcom/tencent/connect/share/QzoneShare;
 
@@ -83,14 +91,6 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/tencent/connect/share/QzoneShare;->a(Lcom/tencent/connect/share/QzoneShare;Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
 
-    .line 296
-    return-void
-.end method
-
-.method public saved(ILjava/lang/String;)V
-    .locals 0
-
-    .prologue
-    .line 288
+    .line 297
     return-void
 .end method

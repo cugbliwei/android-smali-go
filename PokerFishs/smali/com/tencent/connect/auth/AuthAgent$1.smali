@@ -30,7 +30,7 @@
     .locals 0
 
     .prologue
-    .line 278
+    .line 279
     iput-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$1;->c:Lcom/tencent/connect/auth/AuthAgent;
 
     iput-object p2, p0, Lcom/tencent/connect/auth/AuthAgent$1;->a:Ljava/lang/String;
@@ -48,16 +48,31 @@
     .locals 3
 
     .prologue
-    .line 282
+    .line 283
     sget-object v0, Lcom/tencent/connect/auth/AuthAgent;->SECURE_LIB_FILE_NAME:Ljava/lang/String;
 
     sget-object v1, Lcom/tencent/connect/auth/AuthAgent;->SECURE_LIB_NAME:Ljava/lang/String;
 
     const/4 v2, 0x3
 
-    invoke-static {v0, v1, v2}, Lcom/tencent/open/utils/SystemUtils;->extractSecureLib(Ljava/lang/String;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2}, Lcom/tencent/open/utils/g;->a(Ljava/lang/String;Ljava/lang/String;I)Z
 
-    .line 285
+    .line 286
+    iget-object v0, p0, Lcom/tencent/connect/auth/AuthAgent$1;->c:Lcom/tencent/connect/auth/AuthAgent;
+
+    invoke-static {v0}, Lcom/tencent/connect/auth/AuthAgent;->e(Lcom/tencent/connect/auth/AuthAgent;)Ljava/lang/ref/WeakReference;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    .line 302
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 289
+    :cond_1
     iget-object v0, p0, Lcom/tencent/connect/auth/AuthAgent$1;->c:Lcom/tencent/connect/auth/AuthAgent;
 
     invoke-static {v0}, Lcom/tencent/connect/auth/AuthAgent;->e(Lcom/tencent/connect/auth/AuthAgent;)Ljava/lang/ref/WeakReference;
@@ -70,17 +85,15 @@
 
     check-cast v0, Landroid/app/Activity;
 
-    .line 286
+    .line 290
     if-eqz v0, :cond_0
 
-    .line 287
+    .line 291
     new-instance v1, Lcom/tencent/connect/auth/AuthAgent$1$1;
 
     invoke-direct {v1, p0, v0}, Lcom/tencent/connect/auth/AuthAgent$1$1;-><init>(Lcom/tencent/connect/auth/AuthAgent$1;Landroid/app/Activity;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 298
-    :cond_0
-    return-void
+    goto :goto_0
 .end method

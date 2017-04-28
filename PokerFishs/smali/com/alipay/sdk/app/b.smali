@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field a:Z
+.field a:Landroid/app/Activity;
 
-.field private b:Landroid/app/Activity;
+.field b:Landroid/os/Handler;
 
-.field private c:Z
+.field c:Z
 
-.field private d:Landroid/os/Handler;
+.field private d:Z
 
 .field private e:Lcom/alipay/sdk/widget/a;
 
@@ -33,12 +33,12 @@
     iput-object v0, p0, Lcom/alipay/sdk/app/b;->f:Ljava/lang/Runnable;
 
     .line 32
-    iput-object p1, p0, Lcom/alipay/sdk/app/b;->b:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/alipay/sdk/app/b;->a:Landroid/app/Activity;
 
     .line 33
     new-instance v0, Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/alipay/sdk/app/b;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/alipay/sdk/app/b;->a:Landroid/app/Activity;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getMainLooper()Landroid/os/Looper;
 
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/alipay/sdk/app/b;->d:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/alipay/sdk/app/b;->b:Landroid/os/Handler;
 
     .line 34
     return-void
@@ -57,7 +57,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/alipay/sdk/app/b;->b:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/alipay/sdk/app/b;->a:Landroid/app/Activity;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
     .line 98
     new-instance v0, Lcom/alipay/sdk/widget/a;
 
-    iget-object v1, p0, Lcom/alipay/sdk/app/b;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/alipay/sdk/app/b;->a:Landroid/app/Activity;
 
     const-string v2, "\u6b63\u5728\u52a0\u8f7d"
 
@@ -97,7 +97,7 @@
 
     .prologue
     .line 24
-    iput-boolean p1, p0, Lcom/alipay/sdk/app/b;->c:Z
+    iput-boolean p1, p0, Lcom/alipay/sdk/app/b;->d:Z
 
     return p1
 .end method
@@ -136,12 +136,28 @@
     return-void
 .end method
 
-.method private c()Z
+.method private c()V
     .locals 1
 
     .prologue
-    .line 122
-    iget-boolean v0, p0, Lcom/alipay/sdk/app/b;->a:Z
+    const/4 v0, 0x0
+
+    .line 117
+    iput-object v0, p0, Lcom/alipay/sdk/app/b;->b:Landroid/os/Handler;
+
+    .line 118
+    iput-object v0, p0, Lcom/alipay/sdk/app/b;->a:Landroid/app/Activity;
+
+    .line 119
+    return-void
+.end method
+
+.method private d()Z
+    .locals 1
+
+    .prologue
+    .line 127
+    iget-boolean v0, p0, Lcom/alipay/sdk/app/b;->c:Z
 
     return v0
 .end method
@@ -156,7 +172,7 @@
     invoke-direct {p0}, Lcom/alipay/sdk/app/b;->b()V
 
     .line 93
-    iget-object v0, p0, Lcom/alipay/sdk/app/b;->d:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/alipay/sdk/app/b;->b:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/alipay/sdk/app/b;->f:Ljava/lang/Runnable;
 
@@ -177,7 +193,7 @@
 
     new-instance v0, Lcom/alipay/sdk/widget/a;
 
-    iget-object v1, p0, Lcom/alipay/sdk/app/b;->b:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/alipay/sdk/app/b;->a:Landroid/app/Activity;
 
     const-string v2, "\u6b63\u5728\u52a0\u8f7d"
 
@@ -191,7 +207,7 @@
     invoke-virtual {v0}, Lcom/alipay/sdk/widget/a;->a()V
 
     .line 86
-    iget-object v0, p0, Lcom/alipay/sdk/app/b;->d:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/alipay/sdk/app/b;->b:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/alipay/sdk/app/b;->f:Ljava/lang/Runnable;
 
@@ -213,7 +229,7 @@
     .line 39
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/alipay/sdk/app/b;->a:Z
+    iput-boolean v0, p0, Lcom/alipay/sdk/app/b;->c:Z
 
     .line 40
     invoke-super {p0, p1, p2, p3, p4}, Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
@@ -236,7 +252,7 @@
     invoke-static {v0, v1, v2}, Lcom/alipay/sdk/app/statistic/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 47
-    iget-boolean v0, p0, Lcom/alipay/sdk/app/b;->c:Z
+    iget-boolean v0, p0, Lcom/alipay/sdk/app/b;->d:Z
 
     if-eqz v0, :cond_0
 
@@ -246,7 +262,7 @@
     .line 49
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/alipay/sdk/app/b;->c:Z
+    iput-boolean v0, p0, Lcom/alipay/sdk/app/b;->d:Z
 
     .line 76
     :goto_0
@@ -254,7 +270,7 @@
 
     .line 52
     :cond_0
-    iget-object v0, p0, Lcom/alipay/sdk/app/b;->b:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/alipay/sdk/app/b;->a:Landroid/app/Activity;
 
     new-instance v1, Lcom/alipay/sdk/app/c;
 
@@ -270,7 +286,7 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/alipay/sdk/app/b;->b:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/alipay/sdk/app/b;->a:Landroid/app/Activity;
 
     invoke-static {p1, p2, v0}, Lcom/alipay/sdk/util/l;->a(Landroid/webkit/WebView;Ljava/lang/String;Landroid/app/Activity;)Z
 

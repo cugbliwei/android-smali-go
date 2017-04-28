@@ -3,14 +3,10 @@
 .source "ProGuard"
 
 
-# static fields
-.field private static final TAG:Ljava/lang/String; = "openSDK_LOG.JsDialog"
-
-
 # instance fields
-.field protected jsBridge:Lcom/tencent/open/a;
+.field protected a:Lcom/tencent/open/a;
 
-.field protected final mChromeClient:Landroid/webkit/WebChromeClient;
+.field protected final b:Landroid/webkit/WebChromeClient;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "NewApi"
@@ -20,24 +16,6 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 1
-
-    .prologue
-    .line 19
-    invoke-direct {p0, p1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
-
-    .line 34
-    new-instance v0, Lcom/tencent/open/b$1;
-
-    invoke-direct {v0, p0}, Lcom/tencent/open/b$1;-><init>(Lcom/tencent/open/b;)V
-
-    iput-object v0, p0, Lcom/tencent/open/b;->mChromeClient:Landroid/webkit/WebChromeClient;
-
-    .line 20
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
 
@@ -50,7 +28,7 @@
 
     invoke-direct {v0, p0}, Lcom/tencent/open/b$1;-><init>(Lcom/tencent/open/b;)V
 
-    iput-object v0, p0, Lcom/tencent/open/b;->mChromeClient:Landroid/webkit/WebChromeClient;
+    iput-object v0, p0, Lcom/tencent/open/b;->b:Landroid/webkit/WebChromeClient;
 
     .line 24
     return-void
@@ -58,7 +36,7 @@
 
 
 # virtual methods
-.method protected abstract onConsoleMessage(Ljava/lang/String;)V
+.method protected abstract a(Ljava/lang/String;)V
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
@@ -73,7 +51,7 @@
 
     invoke-direct {v0}, Lcom/tencent/open/a;-><init>()V
 
-    iput-object v0, p0, Lcom/tencent/open/b;->jsBridge:Lcom/tencent/open/a;
+    iput-object v0, p0, Lcom/tencent/open/b;->a:Lcom/tencent/open/a;
 
     .line 30
     return-void
