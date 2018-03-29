@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="75.0dip"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ImageView android:id="@id/zk_pay_select_icon" android:background="@drawable/zk_alipay" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginStart="20.0dip" android:layout_alignParentStart="true" />
-    <TextView android:textSize="30.0sp" android:textColor="@android:color/black" android:id="@id/zk_pay_select_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85.0dip" android:layout_marginTop="15.0dip" android:text="支付宝bbbbb" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
-    <ImageView android:id="@id/imageView" android:background="@drawable/zk_go" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
-    <TextView android:textColor="@android:color/black" android:background="#ffededed" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentBottom="true" />
-</RelativeLayout>
