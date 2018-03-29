@@ -184,12 +184,12 @@ func deleteLogCode(code string) string {
 }
 
 func main() {
-	flag := 2
+	flag := 22
 	if flag == 1 {
 		readDir("./PokerFishs/smali")
 	} else if flag == 2 {
 		findMethod("./PokerFishs/smali/com/igexin")
-	} else {
+	} else if flag == 3 {
 		for {
 			out, err := Shell("apktool b PokerFishs")
 			if err == nil {
